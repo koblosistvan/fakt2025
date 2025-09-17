@@ -1,0 +1,7 @@
+egy=int(input('szám egy: '))
+kettő=int(input('szám kettő: '))
+print(f'{egy} + {kettő} = {egy + kettő}')
+print(f'{egy} - {kettő} = {egy - kettő}')
+print(f'{egy} · {kettő} = {egy * kettő}')
+print(f'{egy} : {kettő} = {egy  //kettő}')
+print(f'{egy} ^ {kettő} = {egy ** kettő}')
