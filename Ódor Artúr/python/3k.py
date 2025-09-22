@@ -1,4 +1,5 @@
-szam = int(input("Adj meg egy számot: "))
+"""szam = int(input("Adj meg egy számot: "))"""
+szam = 100
 osztokszama = 0
 for i in range(1, szam + 1):
     
