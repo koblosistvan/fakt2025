@@ -1,7 +1,7 @@
 """szam = int(input("Adj meg egy számot: "))"""
-szam = 100
-osztokszama = 0
-for i in range(1, szam + 1):
+szam = 67
+osztokszama = 1
+for i in range(2, szam//2 + 1):
     
     if szam % i == 0:
         osztokszama += 1
