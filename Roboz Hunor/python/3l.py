@@ -1,5 +1,3 @@
-
-
 a = int(input("Add meg egy  számot: "))
 b = int(input("Add meg még egy számot: "))
 
