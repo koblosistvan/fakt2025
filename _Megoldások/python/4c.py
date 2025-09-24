@@ -1,0 +1,1 @@
+forrás = open('4c-bolt.txt')
