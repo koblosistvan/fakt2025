@@ -1,0 +1,1 @@
+forras = open('4c-bolt.txt')
