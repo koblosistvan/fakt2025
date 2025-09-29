@@ -7,6 +7,8 @@ for i in range (2,a//2+1):
         prim = True
 if prim == True:
     print('Prím')
+elif a == 1:
+    print('Az 1 nem prím')
 else:
     print('Nem prím')
     
