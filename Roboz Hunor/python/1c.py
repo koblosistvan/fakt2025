@@ -1,0 +1,1 @@
+print('Otthoni állataim:\n \t Gubanc\t kutya \n \t Lila\t cica' )
