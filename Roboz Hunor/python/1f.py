@@ -1,0 +1,7 @@
+a = int(input('Adj meg egy számot '))
+b = int(input('Adj meg még egy számot '))
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+print(f'{a+b} \t {a-b} \t {a*b} \t {a/b:.2}')

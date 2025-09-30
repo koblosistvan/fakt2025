@@ -21,8 +21,10 @@ for i in range(len(bevetel) - 1):
 
 profit = sum(bevetel) - sum(kiadas)
 osszeg_hetvege = 0
-
+for i in range(len(bevetel)):
+    if i == 5 or i == 6:
+        osszeg_hetvege += bevetel[i] - kiadas[i]
 
 
 print(f"\nVeszteséges napok {veszteseges_napok}\nProfit minimum 10% {tizszazalek_sz}\nProfit {profit_sz}\n"
-      f"Napi adatok száma: {len(bevetel)}\nÖsszes profit: {profit}")
+      f"Napi adatok száma: {len(bevetel)}\nÖsszes profit: {profit}\nHétvégi profit: {osszeg_hetvege}")
