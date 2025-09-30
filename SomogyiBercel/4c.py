@@ -1,7 +1,7 @@
 
 data = []
 
-with open("SomogyiBercel\\4c-bolt.txt") as f:
+with open("SomogyiBercel/4c-bolt.txt") as f:
     lines = f.readlines()
     for line in lines:
         l = line.strip().split(",")
