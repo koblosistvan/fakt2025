@@ -40,6 +40,10 @@ sáv_vég = 11
 
 for sáv_db in savok:
     print(sáv_kezd, "-", sáv_vég, ":", sáv_db, "fő")
-    sáv_kezd += 12
-    sáv_vég += 12
+    if sáv_vég == 107:
+        sáv_vég +=13
+        sáv_kezd +=12
+    else:
+        sáv_kezd += 12
+        sáv_vég += 12
 
