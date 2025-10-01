@@ -13,4 +13,5 @@ while megold != 3:
         if a == 0:
             megold += 1
             print(x)
+            
 
