@@ -32,3 +32,4 @@ for x in range(sz):
     for y in range(sz-2*x):
         print('x', end='')
     print()
+
