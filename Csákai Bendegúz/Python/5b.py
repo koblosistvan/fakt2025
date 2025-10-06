@@ -37,3 +37,13 @@ legk_index = ido[(fok.index(min(fok)))]
 print(f'A legmagasabb hőmérséklet {legn_index}-kor volt, {legn} hőmérséklet')
 print(f'A legalacsonyabb hőmérséklet {legk_index}-kor volt, {legk} hőmérséklet')
 
+legn_em = fok[1] - fok[0]
+ido1 = ido[0]
+ido2 = ido[1]
+for i in range(1,idohossz-1):
+    if legn_em < fok[i+1] - fok[i]:
+        legn_em = fok[i+1] - fok[i]
+        ido1 = ido[i]
+        ido2 = ido[i+1]
+print(f'A legnagyobb emelkedés {ido1} és {ido2} között volt, {legn_em:.2f} fok')
+
