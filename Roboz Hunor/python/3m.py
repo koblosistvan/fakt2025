@@ -33,14 +33,9 @@ for y in range(b):
         print('o', end = '')
     print()
 
-print('\n' + '-' * 80+'\n')
 
 for y in range(b):
-    for x in range(y):
-        print(' ', end = '')
-    for x in range(a-2*y):
-        print('o', end = '')
-    print()
-
-
+    for x in range(x-2*y):
+        print('o', end = '') 
+        
 
