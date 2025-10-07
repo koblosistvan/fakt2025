@@ -1,4 +1,4 @@
-forras = open('_Feladatok\\python\\5b-homerseklet.txt', mode= 'r', encoding= 'utf-8')
+forras = open('fakt2025\\Csákai Bendegúz\\Python\\5b-homerseklet.txt', mode= 'r', encoding= 'utf-8')
 ido = []
 fok = []
 
@@ -7,7 +7,7 @@ for sor in forras:
     ido.append(adat[0])
     fok.append(float(adat[1]))
 forras.close()
-idohossz =len(ido)
+idohossz =len(ido)-1
 
 harmincfolottinapokszama = 0
 for i in range (1, idohossz):
@@ -40,7 +40,7 @@ print(f'A legalacsonyabb hőmérséklet {legk_index}-kor volt, {legk} hőmérsé
 legn_em = fok[1] - fok[0]
 ido1 = ido[0]
 ido2 = ido[1]
-for i in range(1,idohossz-1):
+for i in range(1,idohossz):
     if legn_em < fok[i+1] - fok[i]:
         legn_em = fok[i+1] - fok[i]
         ido1 = ido[i]
