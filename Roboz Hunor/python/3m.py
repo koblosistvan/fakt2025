@@ -36,7 +36,6 @@ for y in range(b):
 
 for y in range(b):
     for x in range(x-2*y):
-        print('o', end = '')
-
-
+        print('o', end = '') 
+        
 
