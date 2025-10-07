@@ -50,7 +50,9 @@ for i in range(len(homerseklet)-1):
     if kulonbseg > legnagyobb_emelkedes:
         legnagyobb_emelkedes = kulonbseg
         legnagyobb_index = i
-print(f'A legnagyobb hőmérséklet-emelkedés volt {idopont[legnagyobb_index]} és {idopont[legnagyobb_index + 1]} között: {homerseklet[legnagyobb_index+1]} - {homerseklet[legnagyobb_index]} = {kulonbseg:.2f}')
+print(f'A legnagyobb hőmérséklet-emelkedés volt {idopont[legnagyobb_index]} és '
+    f'{idopont[legnagyobb_index + 1]} között: '
+    f'{homerseklet[legnagyobb_index+1]} - {homerseklet[legnagyobb_index]} = {kulonbseg:.2f}')
 
 
 leggyanusabb = 0
