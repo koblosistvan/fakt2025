@@ -25,3 +25,33 @@ for i in range(adatok_szama):
 
 else:
     print(f'Nincs {eletkor_hatar} évnél fiatalabb végzett')
+
+
+for i in range(adatok_szama):
+    if szul_ho[i] == 12 and szul_nap[i] == 4 :
+        print('Van aki ugyanakkor született')
+        break
+    
+else:
+    print('Nem született veled egyidőben senki ')
+    
+legfiatalabb_eletkor= vegzes_eve[0]
+legfiatalabb_index=0
+
+for i in range(adatok_szama):
+    if vegzes_eve[i]-szul_ev[i]<legfiatalabb_eletkor:
+        legfiatalabb_eletkor=vegzes_eve[i]-szul_ev[i] 
+        legfiatalabb_index= i
+print(f'{vegzes_eve[legfiatalabb_index]} évben végzett a legfiatalabb')
+print(f'{legfiatalabb_eletkor} évesen, aki {vegzes_eve[legfiatalabb_index]-legfiatalabb_eletkor} évben született ')
+
+tizenhatban_szuletett=0
+for i in range(adatok_szama):
+    if vegzes_eve[i]==2016:
+        tizenhatban_szuletett+=1
+print(tizenhatban_szuletett)
+
+
+  
+    
+
