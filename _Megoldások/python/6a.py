@@ -31,3 +31,18 @@ if i < adatok_szama:
     print(f'Van {eletkor_hatar} évnél fiatalabb végzett.')
 else:
     print(f'Nincs {eletkor_hatar} évnél fiatalabb végzett.')
+
+
+# Kérjbeafelhasználótólegyéletkorértéket,majddöntsdel,hogyvan-eolyanhallgató,akiennélfiatalabbanszerzettdiplomát!(eldöntés)
+# Van-eolyanhallgató,akinekugyanazonanaponvanaszületésnapja,mintNeked?(eldöntés)
+# Határozdmeg,hogymikorszületettazavégzetthallgató,akilegfiatalabbanszereztemegadiplomáját!(min/max)
+legfiatalabb_index = 0
+legfiatalabb_kor = vegzes_eve[0] - szul_ev[0]
+for i in range(adatok_szama):
+    if legfiatalabb_kor > vegzes_eve[i] - szul_ev[i]:
+        legfiatalabb_kor = vegzes_eve[i] - szul_ev[i]
+        legfiatalabb_index = i
+print(f'A legfiatalabb végzett a {legfiatalabb_index + 1}. hallgató, aki {legfiatalabb_kor} évesen végzett.')
+
+# Számoldmeg,hogyhányhallgatóvégzett2016-ban!(megszámlálás)
+# Mekkoraazátlagéletkorazegyetemen2014tavaszán?(összegzés,megszámlálás
