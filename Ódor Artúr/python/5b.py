@@ -49,5 +49,5 @@ print(f"{harmincfelett}-szer volt 30 felett.\n{atlaghom / len(homersekletek):.2f
       f"\n{kissebb_mint_elozo} volt kissebb hőmérséklet, mint az előző."
       f"\n{ido[homersekletek.index(min(homersekletek))]}-kor volt a legalacsonyabb hőmérséklet és {min(homersekletek)}°C volt"
       f"\n{ido[homersekletek.index(max(homersekletek))]}-kor volt a legalacsonyabb hőmérséklet és {max(homersekletek)}°C volt"
-      f"\n{legnagyobb_emelkedes:.2f} volt a legnagyobb emelkedés{ido_index1} és {ido_index2} között."
+      f"\n{legnagyobb_emelkedes:.2f} volt a legnagyobb emelkedés {ido_index1} és {ido_index2} között."
       f"\nA leggyanúsabb érés {leggyanusabb}°C volt, {ido[leggyanusabb_index]}-kor")
