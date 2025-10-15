@@ -28,7 +28,33 @@ print(f'A leghosszabb nyugalom {kezdete}-kor kezdődött, és {vege}-kor végző
 
 otven = 0
 
-for i in range(meresek-1):
+for i in range(meresek):
     if hely[i] == 50:
         otven += 1
-print(f'{otven}')
+print(f'Az ötvenes mérési pontnál: {otven}-meres volt')
+
+a_ora = int(input('Add meg hogy hány órakkor szeretnéd megnézni: '))
+a_perc = int(input('Add meg hogy hány perckor szeretnéd megnézni: '))
+
+for i in range(meresek):
+    if ora[i] == a_ora and perc[i] == a_perc:
+        print('Ekkor volt mérés.')
+        break
+else:
+     print('Ekkor nem volt mérés.')
+
+for i in range(meresek):
+    if (ora[i] and perc[i]) == (ora[i+1] and perc[i+1]):
+        print('Van olyan hogy 2 mérés történik 1 időpontban.')
+        break
+
+helyek =[0]*100
+for i in range(meresek):
+    helyek[hely[i]-1] += 1
+
+legtobb_meres = helyek[0]
+
+for i in range(len(helyek)):
+    if helyek[i] > legtobb_meres:
+        legtobb_meres = helyek[i]
+print(f'A legtöbb mérés a {legtobb_meres+1}-edik mérési ponton történt.')

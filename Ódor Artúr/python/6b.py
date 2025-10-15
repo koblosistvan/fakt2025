@@ -14,15 +14,11 @@ for sor in forras:
     ido.append(int(adat[1]) * 60 + int(adat[2]))
 forras.close
 
-legtobb_i = ido[1] - ido[0]
-uj_hely = 0
+# for pontok in set(hely):
+#     legtobb_i = p_ido[1] - p_ido[0]
+#     uj_hely = 0
 
-for n in range(max(hely)):
-    for i in range(len(ido) - 1):
-        if hely[n] == hely[i] and ido[i] - ido[uj_hely]:
-            legtobb_i = ido[i] - ido[uj_hely]
-            uj_hely = i
-print(f"{legtobb_i} perc volt a legtöbb idő ami eltelt azonos pontokon, úgy hogy nem jött autó.")
+
 
 szamlalo = 0
 for i in range(len(hely)):
@@ -30,6 +26,31 @@ for i in range(len(hely)):
         szamlalo += 1
 print(f"{szamlalo} db mérési adat volt az 50-es mérési helyen.")
 
-bekeres = map(int, input("Adj meg egy mérési időpontot (pl.: 04:50): ").strip().split(":"))
+# bekert_o, bekert_p = map(int, input("Adj meg egy mérési időpontot (pl.: 04:50): ").strip().split(":"))
+# bekert_i = bekert_o * 60 + bekert_p
+bekert_i = 100
 
 for i in range(len(ido)):
+    if bekert_i == ido[i]:
+        print("Volt ebben az időpontban mérés.")
+        break
+else:
+    print("Nem volt ebben az időpontban meres.")
+
+for i in range(len(ido) - 1):
+    if ido[i] == ido[i+1]:
+        print("Volt ugyan abban az időpontban 2 mérési eredmény")
+        break
+else:
+    print("Nem volt ugyan abban az időpontban mérés.")
+
+statisztika = []
+legnagyobb_i = 0
+for n in range(100):
+    statisztika.append(0)
+    for i in range(len(ido)):
+        if hely[i] == n + 1:
+            statisztika[n] += 1
+    print(f"{statisztika[n]} db mérés volt a {n+1}. helyen")
+print(f"\n{statisztika.index(max(statisztika)) + 1} helyen volt a legtöbb mérés.")
+print(f"A legtöbb mérés a {legnagyobb_i + 1} helyen volt.")
