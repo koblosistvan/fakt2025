@@ -1,4 +1,4 @@
-forras = open('_Feladatok\\python\\6b-forgalom.txt', mode='r', encoding='utf-8')
+forras = open('fakt2025\\_Feladatok\\python\\6b-forgalom.txt', mode='r', encoding='utf-8')
 felesleges = forras.readline()
 hely = []
 ora = []
@@ -37,11 +37,38 @@ idopont = input('Adj meg egy időpontot: ')
 idoszak = idopont.strip().split(':')
 oraban = idoszak[0] 
 percben = idoszak[1] 
+teljesido = int(oraban)*60 +int(percben)
+
 
 for i in range(len(hely)-1):
-    if oraban == ora[i] and percben == perc[i]:
+    if teljesido == ido[i]:
         print('Van autó amit ebben az időpontban mértek')
         break
 else:
     print('Nincs autó amit ebben az időpontban mértek')
 
+
+for i in range(len(hely)-1):
+    if ido[i] == ido[i+1]:
+        print('Van olyan hogy egy percen belül 2 mérés történt')
+        break
+else:
+    print('Nincs olyan hogy egy percen belül 2 mérés történt')
+
+
+
+allomasok = [0]*101
+for i in range(len(hely)-1):
+    allomasok[hely[i]] +=1
+
+print(allomasok)
+print(allomasok.index(max(allomasok)))
+
+legtöbb = 0
+legtöbb_index = allomasok[0]
+
+for i in range(len(allomasok)):
+    if allomasok[i] > legtöbb:
+        legtöbb = allomasok[i]
+        legtöbb_index = i
+print(f'A {allomasok[legtöbb_index]+1}. állomáson volt a legtöbb mérés')
