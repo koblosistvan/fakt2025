@@ -1,0 +1,50 @@
+1.
+A:
+  
+B:
+  27
+  Tetszőlegesre:
+  A[1] + 2*A[2] + 3*(A[3]+...+A[N-3]) + 2*A[N-2] + A[N-1]
+C:
+  23
+  Tetszőlegesre:
+  2*(A[1]+A[N-3]) + 3*(A[2]+...+A[N-4]) + A[N-2] + A[N-1]
+D:
+  A[N-3] + A[N-2] - A[1] + A[2]
+
+
+
+2.
+A:
+  B[I] = I-k darabszáma A-ban
+B:
+  B[I] 0-tól I-ig az egyes számok darabszámainak összegét
+  tartalmazza
+C:
+  B összes eleme 0
+  C a növekvő sorrendbe rendezett A tömböt tartalmazza
+
+
+3.
+
+A művelet a kizáró vagy, és a kizáró vagy megfordítható
+tehát ha KÓD[I] = SZÓ[I] ^ KÓD[I-1], akkor
+SZÓ[I] = KÓD[I] ^ KÓD[I-1], ez alapján pedig el lehet indulni
+KÓD végétől az eleje felé
+
+SZÓ[5] = KÓD[5] ^ KÓD[4] = 1100 ^ 1011 = 0111 = G
+SZÓ[4] = 1011 ^ 1110 = 0101 = E
+SZÓ[3] = 1110 ^ 1010 = 0100 = D
+SZÓ[2] = 1010 ^ 0011 = 1001 = I
+SZÓ[1] = 1001 = H
+A-O-ig vannak csak, ezért R nem lehet
+
+SZÓ = "HIDEG"
+
+KULCS = KÓD[0]
+KÓD[1] = SZÓ[1] ^ KULCS
+
+KULCS = SZÓ[1] ^ KÓD[1] = 1001 ^ 0011 = 1010 = J
+
+4.
+  
