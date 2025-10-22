@@ -1,0 +1,12 @@
+2021/2022:
+
+1.feladat:
+    A: 1, 6, 4
+    B: 3, 4, 6, 7
+    c: 1, 4, 6, 7
+4.feladat:
+    A: a->b b->c c->a
+    B: a->b b->c c->a a->b b->c
+    c: a->c c->b a->b c->b
+    D: a->b b->c c->a
+    E: 
