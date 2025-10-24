@@ -68,4 +68,4 @@ for i in range(len(szamlalok)):
     if szamlalok[i] > legtobb:
         legtobb = szamlalok[i]
         legtobb_index=i
-print(f'A letöbbször a {legtobb_index+1}. helyen mentek át és {legtobb} szor.')
+print(f'A letöbbször a {legtobb_index}. helyen mentek át és {legtobb} szor.')
