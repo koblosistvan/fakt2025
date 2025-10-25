@@ -1,6 +1,8 @@
 1.
 A:
-  
+  Mindkettő az A tömb elemeit összegzi. Egyes elemeket
+  többször vesznek a tömb beli indexüktől függően.
+
 B:
   27
   Tetszőlegesre:
@@ -96,3 +98,43 @@ B:
 A: *C = 0b0011 = 3
 B: *C = 1
 C: *C = 0b11 = 3
+D: *C: *A és *B legnagyobb közös osztója
+E:
+  x4: a két bemenet közül a kevesebb 0 bitre végződő szám
+  hány 0-ra végződik (2 legnagyobb hatványa amivel mindkét
+  szám osztható)
+F:
+  Ha x0 == x1 akkor Y-hoz ugrik
+  Ha x0 > x1 akkor Z-hez ugrik
+  Ha x0 < x1 akkor megcseréli őket
+
+6:
+A1:
+  1-2 (marad: 25 Ft), 2-3 (16 Ft), 1-5 (5 Ft), 5-6 (2 Ft)
+
+A2:
+  1-2 (45 Ft), 2-3 (36 Ft), 1-5 (25 Ft), 5-6 (22 Ft),
+  6-9 (15 Ft), 9-8 (0 Ft)
+
+B1:
+  1-2 (35 Ft), 2-3 (26 Ft), 1-5 (15 Ft), 1-4 (2 Ft)
+
+B2:
+  1-2 (75 Ft), 2-3 (66 Ft), 1-5 (55 Ft), 1-4 (42 Ft),
+  5-6 (28 Ft), 6-8 (9 Ft)
+
+7:
+A:
+  2, 0, 3, 4,
+  0, 0, 0, 3,
+  5, 2, 4, 3
+
+B:
+   0, 0, 2, 7,
+   0, 0, 0, 0,
+  11, 0, 8, 9
+
+C:
+   2, 0, 5, 12,
+   0, 0, 0, 3,
+  26, 2, 21, 17
