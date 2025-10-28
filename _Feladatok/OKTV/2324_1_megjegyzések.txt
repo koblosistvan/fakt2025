@@ -1,0 +1,18 @@
+10 érdekesség
+    Csákai Bendegúz - táblázat használata jobb lenne, precízebben kell
+    Dobai Bálint - sok TAB nem jó, pozíciót kell helyette létrehozni
+    képek arányát tartsuk
+    Sipos Kristóf - komolytalan munkát ne adjunk be!
+Bajnokság
+    csere stílusokkal
+    gólkirálynő levágása excel vagy word
+    Dobai Bálint - itt király lett a tab használat :) (csak nem elég széles az alsó soroknak)
+    oldalszegély
+Kézilabda
+    felsorolás háttere nehéz: táblázat vagy szövegdoboz
+    Csákai Bendegúz - jó a stílus használat
+    Roboz Hunor - a képek elhelyezésére figyeljünk: merre van szöveg, hol a teteje, széle, hogy futja körbe
+    Dobai Bálint - a stílusok mindent tartalmazzanak, azzal könnyítik meg a munkát
+    oldaltörés lehetőségei (kézi, új oldalra, együtt)
+    színes felsorolás jel
+
