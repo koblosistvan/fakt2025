@@ -16,3 +16,7 @@ Kézilabda
     oldaltörés lehetőségei (kézi, új oldalra, együtt)
     színes felsorolás jel
 
+Excel
+    panelek rögzítése és szűrők
+    K oszlop formázás hazai/döntetlen/vendég
+    áttekintés képletek és formázás
