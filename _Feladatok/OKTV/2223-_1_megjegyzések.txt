@@ -1,0 +1,14 @@
+Bendegúz
+    - word profi munka
+    - excel is, a diagram halmozott, pedig nem kéne
+Bálint
+    - Földközi tenger doksiban a fejezetcímek stílussal!
+    - képek pozíciójára figyeljünk és az aláírások helyére is
+    - több hasábos rész elkészítése
+    - Máltában figyeljünk a táblázatban levő fölös enterekre
+Artúr
+    - excelben ne használj táblázat objektumot, csak ha tudod mi az
+    - oldalszegély a pálmafákkal
+Hunor
+    - Földközi tenger a fejlécben levő kép belelóg a törzsszövegbe
+    
