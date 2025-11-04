@@ -1,7 +1,7 @@
 import random
 
 oszt = []
-letszam = int(input('Add meg hogy hányan vannak az osztályban: '))
+letszam = random.randint(15, 20)
 
 for i in range(letszam):
     oszt.append(random.randint(1,5))
