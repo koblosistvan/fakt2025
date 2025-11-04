@@ -1,0 +1,56 @@
+import random
+
+letszam=random.randint(15,20)
+osztalyzatok=[]
+
+for i in range(letszam):
+    osztalyzat=random.randint(1,5)
+    osztalyzatok.append(osztalyzat)
+
+print(f'A lista {len(osztalyzatok)} elemet tartalmaz.')
+
+osszeg=0
+for i in range(letszam):
+   osszeg+=i
+print(f'Az osztályzatok összege {osszeg}')
+
+atlag=osszeg/letszam
+print(f'Az osztályzatok átlaga {atlag}')
+
+for i in range(letszam):
+    if osztalyzatok[i]==1:
+        print('Van elégtelen osztályzat')
+        break
+else:
+    print('Nincs elégtelen osztályzat')
+
+szam=int(input('Adj meg egy osztályzatot: '))
+elofordulas=[]
+for i in range(letszam):
+    if osztalyzatok[i]==szam:
+        elofordulas.append(i)
+print(f'Az osztályzatok között {szam} előfordulásai: {elofordulas}')
+
+elofordulas=0
+for i in range(letszam):
+    if osztalyzatok[i]==3:
+        elofordulas+=1
+print(f'A 3 osztályzat {elofordulas} alkalommal fordul elő')
+
+jobbmint_kozepes=0
+for i in range(letszam):
+    if osztalyzatok[i]>3:
+        jobbmint_kozepes+=1 
+
+arany=jobbmint_kozepes/len(osztalyzatok)*100
+print(f'{jobbmint_kozepes} szám volt jobb, mint közepes\n ez az összes {arany}%-a')
+
+legkisebb=osztalyzatok[0]
+legnagyobb=osztalyzatok[0]
+for i in range(letszam):
+    if legkisebb>osztalyzatok[i]:
+        legkisebb=osztalyzatok[i]
+
+    elif legnagyobb<osztalyzatok[i]:
+        legnagyobb=osztalyzatok[i]
+print(f'A legkisebb osztályzat: {legkisebb}, a legnagyobb {legnagyobb}')
