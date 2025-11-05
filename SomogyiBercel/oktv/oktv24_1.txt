@@ -1,0 +1,74 @@
+1.
+A:
+  SA = [7,6,1]
+  SB = [5,4,3,2]
+B:
+  SA = [4,1]
+  SB = [5,2,3,1]
+C:
+  Hiba!
+D: Hamis
+E: Hamis
+F: Igaz
+
+2.
+A:
+  1: 1 (Igen)
+  2: 2 (Nem)
+  3: 3, 2 (Nem)
+  4: 4, 2 (Nem)
+  5: 5, 1 (Igen)
+  6: 6, 5, 1 (Igen)
+  7: 7, 6, 5, 1 (Igen)
+  8: 8, 3, 2 (Nem)
+B:
+  1: 1 (Igen)
+  2: 2, 8, 3, 1 (Igen)
+  3: 3, 8, 2, 4, 1 (Igen)
+  4: 4, 6, 5, 1 (Igen)
+  5: 5, 6, 4, 2, 8, 3, 1 (Igen)
+  6: 6, 7 (Nem)
+  7: 7, 6, 5, 1 (Igen)
+  8: 8, 3, 2, 4, 1 (Igen)
+
+3.
+A: P, K, O, P, K
+B: O, P, O, P, O
+C:
+  K, O, K, O, O
+  P, O, P, P, K
+D:
+  1. győzelmeinek száma: 49
+  2. győzelmeinek száma: 26
+  Döntetlenek száma: 25
+
+4.
+A:
+  Töltési idő: 14p
+  Min. kapacitás: 14
+B:
+  Töltési idő: 13p
+  Min. kapacitás: 14
+C:
+  Töltési idő: 0p
+  Min. kapacitás: 0
+D:
+  Töltési idő: 4p
+  Min. kapacitás: 13
+E:
+  Töltési idő: 0p
+  Min. kapacitás: 10
+
+5.
+A:
+  1: 1, 2: 1, 3: 4, 4: 3, 5: 9,
+  6: 7, 7: 7, 8: 5, 9: 13, 10: 11,
+  11: 11, 12: 9, 13: 11, 14: 9, 15: 9
+B: 23
+C: 31
+
+6.
+A: FKT$EEE
+B:
+
+C: ABCD, BCDA, CDAB, DABC

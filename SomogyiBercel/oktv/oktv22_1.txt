@@ -1,0 +1,72 @@
+1:
+A:
+  A -> AB -> ABA -> ABAAB -> ABAABABA
+B:
+  A -> B[A] -> BB[B[A]] -> BBBB[BB[B[A]]] ->
+  BBBBBBBB[BBBB[BB[B[A]]]]
+C:
+  A -> AB -> ABBA -> ABBABAAB -> ABBABAABBAABABBA
+D:
+  S -> S+T -> S+T+ST -> S+T+ST+S+TST ->
+  S+T+ST+S+TST+S+T+STS+TST
+E:
+  KL -> L-LKR -> KR-KRL-LR -> L-LR-L-LRKR-KRR ->
+  KR-KRR-KR-KRRL-LR-L-LRR
+
+2:
+A: b = [3]
+B: b = [4, 3, 2, 3, 4]
+
+3:
+
+4:
+A: B->1, B->1, A->2, A->2, B->3, B->1
+B: A->2, A->2, B->3, A->4, A->2, B->3
+C: B->1, A->2, B->3, B->1, A->2, B->3, A->4
+D: B->1, A->2, A->2, B->3, A->4, B->5, A->5, B->5
+E: ABAB
+
+5:
+A: X*Y*Z
+B: 1-(1-X)*(1-Y)*(1-Z)
+C: (1-(1-X)*(1-Y))*Z
+D: 1-(1-X)*(1-Y*Z)
+E: X*(1-Y)*(1-Z) + Y*(1-X)*(1-Z) + Z*(1-X)*(1-Y)
+F: X*Y*(1-Z) + X*Z*(1-Y) + Y*Z*(1-X) =
+  X*Y + X*Z + Y*Z - 3*X*Y*Z
+G: (1-X*Y*Z)*(1-(1-X)*(1-Y)*(1-Z))
+H: Ha 1 vagy 3 igaz, akkor igaz
+I: Ha 2 vagy 3 igaz, akkor igaz
+
+6:
+A:
+  3 kell
+  1: LLLJJJ
+  2: JJJLLL
+  3: LJJLLJ
+B:
+  2 kell
+  1: JJLJLJLL
+  2: LJLJLLJJ
+C:
+  4 kell
+  1: JJJLJLJLLL
+  2: JJLLLLJJJL
+  3: LLLJJJJJLL
+  4: LLLLJLJJJJ
+D:
+  5 kell
+  1: JJJJJLJLLLLL
+  2: LLLLLLJJJJJJ
+  3: JLLLLLJJJJJL
+  4: JJLLLLJJJJLL
+  5: JJJLJLLJJLLL
+E:
+  3 kell
+  1: JJJJLLLJJLLL
+  2: LJLLJLLJJJJL
+  3: LLLLLLJJJJJJ
+
+7:
+A: 2
+B: 11*2

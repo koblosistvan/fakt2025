@@ -1,0 +1,144 @@
+1.
+A:
+  Mindkettő az A tömb elemeit összegzi. Egyes elemeket
+  többször vesznek a tömb beli indexüktől függően.
+
+B:
+  27
+  Tetszőlegesre:
+  A[1] + 2*A[2] + 3*(A[3]+...+A[N-3]) + 2*A[N-2] + A[N-1]
+C:
+  23
+  Tetszőlegesre:
+  2*(A[1]+A[N-3]) + 3*(A[2]+...+A[N-4]) + A[N-2] + A[N-1]
+D:
+  A[N-3] + A[N-2] - A[1] + A[2]     # - A[2]
+
+
+
+2.
+A:
+  B[I] = I-k darabszáma A-ban
+B:
+  B[I] 0-tól I-ig az egyes számok darabszámainak összegét
+  tartalmazza
+C:
+  B összes eleme 0      # az A tömb I-nél kisebb elemei száma
+  C a növekvő sorrendbe rendezett A tömböt tartalmazza
+
+
+3.
+
+A művelet a kizáró vagy, és a kizáró vagy megfordítható
+tehát ha KÓD[I] = SZÓ[I] ^ KÓD[I-1], akkor
+SZÓ[I] = KÓD[I] ^ KÓD[I-1], ez alapján pedig el lehet indulni
+KÓD végétől az eleje felé
+
+SZÓ[5] = KÓD[5] ^ KÓD[4] = 1100 ^ 1011 = 0111 = G
+SZÓ[4] = 1011 ^ 1110 = 0101 = E
+SZÓ[3] = 1110 ^ 1010 = 0100 = D
+SZÓ[2] = 1010 ^ 0011 = 1001 = I
+SZÓ[1] = 1001 = H
+A-O-ig vannak csak, ezért R nem lehet
+
+SZÓ = "HIDEG"
+
+KULCS = KÓD[0]              # "K" lenne
+KÓD[1] = SZÓ[1] ^ KULCS
+
+KULCS = SZÓ[1] ^ KÓD[1] = 1001 ^ 0011 = 1010 = J
+                            # hogy állítható vissza? SZO[i] = ???
+4.
+A:
+  (be: 3)
+  sor: 3
+  ki: (üres)
+
+  (be: 4)
+  sor: 3 4
+  ki: (üres)
+
+  (be: 6)
+  sor: 3 4 6
+  ki: (üres)
+
+  (be: 1)
+  sor: 3 4 6
+  ki: 1
+
+  (be: 8)
+  sor: 3 4 6 8
+  ki: 1
+
+  (be: 2)
+  sor: 3 4 6 8
+  ki: 1 2
+
+  (be: 5)
+  sor: 6 8
+  ki: 1 2 3 4 5
+
+  (be: 9)
+  sor: 6 8 9
+  ki: 1 2 3 4 5
+
+  (be: 7)
+  sor: 8 9
+  ki: 1 2 3 4 5 6 7
+
+  (minden bemenet feldolgozása után)
+  sor: (üres)
+  ki: 1 2 3 4 5 6 7 8 9
+B:
+  Akkor dob hibát, ha a kimenetre nem növ. sorrendben kerülnek
+  az elemek
+  Példa: 3 2 1
+  # minden olyan sorozatra hibajelzést ad, amiben van olyan i<j<k index, hogy A[i]>A[j]>A[k]
+  # a "nem növekvő" más, mint a "csökkenő" 
+  # elég ha három hosszú ilyen részsorozat van
+
+5:
+A: *C = 0b0011 = 3
+B: *C = 1
+C: *C = 0b11 = 3
+D: *C: *A és *B legnagyobb közös osztója
+E:
+  x4: a két bemenet közül a kevesebb 0 bitre végződő szám
+  hány 0-ra végződik (2 legnagyobb hatványa amivel mindkét
+  szám osztható)
+  # Azok minimuma.
+F:
+  Ha x0 == x1 akkor Y-hoz ugrik
+  Ha x0 > x1 akkor Z-hez ugrik
+  Ha x0 < x1 akkor megcseréli őket
+  # Ehhez külön gratulálok!!! Ezt szerintem kifejezetten nehéz megérteni.
+6:
+A1:
+  1-2 (marad: 25 Ft), 2-3 (16 Ft), 1-5 (5 Ft), 5-6 (2 Ft)
+
+A2:
+  1-2 (45 Ft), 2-3 (36 Ft), 1-5 (25 Ft), 5-6 (22 Ft),
+  6-9 (15 Ft), 9-8 (0 Ft)
+
+B1:
+  1-2 (35 Ft), 2-3 (26 Ft), 1-5 (15 Ft), 1-4 (2 Ft)
+
+B2:
+  1-2 (75 Ft), 2-3 (66 Ft), 1-5 (55 Ft), 1-4 (42 Ft),
+  5-6 (28 Ft), 6-8 (9 Ft)
+
+7:
+A:
+  2, 0, 3, 4,
+  0, 0, 0, 3,
+  5, 2, 4, 3
+
+B:
+   0, 0, 2, 7,        # 0 0 2 8
+   0, 0, 0, 0,
+  11, 0, 8, 9
+
+C:
+   2, 0, 5, 12,       # 2 0 5 14
+   0, 0, 0, 3,
+  26, 2, 21, 17       # 64 2 33 22

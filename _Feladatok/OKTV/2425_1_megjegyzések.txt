@@ -1,0 +1,5 @@
+Bendegúz
+    - megrendelőlapon a függő behúzás kellene
+Hunor 
+    - megrendelőlapon sorköz a felsorolásnál
+    
