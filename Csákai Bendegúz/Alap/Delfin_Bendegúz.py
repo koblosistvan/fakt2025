@@ -1,6 +1,6 @@
 import random
 mag = []
-legn_kiug = 10
+legn_kiug = 80
 for i in range(legn_kiug):
     mag.append(random.randint(-5,3))
 print(mag)
@@ -24,7 +24,6 @@ for i in range(legn_kiug):
         break
 else:
     print('A víz alatt volt többet a delfin')
-#Milyen hosszú volt a leghosszabb kiugrása? Az út hányadik pontjánál kezdődött?
 hossz = 0
 legn_hossz = 0
 legn_hossz_index = 0
