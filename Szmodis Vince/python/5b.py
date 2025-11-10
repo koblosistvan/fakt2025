@@ -60,4 +60,4 @@ for i in range(1, adatok_szama):
     if homerseklet[i-1]+homerseklet[i+1]/2>homerseklet[i]:
         gyanus=homerseklet[i]
     print(f'A leggyanúsabb adat: {gyanus}')
-        
+         
