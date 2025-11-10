@@ -17,7 +17,7 @@ for i in range(legn_kiug):
 szazal_ugr = ugras/80*100
 szazal_vizf = vizfelsz/80*100
 szazal_vizal = vizalatt/80*100
-print(f'A delfin az út {szazal_vizf:.0f}%-át tette meg a vízfelszínen, az út {szazal_vizal:.0f}%-át tette meg a víz alatt, így összesen az út {szazal_vizal+szazal_vizf}% át tette meg vízben (kerekítve!!)')
+print(f'A delfin az út {szazal_vizf:.0f}%-át tette meg a vízfelszínen, az út {szazal_vizal:.0f}%-át tette meg a víz alatt, így összesen az út {szazal_vizal+szazal_vizf}% át tette meg vízben')
 for i in range(legn_kiug):
     if szazal_ugr > szazal_vizal:
         print('A víz felett volt többet a delfin')
