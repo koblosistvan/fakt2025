@@ -1,0 +1,9 @@
+2022-23.1
+	2. mit csinál a program?
+	4. állapotautomata
+	5. logikai algebra -> szakkör
+	7. rekurzió -> szakkör
+2023-24.1
+	6. legkisebb költségű feszítőfa -> szakkör
+	7. összes n hosszú út számolása -> szakkör
+	
