@@ -1,0 +1,11 @@
+n faktoriális
+
+egy listában keresi a legkisebb elemet
+
+megnézi, hogy a lista elemei oszthatóak-e 10-zel és össze adja őket
+
+van-e a listában 100-nál kisebb elem
+
+megszámolja, hogy a listában hányszor nőtt a következő szám
+
+prímtényezős felbontás
