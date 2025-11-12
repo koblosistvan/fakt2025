@@ -8,13 +8,14 @@ for sor in forras:
     napi_fert_szama.append(int(adat[1]))
     halalozasok_szama.append(int(adat[2]))
 forras.close()
+adt_szm = len(datum)
 print('1. feladat')
 print(f'Az állomány {len(datum)} nap adatait tartalmazza.''\n')
 print('2. feladat')
 print(f'A két év alatt összesen {sum(napi_fert_szama):,} fertőzöttet és {sum(halalozasok_szama):,} halottat regisztráltak.''\n')
 print('3. feladat')
 szaze_alatt = 0
-for i in range(len(datum)):
+for i in range(adt_szm):
     if napi_fert_szama[i] < 100000:
         szaze_alatt += 1
 print(f'A fertőzöttek száma {szaze_alatt} napon volt 100e alatt.''\n')
@@ -22,7 +23,7 @@ print('4. feladat')
 halott_legt = 0
 datuma = 0
 fert_ez = 0
-for i in range(len(datum)):
+for i in range(adt_szm):
     if halalozasok_szama[i] > halott_legt:
         halott_legt = halalozasok_szama[i]
         datuma = datum[i]
@@ -31,7 +32,7 @@ print(f'Legtöbben {datuma} napon haltak meg:''\n''\t'f'{fert_ez:,} fertőzött'
 print('5. feladat')
 arany_fert_dat = []
 arany = 0
-for i in range(len(datum)):
+for i in range(adt_szm):
     if napi_fert_szama[i]/napi_fert_szama[i] > arany:
         arany_fert_dat = datum[i]
         arany = napi_fert_szama[i]/napi_fert_szama[i-1]
@@ -39,7 +40,7 @@ print(f'A legnagyobb arányú növekedés {arany_fert_dat} napon volt, amikor az
 print('6. feladat')
 csokk = 0
 nott = 0
-for i in range(len(datum)):
+for i in range(adt_szm):
     if halalozasok_szama[i] > halalozasok_szama[i-1]:
         nott+=1
     elif halalozasok_szama[i] < halalozasok_szama[i-1]:
@@ -47,3 +48,13 @@ for i in range(len(datum)):
 print(f'A halálozások száma {csokk-1} napon csökkent és {nott} napon nőtt az előzőhöz képest.''\n')
 print('7. feladat')
 print(f'A napi halálozások átlagos száma {sum(halalozasok_szama)/len(halalozasok_szama):,.1f}')
+
+for i in range(adt_szm-1): #i = ennyi rekord van a tetején
+    for j in range(adt_szm-1-i):
+        if napi_fert_szama[j] < napi_fert_szama[j+1]:
+            napi_fert_szama[j], napi_fert_szama[j+1] = napi_fert_szama[j+1], napi_fert_szama[j]
+            datum[j], datum[j+1] =  datum[j+1], datum[j]
+            halalozasok_szama[j], halalozasok_szama[j+1] = halalozasok_szama[j+1], halalozasok_szama[j]
+print(f'Legtöbb megbetegedés top:')
+for i in range(5):
+    print(f'{i+1}. {datum[i]}: {napi_fert_szama[i]}')
