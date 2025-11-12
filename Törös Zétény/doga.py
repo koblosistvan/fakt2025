@@ -30,15 +30,15 @@ for i in range(oszt_hossz):
 if len(eloford_index) > 0:
     print(f"A {szam}-es osztályzat az osztályzatok {eloford_index } helyein jelennek meg ")
 else:
-        print(f"Nem fordul elő a {szam}-es osztáyzat az osztályzatok között.")
+    print(f"Nem fordul elő a {szam}-es osztáyzat az osztályzatok között.")
 
 negy = 0
 ot = 0
 
 for i in range(oszt_hossz):
-    if osztalyzatok == 4:
+    if osztalyzatok[i] == 4:
         negy += 1
-    if osztalyzatok == 5:
+    if osztalyzatok[i] == 5:
         ot += 1
 
 if negy > 0 or ot > 0:
