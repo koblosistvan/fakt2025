@@ -47,8 +47,21 @@ print()
 legnagyobb_novekedes_index=0
 legnagyobb_novekedes=fertozott[1]/fertozott[0]
 for i in range(len(fertozott)):
-    if fertozott[i+1]/fertozott[i]:
-        legnagyobb_novekedes=fertozott[i+1]/fertozott[i]
+    if fertozott[i]/fertozott[i]: #ide i+1
+        legnagyobb_novekedes=fertozott[i]/fertozott[i]
         legnagyobb_novekedes_index=i
 print('5. feladat')
 print(f'A legnagyobb arányú növekedés {datum[legnagyobb_novekedes_index]} napon volt, amikor az előző \nnapi adat {legnagyobb_novekedes}-szorosa volt a fertőzöttek száma.')
+
+
+
+for i in range(len(fertozott)-1): 
+    for j in range(len(fertozott-1-i)):
+        if fertozott[j] < fertozott[j+1]:
+            datum[j], datum[j+1]=datum[j+1], datum[j]
+            fertozott[j], fertozott[j+1]=fertozott[j+1], fertozott[j]
+            halaleset[j], halaleset[j+1]=halaleset[j+1], halaleset[j]
+
+print(f'Megbetegedési topista:')
+for i in range(5):
+    print(f'{i+1}. {datum[i]}: {fertozott[i]}')
