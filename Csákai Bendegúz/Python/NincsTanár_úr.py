@@ -3,11 +3,11 @@ dobas_szam=random.randint(100,200)
 dobasok=[]
 for i in range(dobas_szam):
     dobasok.append(random.randint(1,6))
-print(dobasok)
-print(f'A dobások száma: {dobas_szam}')
-print(f'A dobott számok összege: {sum(dobasok)}')
-print(f'A dobott számok átlaga: {sum(dobasok)/dobas_szam:.1f}')
-for i in range(dobas_szam):
+print(dobasok)                                          # a debug infókat a végén töröld vagy kommenteld
+print(f'A dobások száma: {dobas_szam}')                 # 1 pont
+print(f'A dobott számok összege: {sum(dobasok)}')       # 1 pont
+print(f'A dobott számok átlaga: {sum(dobasok)/dobas_szam:.1f}') # 1 pont
+for i in range(dobas_szam):                             # 2 pont
     if dobasok[i] == 6:
         print('A listában volt 6-os dobás.')
         break
@@ -15,7 +15,7 @@ else:
     print('A listában nem volt 6-os dobás.')
 szam = int(input('Adj meg egy megnézendő számot a dobások közül: '))
 szam_ind = 0
-for i in range(dobas_szam):
+for i in range(dobas_szam):                             # a rossz megoldást töröld ki
     if dobasok[i] == szam:
         szam_ind = i+1
         print(f'A dobások között ez a szám: {szam} itt található: {szam_ind}.')
