@@ -30,3 +30,14 @@ for i in range(adatok):
     if fertozot[i]< 100000:
         szaz_ezer_alatt+=1
 print(f'\n3.Feladat \n A két évben {szaz_ezer_alatt} alkalommal volt a fertőzöttek száma 100,000 alatt')
+
+for i in range(adatok-1):
+    for j in range(adatok-1-i):
+        if fertozot[j] < fertozot[j+1]:
+            idopont[j], idopont[j+1] = idopont[j+1], idopont[j]
+            fertozot[j], fertozot[j+1] = fertozot[j+1], fertozot[j]
+            halal[j], halal[j+1] = halal[j+1], halal[j]
+
+print(f'megbetegédi toplist:')
+for i in range(5):
+    print(f'{i+1}. {idopont[i]}: {fertozot[i]}')
