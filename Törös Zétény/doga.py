@@ -26,7 +26,6 @@ for i in range(oszt_hossz):
     if osztalyzatok[i] == szam:
         eloford_index.append(i)
     
-
 if len(eloford_index) > 0:
     print(f"A {szam}-es osztályzat az osztályzatok {eloford_index } helyein jelennek meg ")
 else:
