@@ -41,12 +41,12 @@ for i in range(1,len(nap)):
     if regisztrált[i]/regisztrált[i-1]>b:
         leg_arany = i
         b = regisztrált[i]/regisztrált[i-1]
-for i in range(len(nap)):
+for i in range(len(nap)):   
     if i == leg_arany:
         leg_arany = nap[i]
 print('5. feladat')
 print(f'A legnagyobb arányú növekedés {leg_arany} napon volt, amikor az előző napi adat {b:.2f}-szorosa volt a fertőzöttek száma.')
-
+  
 nott = 0
 csokkent=0
 for i in range(len(nap)):
@@ -59,3 +59,15 @@ print(f'A halálozások száma {csokkent} napon csökkent és {nott} napon nőtt
 
 print('7. feladat')
 print(f'A napi halálozások átlagos száma {sum(halott)/len(halott):,.1f} volt.')
+
+
+
+for i in range(len(nap)-1):
+    for k in range(len(nap)-1-i):
+        if regisztrált [k] < regisztrált[k+1]:
+            regisztrált[k],regisztrált[k+1]=regisztrált[k+1],regisztrált[k]
+            halott[k],halott[k+1]=halott[k+1],halott[k]
+            nap[k],nap[k+1]=nap[k+1],nap[k]
+print(f'Megbetegedési toplista:')
+for i in range(5):
+    print(f'\t{i+1}. {nap[i]} {regisztrált[i]}')
