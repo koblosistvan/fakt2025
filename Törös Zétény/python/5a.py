@@ -38,3 +38,30 @@ for i in  range(versenyzok_szama):
     if legnagyobb_fejlodes < iden [i] - tavaly[i]:
         legnagyobb_fejlodes_index = i
         legnagyobb_fejlodes = iden[i] - tavaly[i]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+67

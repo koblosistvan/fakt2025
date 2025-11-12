@@ -23,3 +23,45 @@ for i in range(napok_szama):
 print(f'A teljes profit {ossz_bevetel-ossz_kiadas} Ft volt')
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+67
