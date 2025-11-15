@@ -1,4 +1,4 @@
-forras = open('Csákai Bendegúz\\Python\\6b-forgalom.txt', mode = 'r', encoding = 'utf-8')
+forras = open('fakt2025\\Csákai Bendegúz\\Python\\6b-forgalom.txt', mode = 'r', encoding = 'utf-8')
 forras.readline()
 
 hely = []

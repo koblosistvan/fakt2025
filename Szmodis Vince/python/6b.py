@@ -40,10 +40,13 @@ for i in range(len(hely)):
 else:
     print('Nem haladt el jármű')
 
+legtobb_meres_hely=1
+legtobb_meres=0
 szamlalok= [0]*101
 for i in range(len(hely)):
     szamlalok[hely[i]]+=1
-print(szamlalok)
+    if legtobb_meres_hely:
+        break
 
         
         
