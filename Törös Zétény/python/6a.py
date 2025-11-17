@@ -58,3 +58,10 @@ for i in range(adatok_szama):
         eletkorok_osszege_darab += 1
 
 print(f'A 2014-ben tanulók átlag életkora: {eletkorok_osszege/eletkorok_osszege_darab:.2f}')
+
+
+
+
+
+
+67

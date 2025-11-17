@@ -55,3 +55,13 @@ for i in range(oszt_hossz):
         legnagyobb = osztalyzatok[i]
 
 print(f"A legkisebb osztályzat: {legkisebb} és a legnagyobb osztályzat: {legnagyobb}")
+
+
+
+
+
+
+
+
+
+67
