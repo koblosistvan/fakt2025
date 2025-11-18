@@ -58,3 +58,10 @@ for i in range(len(helyek)):
     if helyek[i] > legtobb_meres:
         legtobb_meres = helyek[i]
 print(f'A legtöbb mérés a {legtobb_meres+1}. mérési ponton történt.')
+
+
+
+
+
+
+67

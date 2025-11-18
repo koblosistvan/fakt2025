@@ -64,7 +64,7 @@ for i in range(len(dobasok)):
         három += 1
     elif dobasok[i] == 4:
         négy += 1
-    elif dobasok[i] == 5:
+    elif dobasok[i] == 5:   #67
         öt += 1
     else:
         hat += 1
