@@ -7,7 +7,7 @@ for i in range(letszam):
 
 print(osztalyzatok)
 #feladat_1
-    print(i+1)
+print(i+1)
 
 for i in range(letszam):
     osszeg=
