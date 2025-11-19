@@ -25,18 +25,21 @@ for sor in forras:
     else:
         gdp.append(float(adat[7]))
 forras.close()
+#1.feladat:
+print("Az adatforrás {sorok} sort tartalmaz.")
 
-print(f"Ennyi adatsort tartalmaz a fájl: {sorok}")
-
-hany = 0
+#2.feladat:
+adat2014 = 0
 
 for i in range(sorok):
-    if ev[i] == 2024:
-        hany += 1
+    if ev[i] == 2014:
+        adat2014 += 1
+print(f"2014-ről {adat2014} sort tartalmaz.")
 
-print(f"Ennyi adat van 2014-ből: {hany}")
-print(f"Az adatok {min(ev)}-től {max(ev)}-ig vannak mérve.")
+#3.feladat:
+print(f"Az adatok {min(ev)-max(ev)} közötti évekre vonatkoznak.")
 
+#4.feladat:
 legn_kap = 0
 legn_kap_index = 0
 
@@ -44,29 +47,6 @@ for i in range(sorok):
     if kapacitas[i] > legn_kap:
         legn_kap = kapacitas[i]
         legn_kap_index = i
+print(f"A legnagyobb kapacitású ország{orszag[legn_kap_index]}, melynek kapacitása: {legn_kap:.2f} hektár.")
 
-print(f"A legnagyobb kapacitása {orszag[legn_kap_index]}-nak van és a kapacitása: {kapacitas[legn_kap_index]}")
-
-legk_gdp = 0
-legk_gdp_index = 0
-
-for i in range(sorok):
-    if legk_gdp < gdp[i]:
-        legk_gdp = gdp[i]
-        legk_gdp_index = i
-
-print(f"Egy főre jutó legkisebb gdp-je {orszag[legk_gdp_index]}-ban/ben volt és ez {ev[legk_gdp_index]}-ban/ben történt.")
-
-kap2000 = 0 
-fel2000 = 0
-kap2014 = 0
-fel2014 = 0
-for i in range(sorok):
-    if ev[i] == 2000:
-        kap2000 += kapacitas[i]
-        fel2000 += felhasznalas[i]
-    if ev[i] == 2014:
-        kap2014 += kapacitas[i]
-        fel2014 += felhasznalas[i]
-
-print(f"2000-ben a kapacitás: {kap2000} volt és a felhasználás: {fel2000} 2014-ben a kapacitás: {kap2014} és a felhasználás: {fel2014}.")
+#5.feladat:
