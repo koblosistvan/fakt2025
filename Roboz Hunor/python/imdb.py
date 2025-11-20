@@ -1,4 +1,4 @@
-forras = open('_Feladatok\\python\\IMDB\\imdb.txt', mode='r',encoding='utf-8')
+forras = open('fakt2025\\_Feladatok\\python\\IMDB\\imdb.txt', mode='r',encoding='utf-8')
 forras.readline()
 év,idő,értékelés,rendező,bevétel,cím = [],[],[],[],[],[]
 for sor in forras:
@@ -56,4 +56,22 @@ for i in range(sor-1,-1,-1):
         szamlalo = 0
 print(s)
 
+leg_ért = értékelés[0]
+leg_ren = ''
+for i in range(sor):
+    if értékelés[i] > leg_ért:
+        leg_ért = értékelés[i]
+for i in range(sor):
+    if értékelés[i] == leg_ért:
+      leg_ren  += f'{rendező[i]} '
+print(f'A legjobb film/filmek rendezői: {leg_ren}')
 
+kert_rend = input('Melyik rendező filmjeit keressük?  ')
+
+rend_film = ''
+
+for i in range(sor):
+    if kert_rend == rendező[i]:
+        rend_film+=f'{cím[i]}\n\t'
+        meg=open(f'fakt2025\\Roboz Hunor\\python\\{kert_rend}',mode='w',encoding='utf-8')
+print(f'A rendező filmjei:\n\t{rend_film}',file=meg)
