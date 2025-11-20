@@ -22,18 +22,24 @@ for i in range(dobas_szam):                             # a rossz megoldást tö
 for i in range(dobas_szam):
     if dobasok[i] == szam:
         szam_ind = i+1
-        break
+        break                                           # 2+1 pont
 print(f'A dobások között ez a szám: {szam} itt található először: {szam_ind}.')
 db_szam = 0
 for i in range(dobas_szam):
     if dobasok[i] == 5:
-        db_szam += 1
+        db_szam += 1                                    # 2 pont
 print(f'Az 5-ös szám a dobások között {db_szam}x fordult elő.') 
 print(f'5-ös számok százalékos aránya: {(db_szam/dobas_szam)*100:.0f}%.')
 prim = 0
 for i in range(dobas_szam):
-    if dobasok[i] % 2 != 0 and dobasok[i] != 1:
+    if dobasok[i] % 2 != 0 and dobasok[i] != 1:         
         prim += 1
+# nem szerencsés ez a megoldás, mert nem a prímeket számolja, hanem a páratlanokat
+# általánosságban két problémát okoz ez a megközelítés:
+#    - erősen kihasználja azt, hogy csak 1-6 közötti számokkal dolgozhatunk
+#      persze tudom, hogy a dobókocka ilyen, de mit tennél, ha azt kérném, hogy írd át 8 oldalú kockára?
+#    - nem olvasható a kód, nagyon kell gondolkodni, hogy mire is szűrsz valójában
+#    - végül a legnagyobb gond, hogy a 2 is prím, és azt nem számolod
 print(f'Az prímek száma a dobások között {prim}.') 
 print(f'A prímszámok százalékos aránya: {(prim/dobas_szam)*100:.0f}%.')
 print(f'A legkisebb dobott szám {min(dobasok)} volt.')
