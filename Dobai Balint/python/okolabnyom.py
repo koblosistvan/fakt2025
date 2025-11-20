@@ -89,7 +89,7 @@ felhaszn_arany = ossz_felhasz1 / ossz_kapac1
 egyfore_felhasznalas_arany = (ossz_felhasz1 / ossz_lakos1) / (ossz_felhasz2 / ossz_lakos2)
 print(f'A ket ertek aranya {felhaszn_arany*100:.0f}%-rol {kapac_arany*100:.0f}%-ra nott')
 print(f'Az egy fore juto felhasznalas 2000-ben {ossz_felhasz1 / ossz_lakos1:.3f} hektar, 2014-re {ossz_felhasz2 / ossz_lakos2:.3f} hektar lett')
-print(f'Az egy fore juto kapacitas 2000-ben {ossz_kapac1 / ossz_lakos1}, 2014-ben {ossz_kapac2 / ossz_lakos2}')
+print(f'Az egy fore juto kapacitas 2000-ben {ossz_kapac1 / ossz_lakos1:,.3f}, 2014-ben {ossz_kapac2 / ossz_lakos2:,.3f}')
 
 
 
