@@ -1,4 +1,4 @@
-forras = open('Csákai Bendegúz\\Python\\7a-lakas-arak.txt', mode='r', encoding='utf-8')
+forras = open('fakt2025\\Csákai Bendegúz\\Python\\7a-lakas-arak.txt', mode='r', encoding='utf-8')
 forras.readline()
 terulet = []
 ar = []
@@ -39,7 +39,7 @@ for i in range(kerter):
         huszalatti += 1
 print(f'{huszalatti} db ház van 20M alatt')
 
-kimenet = open('Csákai Bendegúz\\Python\\arak.txt', mode='w', encoding='utf-8')
+kimenet = open('fakt2025\\Csákai Bendegúz\\Python\\arak.txt', mode='w', encoding='utf-8')
 
 
 
