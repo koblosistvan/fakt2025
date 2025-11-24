@@ -1,4 +1,4 @@
-forras = open('fakt2025\\_Feladatok\\python\\IMDB\\imdb.txt', mode='r',encoding='utf-8')
+forras = open('_Feladatok\\python\\IMDB\\imdb.txt', mode='r',encoding='utf-8')
 forras.readline()
 év,idő,értékelés,rendező,bevétel,cím = [],[],[],[],[],[]
 for sor in forras:
@@ -67,11 +67,59 @@ for i in range(sor):
 print(f'A legjobb film/filmek rendezői: {leg_ren}')
 
 kert_rend = input('Melyik rendező filmjeit keressük?  ')
-
+teljes_nev = kert_rend.strip().split(' ')
+vez_nev = teljes_nev[-1]
 rend_film = ''
 
 for i in range(sor):
     if kert_rend == rendező[i]:
         rend_film+=f'{cím[i]}\n\t'
-        meg=open(f'fakt2025\\Roboz Hunor\\python\\{kert_rend}',mode='w',encoding='utf-8')
+        meg=open(f'Roboz Hunor\\python\\{vez_nev}',mode='w',encoding='utf-8')
 print(f'A rendező filmjei:\n\t{rend_film}',file=meg)
+
+ev = min(év)
+s = ''
+
+for i in range(max(év)-min(év)+1):
+    db = 0
+    ossz = 0
+    for x in range(sor-1):
+        if ev == év[x]:
+            db += 1
+            ossz += bevétel[x]
+    if db != 0:
+        s+= f'A filmek évjárata: {ev}, ennyi film készült ebben az évben {db} db, és ennyi profitot hozott {ossz:,} Ft\n\t'
+    ev+=1
+print(f'\t{s}')
+        
+print(f'Egy film átlagos bevétele: {sum(bevétel)/len(bevétel):,.2f}')
+
+
+for i in range(sor):
+    for j in range(sor-1):
+        if bevétel[j] > bevétel[j+1]:
+            bevétel[j],bevétel[j+1] = bevétel[j+1],bevétel[j]
+
+for i in range(1,11):
+    print(f'\t{i}. {cím[-i]} ({bevétel[-i]} Ft)')
+
+r = []
+darab = []
+
+for i in range(sor):
+    if rendező[i] in r:
+        idx = r.index(rendező[i])
+        darab[idx] += 1
+    else:
+        r.append(rendező[i])
+        darab.append(1)
+
+for i in range(len(darab)):
+    for j in range(len(darab)-1):
+        if darab[j] > darab[j+1]:
+            darab[j],darab[j+1] = darab[j+1],darab[j]
+            r[j],r[j+1] = r[j+1],r[j]
+            
+print('Az 5 legtöbb filmet rendezett rendező neve:')
+for i in range(1,6):
+    print(f'\t{i}. {r[-i]} {darab[-i]} filmmel')
