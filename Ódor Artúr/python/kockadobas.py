@@ -17,9 +17,9 @@ else:
 keresett_sz = int(input("Adj meg egy számot amit keresel: "))
 for i in range(len(dobasok)):                               
     if keresett_sz == dobasok[i]:
-        print(f"{i}. sorszámú elem ugyan az a szám.")       # ugyanaz - egybe kell írni
+        print(f"{i}. sorszámú elem ugyanaz a szám.")       # ugyanaz - egybe kell írni
 if keresett_sz not in dobasok:
-    print(f"A {keresett_sz} nem lett dobva.")               # kicsit még dolgozzunk a magyar nyelvi kifejezőkésségen :)
+    print(f"A(z) {keresett_sz} szám nem szerepel a dobások között")               # kicsit még dolgozzunk a magyar nyelvi kifejezőkésségen :)
                                                             # pl. "A(z) {keresett_sz} szám nem szerepel a dobások között." 
 primek = [2,3,5]                                            # vagy: "A keresett számot nem dobtuk."
 tetszoleges_sz = int(input("Adj meg egy tetszőleges számot: "))
