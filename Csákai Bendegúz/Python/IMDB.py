@@ -34,13 +34,21 @@ for i in range(db):
 else:
     print('Nincs olyan film ami 9-es értékelésnél nagyobbat kapott.')
 print(f'A legmagasabb értékelés: {max(ertek)}')
-#k3 = 0
-#k2 = 0
-#k1 = 0
-#k = 0
-#ny9 =0
-#for i in range(db):
-print('6. feladat')
+
+rang = min(ertek)
+rang_max = max(ertek)
+bef = False
+while not bef:
+    szamlalo = 0
+    for i in ertek:
+        if i == rang:
+            szamlalo += 1
+        if szamlalo > 0:
+            print(f'{rang}:\t{szamlalo} darab film')
+        if rang == rang_max:
+            bef = True
+        rang = (rang*10+1)/10
+
 legjobb = ertek[0]
 rendezo = rendez[0]
 for i in range(db):
@@ -68,4 +76,7 @@ for i in range(n-1):
   for j in range(n-i-1):
     if bevet[j] > bevet[j+1]:
       cim[j], cim[j+1] = cim[j+1], cim[j]
+
+for i in range(1,11):
+    print(f'\t{i}. {cim[-i]} ({bevet[-i]:,} Ft)')
 print('12.feladat')
