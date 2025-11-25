@@ -56,14 +56,35 @@ for i in range(len(számla)):
 print(f'Az 50 eurós összeg {ind}. tranzakció volt.')
 #8.feladat - Van 500 eurónál nagyobb jóváírás a számlán?
 #Írjuk ki az első és az utolsó ilyen utalás sorszámait!
-
-
+for i in számla:
+    if i > 500:
+        print('Van 500 eurónál nagyobb jóváírás a számlán.')
+        break
+else:
+    print('Nincs 500 eurónál nagyobb jóváírás a számlán.')
+na500 = []
+for i in range(len(számla)):
+    if számla[i]> 500:
+        na500.append(i+1)
+print(f'Első: {na500[0]}.\nUtolsó: {na500[-1]}.')
 #9.feladat - Van-e olyan összeg a számlán, melyet bankautomatából ki lehet venni
 #kizárólagosan 10 eurós bankjegyeket választva a kiadáshoz?
-
-    
+for i in számla:
+    if i%10==0:
+        print('Van olyan összeg.')
+        break
+else:
+    print('Nincs olyan összeg.')
 #10.feladat - Ha minden utalás és levonás után még tranzakciónként 0,75 fontot pluszban levontak a számláról,
 #mennyi pénz maradt rajta a nap végén? És, ha csak az utalásoknál vonták le ezt az illetéket?
-
+minden = 0
+csaku = 0
+for i in számla:
+    minden += (i-0.75)
+    if i > 0:
+        csaku += (i-0.75)
+    else:
+        csaku += i
+print(f'A nap végén alapesetben {minden} pénz maradt a számlán, csak utalásos levonásnál pedig {csaku}')
 
 
