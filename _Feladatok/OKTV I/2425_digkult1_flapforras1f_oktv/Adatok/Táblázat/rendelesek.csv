@@ -1,0 +1,201 @@
+﻿Étel neve;Mennyisége;Ára;Megrendelő neve;Megrendelő címe;Megrendelő hűségkártya-azonosítója;Megrendelés ideje;Kiszállítás ideje
+Kapormártás;3;3300;Nagy Dániel;Haas Mihály tér 42.;NDMH36571;45566,41667;45566,47962
+Tőkehalfilé rántva;5;2100;Orsós Márk;Schroll József út 77.;OMPS36737;45566,41963;45566,46297
+Húsleves zöldséggel;4;5500;Kocsis Henrietta;Zengő utca 39.;KHBZ75128;45566,42213;45566,47226
+Húsleves zöldséggel;5;5500;Orsós Márk;Schroll József út 77.;OMPS36737;45566,42232;45566,48904
+Karalábéfőzelék;2;4800;Kocsis Henrietta;Zengő utca 39.;KHBZ75128;45566,42277;45566,49529
+Sárgaborsó-főzelék;4;3900;Sárközi Noémi;Karolina utca 50.;SNNK40894;45566,42288;45566,49136
+Zöldségleves;1;1700;Jónás Antal;Hajnal utca 79.;JATH74928;45566,42591;45566,44527
+Zöldségkrokett;4;2200;Péter Barnabás;Nektár köz 91.;PBMN27312;45566,42636;45566,44876
+Burgonya, héjában főtt;5;2400;Nagy Norbert;Boros István utca 23.;NNJB55125;45566,43069;45566,49599
+Stefánia vagdalt;1;4000;Péter Barnabás;Nektár köz 91.;PBMN27312;45566,43475;45566,48493
+Rakott burgonya;4;2400;Simon Miklós;Szérűskerti út 37.;SMJS63882;45566,43549;45566,45265
+Karfiolleves;5;5400;Simon Miklós;Szérűskerti út 37.;SMJS63882;45566,43891;45566,51225
+Székelykáposzta;2;2400;Molnár Szabina;Hőgyes Endre utca 51.;MSKH64403;45566,4422;45566,50011
+Csirkepaprikás;2;1500;Pap Laura;Kert utca 25.;PLCK22060;45566,44461;45566,47515
+Sárgaborsókrémleves;2;4400;Hegedűs Zsolt;Bercsényi utca 97.;HZCB74456;45566,44603;45566,47353
+Almaleves;2;2300;Pap Laura;Kert utca 25.;PLCK22060;45566,44663;45566,50447
+Burgonyapogácsa;1;3300;Péter Barnabás;Nektár köz 91.;PBMN27312;45566,4515;45566,5223
+Sóskamártás;3;2500;Orsós Márk;Schroll József út 77.;OMPS36737;45566,45391;45566,47079
+Csontleves zöldséggel;3;1900;Nagy Norbert;Boros István utca 23.;NNJB55125;45566,45576;45566,48272
+Franciasaláta;1;3200;Jónás Antal;Hajnal utca 79.;JATH74928;45566,45915;45566,51568
+Csontleves zöldséggel;3;1900;Hegedűs Zsolt;Bercsényi utca 97.;HZCB74456;45566,46101;45566,53675
+Borsos marhatokány;5;4400;Sipos Petra;Fürj utca 15.;SPNF66491;45566,46107;45566,50083
+Rizibizi;4;2100;Király Réka;Fatér utca 28.;KRSF37391;45566,46163;45566,52762
+Pásztortarhony;4;3200;Péter Barnabás;Nektár köz 91.;PBMN27312;45566,47073;45566,52919
+Almaleves;2;2300;Kocsis Henrietta;Zengő utca 39.;KHBZ75128;45566,47203;45566,52265
+Serpenyős rostélyos;2;1600;Orsós Márk;Schroll József út 77.;OMPS36737;45566,47505;45566,48969
+Tökfőzelék;4;2700;Hegedűs Zsolt;Bercsényi utca 97.;HZCB74456;45566,47671;45566,5158
+Sertéspörkölt (hagyományosan);1;5100;Nagy Dániel;Haas Mihály tér 42.;NDMH36571;45566,48434;45566,56238
+Vadas marhasült;5;4900;Lengyel Martin;Pityóka köz 38.;LMDP89511;45566,49099;45566,51528
+Burgonya, hasáb;5;5100;Molnár Szabina;Hőgyes Endre utca 51.;MSKH64403;45566,49257;45566,53845
+Burgonyapogácsa;4;3300;Kocsis Henrietta;Zengő utca 39.;KHBZ75128;45566,50107;45566,56043
+Meggyleves;2;3100;Orsós Márk;Schroll József út 77.;OMPS36737;45566,50175;45566,5735
+Rizsleves;1;5100;László Dávid;Menyhért utca 61.;LDFM52037;45566,50188;45566,55359
+Becsinált leves;5;4000;Simon Miklós;Szérűskerti út 37.;SMJS63882;45566,50271;45566,57744
+Töltött káposzta;4;5500;László Dávid;Menyhért utca 61.;LDFM52037;45566,50294;45566,54933
+Rakott burgonya;4;2400;Pap Laura;Kert utca 25.;PLCK22060;45566,50381;45566,5196
+Tarhonyás hús;4;2400;László Dávid;Menyhért utca 61.;LDFM52037;45566,50541;45566,5481
+Sárgaborsókrémleves;4;4400;Hegedűs Zsolt;Bercsényi utca 97.;HZCB74456;45566,50845;45566,56373
+Székelykáposzta;4;2400;Pap Laura;Kert utca 25.;PLCK22060;45566,50966;45566,52464
+Raguleves;2;2600;Péter Barnabás;Nektár köz 91.;PBMN27312;45566,5105;45566,58307
+Tarhonyaleves;5;4600;Orsós Márk;Schroll József út 77.;OMPS36737;45566,51781;45566,5801
+Almamártás;2;3400;Sipos Petra;Fürj utca 15.;SPNF66491;45566,52512;45566,54861
+Paradicsomleves;2;2200;Nagy Norbert;Boros István utca 23.;NNJB55125;45566,5258;45566,5526
+Karalábéfőzelék;3;4800;Nagy Dániel;Haas Mihály tér 42.;NDMH36571;45566,52929;45566,55948
+Zöldborsófőzelék;1;3700;Lengyel Martin;Pityóka köz 38.;LMDP89511;45566,52938;45566,56322
+Gombaleves;4;1500;Király Réka;Fatér utca 28.;KRSF37391;45566,53197;45566,57316
+Stefánia vagdalt;2;4000;Péter Barnabás;Nektár köz 91.;PBMN27312;45566,53381;45566,58847
+Kelkáposzta-főzelék;4;4300;Molnár Szabina;Hőgyes Endre utca 51.;MSKH64403;45566,53518;45566,58814
+Stefánia vagdalt;2;4000;Lengyel Martin;Pityóka köz 38.;LMDP89511;45566,53529;45566,5673
+Rakott kelkáposzta;1;4700;Nagy Norbert;Boros István utca 23.;NNJB55125;45566,53718;45566,5599
+Zöldbabfőzelék (tejfeles);4;5000;Péter Barnabás;Nektár köz 91.;PBMN27312;45566,53908;45566,61224
+Rizibizi;3;2100;Pap Laura;Kert utca 25.;PLCK22060;45566,5403;45566,59951
+Paradicsommártás;4;4000;Molnár Szabina;Hőgyes Endre utca 51.;MSKH64403;45566,54556;45566,60265
+Szárazbableves;1;1900;Lengyel Martin;Pityóka köz 38.;LMDP89511;45566,54604;45566,57016
+Franciasaláta;4;3200;Kocsis Henrietta;Zengő utca 39.;KHBZ75128;45566,5465;45566,60645
+Töltött paprika;4;4700;Pap Laura;Kert utca 25.;PLCK22060;45566,54851;45566,5728
+Szalontüdő zsemlegombóccal;1;4400;László Dávid;Menyhért utca 61.;LDFM52037;45566,55138;45566,57333
+Gombaleves;5;1500;Sárközi Noémi;Karolina utca 50.;SNNK40894;45566,55183;45566,60774
+Paradicsommártás;4;4000;Pap Laura;Kert utca 25.;PLCK22060;45566,55471;45566,59266
+Töltött paprika;5;4700;Hegedűs Zsolt;Bercsényi utca 97.;HZCB74456;45566,55476;45566,58401
+Tőkehalfilé rántva;2;2100;Nagy Dániel;Haas Mihály tér 42.;NDMH36571;45566,55535;45566,5709
+Lebbencsleves;5;3100;Nagy Norbert;Boros István utca 23.;NNJB55125;45566,55723;45566,58583
+Húsleves zöldséggel;1;5500;Kocsis Henrietta;Zengő utca 39.;KHBZ75128;45566,55817;45566,62849
+Karfiolleves;2;5400;Kocsis Henrietta;Zengő utca 39.;KHBZ75128;45566,56188;45566,57744
+Sertésmáj, pirított;3;3700;Péter Barnabás;Nektár köz 91.;PBMN27312;45566,56317;45566,63684
+Borsos marhatokány;3;4400;Sipos Petra;Fürj utca 15.;SPNF66491;45566,56732;45566,58728
+Kapormártás;3;3300;Nagy Norbert;Boros István utca 23.;NNJB55125;45566,56833;45566,58724
+Tökfőzelék;4;2700;Sipos Petra;Fürj utca 15.;SPNF66491;45566,572;45566,61178
+Sertéspörkölt (hagyományosan);2;5100;Sárközi Noémi;Karolina utca 50.;SNNK40894;45566,57613;45566,61019
+Karalábéfőzelék;3;4800;Nagy Dániel;Haas Mihály tér 42.;NDMH36571;45566,57678;45566,59528
+Sertéstokány;1;3600;Orsós Márk;Schroll József út 77.;OMPS36737;45566,57752;45566,61993
+Sárgaborsó-főzelék;3;3900;Jónás Antal;Hajnal utca 79.;JATH74928;45566,5784;45566,6013
+Karfiolleves;1;5400;László Dávid;Menyhért utca 61.;LDFM52037;45566,57902;45566,65867
+Meggyleves;3;3100;Király Réka;Fatér utca 28.;KRSF37391;45566,583;45566,60016
+Burgonyafőzelék (tejfeles);1;5400;Nagy Dániel;Haas Mihály tér 42.;NDMH36571;45566,58383;45566,61008
+Vadas marhasült;5;4900;Nagy Dániel;Haas Mihály tér 42.;NDMH36571;45566,584;45566,62999
+Csirkepaprikás;4;1500;Nagy Dániel;Haas Mihály tér 42.;NDMH36571;45566,59112;45566,62052
+Csirkepaprikás;1;1500;Sárközi Noémi;Karolina utca 50.;SNNK40894;45566,59145;45566,63352
+Paradicsommártás;5;4000;Péter Barnabás;Nektár köz 91.;PBMN27312;45566,5921;45566,62091
+Tarhonyaleves;2;4600;Simon Miklós;Szérűskerti út 37.;SMJS63882;45566,5964;45566,62095
+Burgonyapogácsa;1;3300;Nagy Norbert;Boros István utca 23.;NNJB55125;45566,59673;45566,61475
+Székelykáposzta;2;2400;Lengyel Martin;Pityóka köz 38.;LMDP89511;45566,59716;45566,63046
+Zöldborsóleves;2;2400;Molnár Szabina;Hőgyes Endre utca 51.;MSKH64403;45566,59768;45566,65165
+Töltött káposzta;1;5500;Nagy Norbert;Boros István utca 23.;NNJB55125;45566,59957;45566,63169
+Rizseshús (szerb);1;4300;Péter Barnabás;Nektár köz 91.;PBMN27312;45566,60172;45566,67619
+Rizibizi;3;2100;Nagy Dániel;Haas Mihály tér 42.;NDMH36571;45566,60329;45566,63472
+Zöldbableves;1;4700;Simon Miklós;Szérűskerti út 37.;SMJS63882;45566,60574;45566,63328
+Gulyásleves ;3;4900;Jónás Antal;Hajnal utca 79.;JATH74928;45566,60631;45566,64203
+Almaleves;5;2300;Kocsis Henrietta;Zengő utca 39.;KHBZ75128;45566,61058;45566,65913
+Zöldborsófőzelék;3;3700;Sipos Petra;Fürj utca 15.;SPNF66491;45566,61184;45566,6584
+Tökfőzelék;4;2700;Nagy Dániel;Haas Mihály tér 42.;NDMH36571;45566,61316;45566,64304
+Csirkepaprikás;1;1500;Sárközi Noémi;Karolina utca 50.;SNNK40894;45566,61934;45566,6886
+Töltött káposzta;4;5500;Nagy Norbert;Boros István utca 23.;NNJB55125;45566,62506;45566,65982
+Sárgaborsó-főzelék;5;3900;László Dávid;Menyhért utca 61.;LDFM52037;45566,62654;45566,64444
+Almaleves;4;2300;Jónás Antal;Hajnal utca 79.;JATH74928;45566,62741;45566,65497
+Sertéspörkölt (hagyományosan);2;5100;Kocsis Henrietta;Zengő utca 39.;KHBZ75128;45566,62868;45566,68741
+Becsinált leves;1;4000;Nagy Dániel;Haas Mihály tér 42.;NDMH36571;45566,62916;45566,65421
+Rántott leves;3;2400;László Dávid;Menyhért utca 61.;LDFM52037;45566,63061;45566,6855
+Vadas marhasült;3;4900;Király Réka;Fatér utca 28.;KRSF37391;45566,63256;45566,67981
+Tőkehalfilé rántva;1;2100;Lengyel Martin;Pityóka köz 38.;LMDP89511;45566,6327;45566,69452
+Zöldbabfőzelék (tejfeles);2;5000;Orsós Márk;Schroll József út 77.;OMPS36737;45566,635;45566,70603
+Franciasaláta;3;3200;Orsós Márk;Schroll József út 77.;OMPS36737;45566,63579;45566,67243
+Sárgaborsó-főzelék;3;3900;Kocsis Henrietta;Zengő utca 39.;KHBZ75128;45566,64051;45566,66447
+Zöldbabfőzelék (tejfeles);3;5000;Orsós Márk;Schroll József út 77.;OMPS36737;45566,64314;45566,70194
+Sertéspörkölt (hagyományosan);3;5100;Péter Barnabás;Nektár köz 91.;PBMN27312;45566,644;45566,67092
+Kapormártás;3;3300;Nagy Dániel;Haas Mihály tér 42.;NDMH36571;45566,64454;45566,72076
+Zöldségleves;2;1700;Sipos Petra;Fürj utca 15.;SPNF66491;45566,64748;45566,66473
+Becsinált leves;5;4000;Hegedűs Zsolt;Bercsényi utca 97.;HZCB74456;45566,6497;45566,68541
+Tarhonya ;3;3800;Jónás Antal;Hajnal utca 79.;JATH74928;45566,65149;45566,71853
+Zöldségleves;1;1700;Péter Barnabás;Nektár köz 91.;PBMN27312;45566,65245;45566,68449
+Meggyleves;2;3100;Nagy Dániel;Haas Mihály tér 42.;NDMH36571;45566,65685;45566,68742
+Szárazbableves;2;1900;Hegedűs Zsolt;Bercsényi utca 97.;HZCB74456;45566,65802;45566,68574
+Töltött káposzta;4;5500;Nagy Norbert;Boros István utca 23.;NNJB55125;45566,65851;45566,72167
+Almaleves;5;2300;Sipos Petra;Fürj utca 15.;SPNF66491;45566,65881;45566,6731
+Tarhonyás hús;1;2400;Jónás Antal;Hajnal utca 79.;JATH74928;45566,65888;45566,72007
+Burgonya, hasáb;3;5100;Simon Miklós;Szérűskerti út 37.;SMJS63882;45566,66094;45566,72235
+Paradicsomleves;2;2200;Lengyel Martin;Pityóka köz 38.;LMDP89511;45566,66659;45566,68507
+Rizibizi;3;2100;Simon Miklós;Szérűskerti út 37.;SMJS63882;45566,67005;45566,72599
+Zöldségkrokett;4;2200;Molnár Szabina;Hőgyes Endre utca 51.;MSKH64403;45566,67328;45566,74578
+Sóskaleves (tejfeles);4;2000;Kocsis Henrietta;Zengő utca 39.;KHBZ75128;45566,67455;45566,70994
+Burgonya, hasáb;4;5100;Pap Laura;Kert utca 25.;PLCK22060;45566,67622;45566,74544
+Paradicsomleves;2;2200;Péter Barnabás;Nektár köz 91.;PBMN27312;45566,67802;45566,70719
+Tökfőzelék;5;2700;Nagy Norbert;Boros István utca 23.;NNJB55125;45566,67887;45566,71107
+Töltött hús;3;2800;Sipos Petra;Fürj utca 15.;SPNF66491;45566,67932;45566,7465
+Sertésmáj, pirított;4;3700;László Dávid;Menyhért utca 61.;LDFM52037;45566,68477;45566,72368
+Serpenyős rostélyos;4;1600;Péter Barnabás;Nektár köz 91.;PBMN27312;45566,68793;45566,76178
+Sertésszelet, tejfeles, gombás;2;3700;Nagy Dániel;Haas Mihály tér 42.;NDMH36571;45566,68799;45566,72055
+Rizseshús (szerb);1;4300;Jónás Antal;Hajnal utca 79.;JATH74928;45566,69329;45566,71064
+Serpenyős rostélyos;3;1600;Király Réka;Fatér utca 28.;KRSF37391;45566,69357;45566,72926
+Zöldségkrokett;2;2200;Péter Barnabás;Nektár köz 91.;PBMN27312;45566,69543;45566,77029
+Tarhonyás hús;3;2400;Hegedűs Zsolt;Bercsényi utca 97.;HZCB74456;45566,69788;45566,77387
+Zöldbabfőzelék (tejfeles);3;5000;Péter Barnabás;Nektár köz 91.;PBMN27312;45566,69875;45566,72319
+Karalábéfőzelék;5;4800;Sárközi Noémi;Karolina utca 50.;SNNK40894;45566,69927;45566,76096
+Franciasaláta;1;3200;Hegedűs Zsolt;Bercsényi utca 97.;HZCB74456;45566,70292;45566,74334
+Szalontüdő zsemlegombóccal;2;4400;Sárközi Noémi;Karolina utca 50.;SNNK40894;45566,70412;45566,74761
+Spárgaleves;4;3800;Orsós Márk;Schroll József út 77.;OMPS36737;45566,70509;45566,71911
+Tarhonyaleves;2;4600;Lengyel Martin;Pityóka köz 38.;LMDP89511;45566,70785;45566,75759
+Gombaleves;2;1500;Lengyel Martin;Pityóka köz 38.;LMDP89511;45566,71056;45566,74763
+Székelykáposzta;2;2400;Kocsis Henrietta;Zengő utca 39.;KHBZ75128;45566,71198;45566,77143
+Tarhonya ;5;3800;Pap Laura;Kert utca 25.;PLCK22060;45566,71608;45566,76638
+Tőkehalfilé rántva;4;2100;Hegedűs Zsolt;Bercsényi utca 97.;HZCB74456;45566,72049;45566,74599
+Tarhonya ;4;3800;Molnár Szabina;Hőgyes Endre utca 51.;MSKH64403;45566,7271;45566,80346
+Karalábéleves;3;3500;Orsós Márk;Schroll József út 77.;OMPS36737;45566,73204;45566,80507
+Párolt rizs;4;3300;Hegedűs Zsolt;Bercsényi utca 97.;HZCB74456;45566,73911;45566,77355
+Sertésmáj, pirított;4;3700;László Dávid;Menyhért utca 61.;LDFM52037;45566,74142;45566,78022
+Húsleves zöldséggel;2;5500;Lengyel Martin;Pityóka köz 38.;LMDP89511;45566,74192;45566,77439
+Galuska;1;2700;Lengyel Martin;Pityóka köz 38.;LMDP89511;45566,74631;45566,79925
+Burgonyaleves;1;2700;Péter Barnabás;Nektár köz 91.;PBMN27312;45566,74664;45566,77024
+Spagetti;1;4000;Hegedűs Zsolt;Bercsényi utca 97.;HZCB74456;45566,74933;45566,76839
+Pásztortarhony;5;3200;Orsós Márk;Schroll József út 77.;OMPS36737;45566,75295;45566,80071
+Parajfőzelék;2;3200;Sipos Petra;Fürj utca 15.;SPNF66491;45566,7532;45566,79869
+Burgonyaleves;3;2700;Sárközi Noémi;Karolina utca 50.;SNNK40894;45566,75637;45566,82886
+Töltött hús;3;2800;Sárközi Noémi;Karolina utca 50.;SNNK40894;45566,76089;45566,79905
+Rakott burgonya;3;2400;Hegedűs Zsolt;Bercsényi utca 97.;HZCB74456;45566,76179;45566,78105
+Tarhonyás hús;1;2400;Molnár Szabina;Hőgyes Endre utca 51.;MSKH64403;45566,76566;45566,82702
+Zöldségkrokett;5;2200;Péter Barnabás;Nektár köz 91.;PBMN27312;45566,76641;45566,82776
+Csirke, rántva;5;1600;Orsós Márk;Schroll József út 77.;OMPS36737;45566,76837;45566,83123
+Karfiolleves;5;5400;Péter Barnabás;Nektár köz 91.;PBMN27312;45566,77046;45566,80999
+Almaleves;1;2300;Péter Barnabás;Nektár köz 91.;PBMN27312;45566,77215;45566,82616
+Sárgaborsó-főzelék;2;3900;Nagy Dániel;Haas Mihály tér 42.;NDMH36571;45566,77301;45566,81112
+Paradicsomos káposzta;3;4200;László Dávid;Menyhért utca 61.;LDFM52037;45566,77407;45566,8088
+Meggyleves;1;3100;Orsós Márk;Schroll József út 77.;OMPS36737;45566,77575;45566,83192
+Galuska;1;2700;Kocsis Henrietta;Zengő utca 39.;KHBZ75128;45566,77823;45566,81427
+Gombaleves;3;1500;Pap Laura;Kert utca 25.;PLCK22060;45566,77859;45566,80394
+Rizsleves;5;5100;Péter Barnabás;Nektár köz 91.;PBMN27312;45566,78381;45566,86021
+Tormamártás;3;2200;Simon Miklós;Szérűskerti út 37.;SMJS63882;45566,78692;45566,84784
+Rizsleves;4;5100;Kocsis Henrietta;Zengő utca 39.;KHBZ75128;45566,79032;45566,81357
+Burgonyaleves;4;2700;Orsós Márk;Schroll József út 77.;OMPS36737;45566,79432;45566,86312
+Tarhonyaleves;2;4600;Király Réka;Fatér utca 28.;KRSF37391;45566,79881;45566,81484
+Karfiolleves;5;5400;Sipos Petra;Fürj utca 15.;SPNF66491;45566,80128;45566,83626
+Tökfőzelék;4;2700;Király Réka;Fatér utca 28.;KRSF37391;45566,80587;45566,84441
+Csirke, rántva;5;1600;Nagy Dániel;Haas Mihály tér 42.;NDMH36571;45566,80639;45566,85861
+Almamártás;5;3400;Sipos Petra;Fürj utca 15.;SPNF66491;45566,80661;45566,84182
+Ponty rántva;2;3800;Simon Miklós;Szérűskerti út 37.;SMJS63882;45566,80665;45566,87296
+Rakott kelkáposzta;5;4700;Sárközi Noémi;Karolina utca 50.;SNNK40894;45566,8068;45566,88004
+Rizibizi;3;2100;Nagy Norbert;Boros István utca 23.;NNJB55125;45566,81071;45566,84802
+Becsinált leves;4;4000;László Dávid;Menyhért utca 61.;LDFM52037;45566,81135;45566,87522
+Tarhonyaleves;4;4600;Sipos Petra;Fürj utca 15.;SPNF66491;45566,81248;45566,86525
+Húsleves zöldséggel;4;5500;Pap Laura;Kert utca 25.;PLCK22060;45566,81254;45566,88796
+Finomfőzelék;4;4100;Nagy Dániel;Haas Mihály tér 42.;NDMH36571;45566,81285;45566,84678
+Zöldbabfőzelék (tejfeles);4;5000;Kocsis Henrietta;Zengő utca 39.;KHBZ75128;45566,81455;45566,84534
+Ponty rántva;4;3800;Kocsis Henrietta;Zengő utca 39.;KHBZ75128;45566,81707;45566,89267
+Tőkehalfilé rántva;5;2100;Hegedűs Zsolt;Bercsényi utca 97.;HZCB74456;45566,81794;45566,83784
+Gulyásleves ;2;4900;Orsós Márk;Schroll József út 77.;OMPS36737;45566,81794;45566,88283
+Paradicsomleves;3;2200;Orsós Márk;Schroll József út 77.;OMPS36737;45566,81804;45566,88148
+Sertésszelet, tejfeles, gombás;5;3700;Király Réka;Fatér utca 28.;KRSF37391;45566,82106;45566,87082
+Zsemlegombóc;3;5000;Sárközi Noémi;Karolina utca 50.;SNNK40894;45566,82107;45566,89054
+Gombaleves;3;1500;László Dávid;Menyhért utca 61.;LDFM52037;45566,82797;45566,8505
+Becsinált leves;3;4000;Lengyel Martin;Pityóka köz 38.;LMDP89511;45566,82931;45566,90276
+Almamártás;3;3400;Sárközi Noémi;Karolina utca 50.;SNNK40894;45566,83528;45566,8671
+Sárgaborsókrémleves;1;4400;Király Réka;Fatér utca 28.;KRSF37391;45566,8381;45566,89351
+Paradicsommártás;2;4000;Lengyel Martin;Pityóka köz 38.;LMDP89511;45566,84013;45566,91569
+Töltött káposzta;2;5500;Simon Miklós;Szérűskerti út 37.;SMJS63882;45566,84917;45566,86566
+Zsemlegombóc;1;5000;Lengyel Martin;Pityóka köz 38.;LMDP89511;45566,85612;45566,91531
+Tőkehalfilé rántva;5;2100;Nagy Dániel;Haas Mihály tér 42.;NDMH36571;45566,86393;45566,91477
+Burgonya, héjában főtt;1;2400;Lengyel Martin;Pityóka köz 38.;LMDP89511;45566,86745;45566,92819
+Tőkehalfilé rántva;5;2100;Péter Barnabás;Nektár köz 91.;PBMN27312;45566,86767;45566,8976
+Töltött paprika;1;4700;Molnár Szabina;Hőgyes Endre utca 51.;MSKH64403;45566,86939;45566,90631
+Zöldbabfőzelék (tejfeles);1;5000;Lengyel Martin;Pityóka köz 38.;LMDP89511;45566,87022;45566,9335
+Sertéstokány;5;3600;Jónás Antal;Hajnal utca 79.;JATH74928;45566,87373;45566,93297
