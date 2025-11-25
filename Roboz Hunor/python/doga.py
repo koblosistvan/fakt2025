@@ -23,20 +23,20 @@ else:
 #        break
 #print(f'A dobások között a 4 első előfordulása: {index}.')
 
-index = 0
-a = int(input('Melyik szám első előfordulását keressem? '))
+index = 0                                                       # az "index" mint változónév nem szerencsés, kerülendők a programnyelv "foglalt" szavai
+a = int(input('Melyik szám első előfordulását keressem? '))     # gondot nem okoz, de az index a listáknak egy tagfüggvénye pl dobas.index(5) megadja az első 5-ös dobás sorszámát
 for i in range(szam):
     if dobas[i] == a:
         index = i
         break
-print(f'A dobások között a {a} első előfordulása: {index}.')
+print(f'A dobások között a {a} első előfordulása: {index}.')    # és ha egyáltalán nincs benne olyan szám? Akkor 0 lesz az eredmény
 
 
 b = []
 for i in range(szam):
     if dobas[i] == a:
         b.append(i)
-print(f'A dobások előfordulásai: {b}.')
+print(f'A dobások előfordulásai: {b}.')                         # ez ügyes megoldás :)
 
 
 c = 0
@@ -52,7 +52,7 @@ for i in range(szam):
         d+=1
 print(f'A dobások között {d} alkalommal fordult elő hogy a dobott szám prím volt, ez {d/szam*100:.0f}%-a a dobásoknak.')
 
-legkisebb =6
+legkisebb =6                                        # a kezdőérték a 0. elem értéke legyen
 legnagyobb = 1
 for i in range(szam):
     if dobas[i] < legkisebb:
