@@ -17,5 +17,5 @@ for sor in forras:
 forras.close()
 print(f"{len(csapat) / 2:.0f} meccs adatai vannak az állományban")
 
-for a in idopont:
+for a in idopont:vvv
     b = a.strip().split(" ")
