@@ -6,10 +6,8 @@ levonas = []
 
 for i in range(len(számla)):
     if számla[i] < 0:
-        levon += 1
         levonas.append(számla[i])
     else:
-        utal += 1
         utalas.append(számla[i])
 print(f"{len(levonas)}-ször vontak le pénzt a számláról és {len(utalas)}-ször utaltak a számlára")
 
@@ -30,7 +28,7 @@ for i in range(len(utalas)):
 print(f"Ennyiser utaltak többet mint 100 eurót: {nagyob100}")
 
 #6.feladat - Melyik a legnagyobb jóváírás és a legnagyobb levonás? Melyik a legkisebb jóváírás?
-print(f"A legnagyobb levonás: {min(levonas)} és a legkisebb levonás: {max(levonas)}, A legnagyobb utalás: {max(utalas)} a legkisebb utalás {min(utalás)}")
+print(f"A legnagyobb levonás: {min(levonas)} és a legkisebb levonás: {max(levonas)}, A legnagyobb utalás: {max(utalas)} a legkisebb utalás {min(utalas)}")
 
 #7.feladat - Hányadik sorszámú tranzakció az 50 eurós összeg? Ha a levonásokat nem számítjuk, akkor hányadik?
 index50 = 0
@@ -55,14 +53,20 @@ legk500 = 0
 legn500 = 0
 for i in range(len(számla)):
     if számla[i] > 500 and számla[i] > 0:
-        if legk500 != 0:
+        if legk500 == 0:
             legk500 = i
         legn500 = i
+print(f"Az első 500 feletti utalás sorszáma: {legk500+1} a legutolsó 500 feletti utalás sorszáma: {legn500+1}.")
 
 
 #9.feladat - Van-e olyan összeg a számlán, melyet bankautomatából ki lehet venni
 #kizárólagosan 10 eurós bankjegyeket választva a kiadáshoz?
-
+for i in range(len(számla)):
+    if számla[i] %10 == 0 and számla[i] > 0:
+        print("Van olyan összeg a számlán, melyet bankautomatából ki lehet venni")
+        break
+else:
+    print("Nincs olyan összeg a számlán, melyet bankautomatából ki lehet venni")
     
 #10.feladat - Ha minden utalás és levonás után még tranzakciónként 0,75 fontot pluszban levontak a számláról,
 #mennyi pénz maradt rajta a nap végén? És, ha csak az utalásoknál vonták le ezt az illetéket?
