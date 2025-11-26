@@ -47,11 +47,22 @@ print(f'a legnagyobb levonas {max_levonas}')
 #7.feladat - Hányadik sorszámú tranzakció az 50 eurós összeg? Ha a levonásokat nem számítjuk, akkor hányadik?
 otvenes = 0
 for i in range(len(szamla)):
+    if szamla[i] == 50:
+        otvenes = i+1
+
+print(f'{otvenes}-odik az 50 euros utalas sorszama')
 
 
 
 #8.feladat - Van 500 eurónál nagyobb jóváírás a számlán?
 #Írjuk ki az első és az utolsó ilyen utalás sorszámait!
+nagyobb_otszaz = 0
+for i in range(len(szamla)):
+    if szamla[i] > 500:
+        print('Van 500 euronal nagyobb jovairas')
+        break
+else:
+    print('nincs 500 euronal nagyobb jovairas')
 
 
 #9.feladat - Van-e olyan összeg a számlán, melyet bankautomatából ki lehet venni
