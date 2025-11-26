@@ -14,7 +14,7 @@ for sor in forras:
     rendezo.append(adat[3])
     bevetel.append(int(adat[4]))
     cim.append(adat[5])
-forras.close
+forras.close()
 print()
 
 allomany = len(ev)
@@ -38,8 +38,8 @@ else:
     print("Nincs olyan film ami 9-esnél jobb értékelést kapott")
 print(f"A legmagasabb értékelés: {max(ertekeles)}")
 
-szamlalo = 0
 rang = min(ertekeles)
+rang_max = max(ertekeles)
 befejezve = False
 while not befejezve:
     szamlalo = 0
@@ -48,7 +48,7 @@ while not befejezve:
             szamlalo += 1
     if szamlalo > 0:
         print(f"{rang}:\t{szamlalo} darab film")
-    if rang == 9.3:
+    if rang == rang_max:
         befejezve = True
     rang = (rang*10+1)/10
     
@@ -58,6 +58,4 @@ forras = open(f"Ódor Artúr\\python\\{k_rendezo}.txt", mode= "w", encoding="utf
 for i in range(allomany):
     if k_rendezo == rendezo[i]:
         print(cim[i], file=forras)
-forras.close
-
-        
+forras.close()
