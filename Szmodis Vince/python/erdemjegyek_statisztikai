@@ -31,11 +31,11 @@ for i in range(letszam):
         elofordulas.append(i)
 print(f'Az osztályzatok között {szam} előfordulásai: {elofordulas}')
 
-elofordulas=0
+ellofordulas=0
 for i in range(letszam):
     if osztalyzatok[i]==3:
-        elofordulas+=1
-print(f'A 3 osztályzat {elofordulas} alkalommal fordul elő')
+        ellofordulas+=1
+print(f'A 3 osztályzat {ellofordulas} alkalommal fordul elő')
 
 jobbmint_kozepes=0
 for i in range(letszam):
@@ -53,4 +53,4 @@ for i in range(letszam):
 
     elif legnagyobb<osztalyzatok[i]:
         legnagyobb=osztalyzatok[i]
-print(f'A legkisebb osztályzat: {legkisebb}, a legnagyobb {legnagyobb}')
+print(f'A legkisebb osztályzat: {legkisebb}, a legnagyobb: {legnagyobb}')
