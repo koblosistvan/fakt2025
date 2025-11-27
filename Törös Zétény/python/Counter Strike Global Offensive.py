@@ -64,5 +64,5 @@ for i in range(sorok):
         elif eredmeny[i] == 'vereség':
             vesztett += 1
         elif eredmeny[i] == 'döntetlen':
-            dontetlen += 1
+            dontetlen += 1 #67
 print(f"Az Extra Salt összesen {mecsek} mecset játszott amiből {nyert} nyert meg {dontetlen} lett döntetlen és végül {vesztett} mecset vesztett el, az átlagos pontkülönbségük: {pontkul/mecsek:.2f} ")

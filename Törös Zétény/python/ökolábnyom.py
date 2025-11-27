@@ -64,7 +64,7 @@ print(f"A legkisebb egy főre jutó GDP-je {orszag[legk_gdp_index+1]}-nak volt {
 fel2000 = 0
 kap2000 = 0
 lak2000 = 0
-fel2014 = 0
+fel2014 = 0 #67
 kap2014 = 0
 lak2014 = 0
 index2000 = 0
