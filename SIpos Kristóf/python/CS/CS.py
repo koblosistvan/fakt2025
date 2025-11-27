@@ -45,4 +45,7 @@ for i in range(adatok_szama):
         min_pont=pont[i]
     elif max_pont<pont[i]:
         max_pont=pont[i]
+for i in range(adatok_szama):
+    j = adatok_szama-i
+    if 
 print(f'A meccsek sorendje {pont}.')
