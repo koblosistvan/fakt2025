@@ -4,6 +4,8 @@ forras.readline()
 idő,pálya,csapat,pont,különbség,eredmény = [],[],[],[],[],[]
 
 for sor in forras:
+        if len(idő) == 1000000:
+            break
         adat = sor.strip().split(';')
         idő.append(adat[0])
         pálya.append(adat[1])
@@ -17,7 +19,9 @@ print(f'{int(len(csapat)/2)} meccs adatai vannak az állományban')
 print(f'Az első meccs {min(idő)}-kor volt')
 
 
-"""for i in range(len(különbség)):
+#buborék
+"""start = time.time()
+for i in range(len(különbség)):
     for k in range(len(különbség)-i-1):
         if különbség[k] < különbség[k+1]:
             idő[k],idő[k+1] = idő[k+1],idő[k]
@@ -25,10 +29,13 @@ print(f'Az első meccs {min(idő)}-kor volt')
             csapat[k],csapat[k+1] = csapat[k+1],csapat[k]
             pont[k],pont[k+1] = pont[k+1],pont[k]
             különbség[k],különbség[k+1] = különbség[k+1],különbség[k]
-            eredmény[k],eredmény[k+1] = eredmény[k+1],eredmény[k]"""
+            eredmény[k],eredmény[k+1] = eredmény[k+1],eredmény[k]
+end=time.time()
+"""
 
-start = time.time()
 
+#kertitörpe
+"""start = time.time()
 i = 0
 n = len(idő)
 while i < n-1:
@@ -43,8 +50,35 @@ while i < n-1:
         eredmény[i],eredmény[i+1] = eredmény[i+1],eredmény[i]
         if i > 0:
             i-=1
+end = time.time()"""
 
+
+#koktél
+start=time.time()
+a = 0
+b = len(idő)-1
+while a < b:
+    for i in range(a,b):
+        if különbség[i] > különbség[i+1]:
+            idő[i],idő[i+1] = idő[i+1],idő[i]
+            pálya[i],pálya[i+1] = pálya[i+1],pálya[i]
+            csapat[i],csapat[i+1] = csapat[i+1],csapat[i]
+            pont[i],pont[i+1] = pont[i+1],pont[i]
+            különbség[i],különbség[i+1] = különbség[i+1],különbség[i]
+            eredmény[i],eredmény[i+1] = eredmény[i+1],eredmény[i]
+        b-=1
+    for i in range(a,b+1,-1):
+        if különbség[i] < különbség[i+1]:
+            idő[i],idő[i+1] = idő[i+1],idő[i]
+            pálya[i],pálya[i+1] = pálya[i+1],pálya[i]
+            csapat[i],csapat[i+1] = csapat[i+1],csapat[i]
+            pont[i],pont[i+1] = pont[i+1],pont[i]
+            különbség[i],különbség[i+1] = különbség[i+1],különbség[i]
+            eredmény[i],eredmény[i+1] = eredmény[i+1],eredmény[i]
+        a+=1
 end = time.time()
+
+
 print(f'Összesen {len(set(pálya))} pálya van')
 
 extra_salt_meccs = 0
@@ -71,4 +105,4 @@ for i in range(len(csapat)):
 print(f'A legkisebb pontkülönbség: {min(e_kül)}, a legnagyobb: {max(e_kül)}')
 print(f'{sum(e_kül)/len(e_kül):.2f} volt az átlagpontszám')
 
-print(end-start)
+print(f'{end-start:.2f} másodperc volt')
