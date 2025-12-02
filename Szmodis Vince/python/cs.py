@@ -1,3 +1,16 @@
+<<<<<<< HEAD
+forras= open('Szmodis Vince\\CS\\cs.csv', mode='r', encoding='utf-8')
+idopont=[]
+palya=[]
+csapat=[]
+pont=[]
+pont_kulombseg=[]
+eredmeny=[]
+
+for sor in forras:
+    adat=sor.strip().split(';')
+    idopont.append(adat[0])
+=======
 forras =open ('Szmodis Vince\\python\\cs.csv', mode = 'r', encoding= 'utf-8')
 idopont=[]
 palya=[]
@@ -76,3 +89,4 @@ print(f'\t{ossz_pontkul/szamlalo} volt  a csapat pontjainak átlaga')
 print()
 
 
+>>>>>>> 6ea5185cb248114b28bc17a948e9b0d7d041b5d5
