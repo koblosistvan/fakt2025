@@ -1,0 +1,9 @@
+f=open('osztaly.txt', 'w')
+f.write('BBBBBBalabs mArton tata 17 4.1\n')
+f.write('gipsz jakab bekescsaba 20 3.0\n')
+f.write('gaspar gyozo nogradmegyer 42 4.1\n')
+f.write('mc isti nyiregyhaza 50 4..8')
+f.close()
+
+for sor in f:
+    print(sor)
