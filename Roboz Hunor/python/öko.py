@@ -78,7 +78,8 @@ if a > b :
     c = 'csökkent'
 else: c = 'nőtt'
 print(f'A két érték aránya {a:.0f}%-ről {b:.0f}%-ra {c}.')
-
+/
++*-
 t_fő_2000 = 0
 t_fő_2014 = 0
 

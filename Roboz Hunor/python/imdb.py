@@ -76,6 +76,7 @@ for i in range(sor):
         rend_film+=f'{cím[i]}\n\t'
         meg=open(f'Roboz Hunor\\python\\{vez_nev}',mode='w',encoding='utf-8')
 print(f'A rendező filmjei:\n\t{rend_film}',file=meg)
+meg.close()
 
 ev = min(év)
 s = ''
@@ -119,7 +120,7 @@ for i in range(len(darab)):
         if darab[j] > darab[j+1]:
             darab[j],darab[j+1] = darab[j+1],darab[j]
             r[j],r[j+1] = r[j+1],r[j]
-            
+
 print('Az 5 legtöbb filmet rendezett rendező neve:')
 for i in range(1,6):
     print(f'\t{i}. {r[-i]} {darab[-i]} filmmel')

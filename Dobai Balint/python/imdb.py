@@ -23,6 +23,7 @@ print(f'a filmek szama a tartomanyban : {filmek_szama}')
 
 legregebbi = ev[0]
 legjobb_ertekeles = ertekeles[0]
+legjobb_ertekeles_index = rendezo[0]
 tobb_ketora = 0
 jobbmint_kilenc = 0
 for i in range(filmek_szama):
@@ -34,10 +35,12 @@ for i in range(filmek_szama):
         jobbmint_kilenc +=1
     if ertekeles[i] > legjobb_ertekeles:
         legjobb_ertekeles = ertekeles[i]
+        legjobb_ertekeles_index +=1
 
 print(f'az elso film {legregebbi}-ban jelent meg')
 print(f'{tobb_ketora} db film van ami 2 oranal hosszabb')
 print(f'{jobbmint_kilenc} db olyan film van ami kilencnel jobb ertekelest kapott')
 print(f'a legmagasabbra ertekelt film : {legjobb_ertekeles}')
+print(f'a legjobb ertekelest kapott filmet {legjobb_ertekeles_index} rendezte')
 
 
