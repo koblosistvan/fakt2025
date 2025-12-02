@@ -15,7 +15,7 @@ for sor in forras:
     pont.append(int(adat[3]))
     pont_kul.append(int(adat[4]))
     eredmeny.append(str(adat[5]))
-    if len(idopont) == 1000:
+    if len(idopont) == 10000:
         break
 forras.close()
 
@@ -67,6 +67,23 @@ for i in range(adatok_szama):
         pk_osszeg = sum(pont_kul)
         pk_atlag = pk_osszeg / len(pont_kul)    
 print(f'{pk_atlag*10.:.1f}')
+
+a = 0
+b = adatok_szama-1
+
+while a<b:
+    for i in range(b,a):
+        if pont[i] <pont[i+1]:
+            pont[i], pont[i+1] = pont[i+1] , pont[i]
+            csapat[i] , csapat[i+1] = csapat[i+1] , csapat[i]
+    for i in range(b , a , -1):
+        if pont[i] > pont[i-1]:
+            pont[i] , pont[i-1] = pont[i-1] , pont[i]
+            csapat[i] ,  csapat[i-1] = csapat[i-1] , csapat[i]
+
+print('koktel rendezes pont szerint:')
+for i in range(5):
+    print(f'{i+1} : {csapat[i]} {pont[i]} ponttal')
 
 
 
