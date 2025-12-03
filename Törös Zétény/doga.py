@@ -47,3 +47,21 @@ for i in range(len(dobasok)):
     if dobasok[i] > legn:
         legn = dobasok[i]
 print(f"A legnagyobb dobás: {legn}, és a legkisebb dobás: {legk}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+67
