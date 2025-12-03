@@ -1,67 +1,49 @@
 import random
 
-osztalyzatok = []
+dobasok = []
+for i in range(random.randint(100, 120)):
+    dobasok.append(random.randint(1, 6))
+#1.feladat:
+print(f"A szimuláció során {len(dobasok)} dobás történt.")
 
-for i in range(15, 20):
-    osztalyzatok.append(random.randint(1, 5))
+#2.feladat:
+print(f"A dobott számok összege: {sum(dobasok)}")
 
-oszt_sum = sum(osztalyzatok)
-oszt_hossz = len(osztalyzatok)
+#3.feladat:
+print("A dobott számok átlaga: ", sum(dobasok)/len(dobasok))
 
-print(f"Az osztályzatok száma: {len(osztalyzatok)}")
-print(f"Az osztályzatok összege: {sum(osztalyzatok)}")
-print(f"Az osztályzatokátlaga: {oszt_sum/oszt_hossz:.1f}")
-
-for i in range(oszt_hossz):
-    if osztalyzatok[i] == 1:
-        print("Van elégtelen osztályzat.")
+#4.feladat:
+for i in range(len(dobasok)):
+    if dobasok[i] == 6:
+        print("A dobások között volt hatos dobás.")
         break
 else:
-    print("Nincs elégtelen osztályzat.")
+    print("A dobások között nincs hatos dobás.")
 
-szam = int(input("Add meg a keresett osztályzatot: "))
-eloford_index = []
+#5.feladat:
+szam = int(input("Melyik számot keresed a dobások között: "))
+index = []
+for i in range(len(dobasok)):
+    if dobasok[i] == szam:
+        index.append(i)
+print(f"A {szam} ezeken a helyeken található meg a dobások között: {index} és az első előfordulási helye: {index[0]}")
 
-for i in range(oszt_hossz):
-    if osztalyzatok[i] == szam:
-        eloford_index.append(i)
-    
-if len(eloford_index) > 0:
-    print(f"A {szam}-es osztályzat az osztályzatok {eloford_index } helyein jelennek meg ")
-else:
-    print(f"Nem fordul elő a {szam}-es osztáyzat az osztályzatok között.")
+#6.feladat:
+egy = 0
+primek = 0 
+for i in range(len(dobasok)):
+    if dobasok[i] == 3 or dobasok[i] == 2 or dobasok[i] == 5:
+        primek += 1
+    if dobasok[i] == 1:
+        egy += 1
+print(f"Az egyes szám {egy} alaklommal volt kidobva, a dobások között {primek} alkalommal volt prímszám aminek a százalékos arány: {primek/len(dobasok)*100:.1f}%")
 
-negy = 0
-ot = 0
-
-for i in range(oszt_hossz):
-    if osztalyzatok[i] == 4:
-        negy += 1
-    if osztalyzatok[i] == 5:
-        ot += 1
-
-if negy > 0 or ot > 0:
-    print(f"A 3-as nál jobb jegyek aránya: {ot} ötös és {negy} negyes")
-else:
-    print("Nem volt jobb jegy 3-as nál")
-
-legkisebb = 5
-legnagyobb = 1
-
-for i in range(oszt_hossz):
-    if osztalyzatok[i] < legkisebb:
-        legkisebb = osztalyzatok [i]
-    if osztalyzatok[i] > legnagyobb:
-        legnagyobb = osztalyzatok[i]
-
-print(f"A legkisebb osztályzat: {legkisebb} és a legnagyobb osztályzat: {legnagyobb}")
-
-
-
-
-
-
-
-
-
-67
+#7.feladat:
+legk = 6
+legn = 1
+for i in range(len(dobasok)):
+    if dobasok[i] < legk:
+        legk = dobasok[i]
+    if dobasok[i] > legn:
+        legn = dobasok[i]
+print(f"A legnagyobb dobás: {legn}, és a legkisebb dobás: {legk}")
