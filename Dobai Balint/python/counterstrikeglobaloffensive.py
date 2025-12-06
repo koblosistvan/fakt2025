@@ -1,3 +1,4 @@
+import time
 forras = open('Dobai Balint\\python\\cs.csv', mode ='r', encoding='utf-8')
 forras.readline()
 idopont = []
@@ -68,7 +69,28 @@ for i in range(adatok_szama):
         pk_atlag = pk_osszeg / len(pont_kul)    
 print(f'{pk_atlag*10.:.1f}')
 
+start = time.time()
+a = 0
+b = adatok_szama-1
 
+while a<b:
+    for i in range(b,a):
+        if pont[i] <pont[i+1]:
+            pont[i], pont[i+1] = pont[i+1] , pont[i]
+            csapat[i] , csapat[i+1] = csapat[i+1] , csapat[i]
+        a+=1
+    for i in range(b , a , -1):
+        if pont[i] > pont[i-1]:
+            pont[i] , pont[i-1] = pont[i-1] , pont[i]
+            csapat[i] ,  csapat[i-1] = csapat[i-1] , csapat[i]
+        b-=1
+
+print('koktel rendezes pont szerint:')
+for i in range(5):
+    print(f'{i+1} : {csapat[i]} {pont[i]} ponttal')
+
+end = time.time()
+print(end-start)
 
 
 

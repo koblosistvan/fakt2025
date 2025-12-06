@@ -1,0 +1,12 @@
+
+# hány jegyet adtak el a moziban
+
+# mennyi lenne a mozi bevétele telt ház esetén
+
+# mennyi a jelenlegi foglalás mellett a bevétel
+
+# melyik sorban van a legkevesebb foglalt hely
+
+# hol vannak szingli szabad helyek
+
+# keress helyet egy háromfős társaság számára

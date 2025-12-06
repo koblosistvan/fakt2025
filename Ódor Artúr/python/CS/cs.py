@@ -1,7 +1,7 @@
 forras = open("_Feladatok\\python\\CS\\cs.csv", mode="r", encoding="utf-8")
 print()
 import time
-start = time.time()
+ido_s = time.time()
 idopont = []
 palya = []
 csapat = []
@@ -10,7 +10,7 @@ pont_kulonbseg = []
 eredmeny = []
 forras.readline()
 for sor in forras:
-    if len(idopont) == 1000:
+    if len(idopont) == 100000:
         break
     adat = sor.strip().split(";")
     idopont.append(adat[0])
@@ -34,8 +34,29 @@ print(f"Az első meccs ekkor volt: {min(idopont)}")
             pont[n], pont[n+1] = pont[n+1], pont[n]
             eredmeny[n], eredmeny[n+1]=eredmeny[n+1], eredmeny[n]"""
 
-for i in range(len(pont_kulonbseg)):
-    
+kezd = 0
+bef = len(pont_kulonbseg) - 1
+
+while kezd < bef:
+    for n in range(kezd, bef):
+        if pont_kulonbseg[n] > pont_kulonbseg[n + 1]:
+            pont_kulonbseg[n], pont_kulonbseg[n+1] = pont_kulonbseg[n+1], pont_kulonbseg[n]
+            idopont[n], idopont[n+1] = idopont[n+1], idopont[n]
+            palya[n], palya[n+1] = palya[n+1], palya[n]
+            csapat[n], csapat[n+1] = csapat[n+1], csapat[n]
+            pont[n], pont[n+1] = pont[n+1], pont[n]
+            eredmeny[n], eredmeny[n+1]=eredmeny[n+1], eredmeny[n]
+    bef -= 1
+
+    for n in range(bef, kezd, -1):
+        if pont_kulonbseg[n] < pont_kulonbseg[n - 1]:
+            pont_kulonbseg[n], pont_kulonbseg[n-1] = pont_kulonbseg[n-1], pont_kulonbseg[n]
+            idopont[n], idopont[n-1] = idopont[n-1], idopont[n]
+            palya[n], palya[n-1] = palya[n-1], palya[n]
+            csapat[n], csapat[n-1] = csapat[n-1], csapat[n]
+            pont[n], pont[n-1] = pont[n-1], pont[n]
+            eredmeny[n], eredmeny[n-1]=eredmeny[n-1], eredmeny[n]
+    kezd += 1
 
 
 
@@ -68,7 +89,5 @@ print(f"{w} alkalommal nyert\n{l} alkalommal vesztett\n{d} alkalommal játszott 
 print(f"A legnagyobb pontkülönbségük {max_pontk} pont volt\nA legkissebb pontkülönbségük {min_pontk} pont volt")
 print(f"A pontkülönbség átlag {atlag/sz_meccs:.2f}")
 
-
-
-end = time.time()
-print(end-start)
+vege = time.time()
+print(vege-ido_s)
