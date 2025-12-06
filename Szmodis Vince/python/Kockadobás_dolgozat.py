@@ -4,8 +4,8 @@ dobas_szam=random.randint(100,120)
 ertek=[]
 szam=[]
 for i in range(dobas_szam):
-szam=random.randint(1,6)
-ertek.append(szam)
+    szam=random.randint(1,6)
+    ertek.append(szam)
 
 print(f'A szimuláció során {dobas_szam} dobás történt')
 

@@ -10,7 +10,7 @@ pont_kulonbseg = []
 eredmeny = []
 forras.readline()
 for sor in forras:
-    if len(idopont) == 1000:
+    if len(idopont) == 100000:
         break
     adat = sor.strip().split(";")
     idopont.append(adat[0])
