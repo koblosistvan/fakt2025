@@ -13,13 +13,23 @@ Feladatok:
 '''
 
 # 1. olvasd be és tárold el a kép karaktereit
-forras = open('_Megoldások\\python\\Fenyőfa\\fenyofa.txt', mode='r', encoding='utf-8')
-adat = forras.readline().strip().split()
-sor, oszlop = int(adat[0]), int(adat[1])
-kep = []
-for i in range(sor):
-    kep.append(forras.readline().strip())
+forras = open("Törös Zétény\\python\\fenyofa.txt",encoding="utf-8", mode="r")
+adat = forras.readline()
+sorok_szama, pixelek_szama, = int(adat[0]), int(adat[1])
 forras.close()
+#2. hány hópihét látsz a képen?
+x = 0
+for i in range(sorok_szama):
+    for j in range(pixelek_szama):
+        if adat[j] == "f":
+            x += 1
+print(f"Ennyi hópihe van: {x}")
 
-
-print('Vege.')
+#3. melyik sorban van a törzs teteje?
+index = 0
+for i in range(sorok_szama):
+    for j in range(pixelek_szama):
+        if adat[j] == "b":
+            index = i
+            break
+print(f"Ebben a sorban kezdődik a fa törzse: {index}")
