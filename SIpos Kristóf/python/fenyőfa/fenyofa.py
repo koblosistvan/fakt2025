@@ -12,5 +12,3 @@ Feladatok:
 6. milyen színű díszeket látsz, melyikből hányat?
 '''
 
-# 1. olvasd be és tárold el a kép karaktereit
-forras = open()
