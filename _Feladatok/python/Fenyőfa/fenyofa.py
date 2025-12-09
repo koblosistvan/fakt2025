@@ -12,17 +12,5 @@ Feladatok:
 6. milyen színű díszeket látsz, melyikből hányat?
 '''
 
-forras = open("_Megoldások\\python\\Fenyőfa\\fenyofa.txt", mode="r", encoding="utf-8")
-adat = forras.readline().strip().split(" ")
-pixelek = []
-for sor in range(int(adat[0])):
-    pixelek.append(forras.readline().strip())
-print(pixelek)
-
-hopihek = 0
-for sor in pixelek:
-    for pixel in sor:
-        if pixel == "f":
-            hopihek += 1
-print(f"A hópihék száma: {hopihek}")
-
+# 1. olvasd be és tárold el a kép karaktereit
+forras = open()
