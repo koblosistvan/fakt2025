@@ -1,5 +1,10 @@
 # 1. feladat: Milyen programozási tételeket (alap algoritmusokat) ismersz? Sorold fel őket!
-# ide írd
+# megszámálás, 
+# összegzés, 
+# minimum/maximum kiválasztás, 
+# eldöntés, 
+# kiválogatás, 
+# rendezés
 
 
 # 2. feladat: egészítsd ki!
