@@ -81,8 +81,16 @@ f(6)
 for sor in range(sorok):
     for szek in range(szekek_szama-2):
        if foglalas[sor][szek:szek+3]  == '   ':
-           print(f'Ide ülhet a 3 fös társaság:\n{sor} {szek} {sor+1} {szek+1} {sor+2} {szek+2}')
+           print(f'Ide ülhet a 3 fös társaság:\n{sor}. sor {szek}. szék {sor}. sor {szek+1}. szék {sor}. sor {szek+2}. szék')
 
+
+f(7)
 #Házi
 létszám = int(input('Hányan vagytok'))
 
+for sor in range(sorok):
+    for szek in range(szekek_szama-(létszám-1)):
+        if foglalas[sor][szek:szek+létszám]  == ' '*létszám:
+            print(f'\nIde ülhet a {létszám} fös társaság:')
+            for x in range(létszám):
+                print(f'{sor+1}. sor {szek+x}. szék',end=' ')
