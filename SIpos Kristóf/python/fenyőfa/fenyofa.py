@@ -12,14 +12,3 @@ Feladatok:
 6. milyen színű díszeket látsz, melyikből hányat?
 '''
 
-# 1. olvasd be és tárold el a kép karaktereit
-forras = open('_Megoldások\\python\\Fenyőfa\\fenyofa.txt', mode='r', encoding='utf-8')
-adat = forras.readline().strip().split()
-sor, oszlop = int(adat[0]), int(adat[1])
-kep = []
-for i in range(sor):
-    kep.append(forras.readline().strip())
-forras.close()
-
-
-print('Vege.')
