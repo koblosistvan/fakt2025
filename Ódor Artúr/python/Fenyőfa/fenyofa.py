@@ -11,4 +11,64 @@ Feladatok:
 5. hány dísz van a fán? 
 6. milyen színű díszeket látsz, melyikből hányat?
 '''
+def f(n):
+    print(f"\n {n}. feladat")
 
+f(1)    
+forras = open(r"Ódor Artúr\python\Fenyőfa\fenyofa.txt", mode="r", encoding="utf-8")
+adat = forras.readline().strip().split(" ")
+sorok_sz, pixel_sz = int(adat[0]), int(adat[1])
+
+pixelek = []
+for i in range(sorok_sz):  
+    pixelek.append(forras.readline().strip())
+print(f"A fájl beolvasva")
+
+
+f(2)
+hopehely = 0
+for sor in pixelek:
+    for pixel in sor:
+        if pixel == "f":
+            hopehely += 1
+print(f"A hópelyhek száma: {hopehely}")
+
+f(3)
+teteje = 0
+for sor in range(sorok_sz):
+    for pixel in range(pixel_sz):
+        if pixelek[sor][pixel] == "b":
+            teteje = sor + 1
+            print(f"A {teteje}. sorban kezdődik a törzs.")
+            break
+    if pixelek[sor][pixel] == "b":
+            break
+    
+f(4)
+szamlalo = 0
+for sor in range(sorok_sz):
+    for pixel in range(pixel_sz):
+        if pixelek[sor][pixel] == "b":
+            szamlalo += 1
+            break
+print(f"A törzs alja {teteje + szamlalo}. sorban van, és {szamlalo} magas a törzs.")
+
+f(5)
+disz = 0
+for sor in pixelek:
+    for pixel in sor:
+        if pixel == "s" or pixel == "p" or pixel == "k" or pixel=="a":
+            disz += 1
+print(f"{disz} pixel dísz van.")
+
+f(6)
+alapszinek = "fhzb"
+diszek = {}
+for sor in pixelek:
+    for pixel in sor:
+        if pixel not in alapszinek:
+            if pixel in diszek:
+                diszek[pixel] += 1
+            elif pixel not in diszek:
+                diszek[pixel] = 1
+print(diszek)
