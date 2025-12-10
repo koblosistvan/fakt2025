@@ -30,7 +30,7 @@ hopehely = 0
 for sor in pixelek:
     for pixel in sor:
         if pixel == "f":
-            hopehely += 1
+            hopehely += 1  
 print(f"A hópelyhek száma: {hopehely}")
 
 f(3)
@@ -64,6 +64,7 @@ print(f"{disz} pixel dísz van.")
 f(6)
 alapszinek = "fhzb"
 diszek = {}
+#six-seven 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67
 for sor in pixelek:
     for pixel in sor:
         if pixel not in alapszinek:

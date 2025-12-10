@@ -21,26 +21,37 @@ for sor in range(sorok_szama):
 print(f'A hópihék száma az {snow}.')
 #Feladat 3
 print('Feladat 3')
+torzs_magassaga=[]
 for sor in range(sorok_szama):
     for oszlop in range(oszlopok_szama):
-        if 'b' in pixelek[sor][oszlop]: 
-            break
-print(f'A törzs a {sor}. sorban kezdődik.')
+        if pixelek[sor][oszlop]== 'b': 
+            torzs_magassaga.append(sor)
+print(f'A törzs a {min(torzs_magassaga)}. sorban kezdődik.')
 
 #Feladat 4
 print('Feladat 4')
-
+torzs_kezdete=min(torzs_magassaga)
+torzs_vege=max(torzs_magassaga)
+print(f'A törzs {torzs_vege} és a törzs {torzs_vege-torzs_kezdete} magas.')
 #Feladat 5
 print('Feladat 5')
+diszek_szama=0
+for sor in range(sorok_szama):
+    for oszlop in range(oszlopok_szama):
+        if  sor > 5:
+            if pixelek[sor][oszlop] in 'skp':
+                diszek_szama += 1
+print(f'{diszek_szama} dísz van.')
+#Feladat 6
+print('Feladat 6')
 nem_disz='hzbf'
 szinek_szama = {}
 for sor in range(sorok_szama):
     for oszlop in range(oszlopok_szama):
-        if pixel[sor][oszlop] not in nem_disz:
-            if pixel[sor][oszlop] in szinek_szama:
-
+        pixel_szin = pixelek[sor][oszlop]
+        if pixel_szin not in nem_disz:
+            if pixel_szin in szinek_szama:
+                szinek_szama[pixel_szin] += 1
             else:
-                pixel[sor][oszlop].append(szinek_szama)
-
-#Feladat 6
-print('Feladat 6')
+                szinek_szama[pixel_szin] = 1
+print(szinek_szama)
