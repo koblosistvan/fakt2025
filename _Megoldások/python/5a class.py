@@ -14,7 +14,7 @@ for sor in forras:
 forras.close()
 versenyzok_szama = len(adatok)
 
-legmagasabb = adatok[0].tavaly         # azt feltételezem, hogy a 0. a legmagasabb
+legmagasabb = min(adatok, key=tavaly).tavaly
 legmagasabb_index = 0
 
 for i in range(1, versenyzok_szama):
