@@ -1,6 +1,6 @@
 from PIL import Image
 
-source = open('_Megoldások\\python\\Fenyőfa\\fenyofa.txt', 'r', encoding='utf-8')
+source = open('Fenyőfa\\fenyofa.txt', 'r', encoding='utf-8')
 width, height = [int(a) for a in source.readline().strip().split()]
 pixels = []
 for _ in range(height):
@@ -22,5 +22,5 @@ for y in range(height):
     for x in range(width):
         img.putpixel((x, y), COLORS[pixels[y][x]])
 
-img.save('_Megoldások\\python\\Fenyőfa\\fenyofa.png')
+img.save('Fenyőfa\\fenyofa.png')
 print('Elkészült a képfájl.')

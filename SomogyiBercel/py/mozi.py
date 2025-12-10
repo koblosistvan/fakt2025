@@ -40,7 +40,6 @@ for i, row in enumerate(data):
 		if not row[j][1] and (j == 0 or row[j-1][1]) and (j == chairs-1 or row[j+1][1]):
 			single_chairs.append((i,j))
 
-
 feladat(1)
 print("Foglalások száma: %d" % res_count)
 

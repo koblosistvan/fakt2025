@@ -25,7 +25,7 @@ legregebb = idopont[0]
 for i in range(sorok):
     if idopont[i] < legregebb:
         legregebb = idopont[i]
-print(f"A legrégebb mecs {legregebb} ban játszódott.")
+print(f"A legrégebbi mecs {legregebb} ban játszódott.")
 
 #3.feladat:
 '''
