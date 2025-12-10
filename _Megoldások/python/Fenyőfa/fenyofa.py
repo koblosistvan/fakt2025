@@ -39,9 +39,21 @@ f(2)
 for sor in range(magassag):
     for oszlop in range(szelesseg):
         pixel_szin = kep[sor][oszlop]
-        if pixel_szin not in alapszinek:
-            if pixel_szin in szinek_szama:
-                szinek_szama[pixel_szin] += 1
-            else:
-                szinek_szama[pixel_szin] = 1
-print(szinek_szama)
+        if pixel_szin in szinek_szama:
+            szinek_szama[pixel_szin] += 1
+        else:
+            szinek_szama[pixel_szin] = 1
+print(f'There\'s {szinek_szama["f"]} snowflakes on the image.')
+
+
+# 3. melyik sorban van a törzs teteje?
+# 4. melyik sorban van a törzs alja, milyen magas a fa törzse?
+barna_sorok = []
+for sor in range(magassag):
+    if 'b' in kep[sor]:
+        barna_sorok.append(sor)
+f(3)
+print(f'A törzs teteje a {min(barna_sorok)-1}. sorban van.')
+f(4)
+print(f'A törzs alja a {max(barna_sorok)-1}. sorban van.')
+print(f'A törzs {max(barna_sorok)-min(barna_sorok)+1} pixel magas.')
