@@ -1,0 +1,4 @@
+kerdes = int(input())
+hazak = []
+for i in range(kerdes):
+    hazak.append

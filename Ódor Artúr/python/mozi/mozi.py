@@ -72,3 +72,17 @@ for sor in range(sorok_sz):
     for szek in range(szekek_sz - 2):
         if foglaltsag[sor][szek:szek+3] == "   ":
             print(f"{sor + 1} sorban a {szek} - {szek + 2}. székek")
+
+# házi
+f(7)
+letszam = int(input("Hányan vagytok? "))
+for sor in range(sorok_sz):
+    szamlalo = 0
+    for szek in range(szekek_sz):
+        if foglaltsag[sor][szek] == " ":
+            szamlalo += 1
+        elif foglaltsag[sor][szek] == "x":
+            szamlalo = 0
+        if szamlalo == letszam:
+            print(f"{sor+1}. sorban és {szek-letszam+1}-tól a {szek+1}-ig")
+            szamlalo -= 1
