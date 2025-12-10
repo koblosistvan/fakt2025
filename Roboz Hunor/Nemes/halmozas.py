@@ -27,3 +27,5 @@ for i in range(kerdesek_szama):
     hossz = veg[i] - kezd[i] + 1
     print(sum(összeg[a:a + hossz]))
     a += hossz
+
+
