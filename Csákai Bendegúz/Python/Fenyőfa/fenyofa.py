@@ -15,35 +15,8 @@ Feladatok:
 # 1. olvasd be és tárold el a kép karaktereit
 forras = open('fakt2025\\Csákai Bendegúz\\Python\\Fenyőfa\\fenyofa.txt', mode='r',encoding='utf-8')
 adat = forras.readline().strip()
-szeles, magas = int(adat[0]),int(adat[1])
-szinek = []
-for i in range(szeles):
-    adat = forras.readline()[:magas]
-    szinek.append(adat)
-forras.close()
-
-hatter = 0
-piros = 0
-kek = 0
-zold = 0
-sarga = 0
-feher = 0
-barna = 0
-for szel in range(szeles):
-    for mag in range(magas):
-        if szinek[szel][mag] == 'h':
-            hatter += 1
-        elif szinek[szel][mag] == 'p':
-            piros += 1
-        elif szinek[szel][mag] == 'k':
-            kek += 1
-        elif szinek[szel][mag] == 'z':
-            zold += 1
-        elif szinek[szel][mag] == 's':
-            sarge += 1
-        elif szinek[szel][mag] == 'f':
-            feher += 1
-        elif szinek[szel][mag] == 'b':
-            barna+= 1
-print(hatter, piros, kek, zold, sarga, feher, barna)
-0  
+def f(n):
+    print(f'{n}. feladat') 
+f(1)
+f(2)
+f(3)

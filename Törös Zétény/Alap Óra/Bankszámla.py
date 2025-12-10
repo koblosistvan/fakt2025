@@ -64,7 +64,7 @@ print(f"Az első 500 feletti utalás sorszáma: {legk500+1} a legutolsó 500 fel
 for i in range(len(számla)):
     if számla[i] %10 == 0 and számla[i] > 0:
         print("Van olyan összeg a számlán, melyet bankautomatából ki lehet venni")
-        break
+        break#67
 else:
     print("Nincs olyan összeg a számlán, melyet bankautomatából ki lehet venni")
     
