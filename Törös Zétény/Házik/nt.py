@@ -34,3 +34,34 @@ while len(szurke_sor)>0:
     # Ha van fehér szomszédja, akkor az ábécésorrendben legelsőt szürkére festjük.
     fekete_latott.append(varos)
     szurke_sor = szurke_sor[1:]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+67

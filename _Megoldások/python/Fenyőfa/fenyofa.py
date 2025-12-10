@@ -13,4 +13,35 @@ Feladatok:
 '''
 
 # 1. olvasd be és tárold el a kép karaktereit
-forras = open()
+forras = open('_Megoldások\\python\\Fenyőfa\\fenyofa.txt')
+adat = forras.readline().strip().split()
+magassag, szelesseg = int(adat[0]), int(adat[1])
+
+kep = []
+for sor in range(magassag):
+    kep.append(forras.readline().strip())
+forras.close()
+
+
+def f(n):
+    print(f'\n{n}. feladat')
+
+
+# 1. olvasd be és tárold el a kép karaktereit
+f(1)
+print(f'Beolvastam a {szelesseg} x {magassag} px méretű képet.')
+
+
+alapszinek = 'hzbf'
+szinek_szama = {}
+# 2. hány hópihét látsz a képen?
+f(2)
+for sor in range(magassag):
+    for oszlop in range(szelesseg):
+        pixel_szin = kep[sor][oszlop]
+        if pixel_szin not in alapszinek:
+            if pixel_szin in szinek_szama:
+                szinek_szama[pixel_szin] += 1
+            else:
+                szinek_szama[pixel_szin] = 1
+print(szinek_szama)

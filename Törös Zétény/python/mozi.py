@@ -36,3 +36,32 @@ for i in range(sorok_szama):
         if foglalt[i][j] == "x":
             jelenlegi_bevetel += arak[i][j]
 print(f"A jelenlegi eladott jegyek összege: {jelenlegi_bevetel:,} Ft")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+67

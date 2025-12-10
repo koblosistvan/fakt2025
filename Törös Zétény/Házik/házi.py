@@ -59,3 +59,9 @@ for i in range(letszam):
 
 print("A legkisebb szám:", leg_kisebb)
 print("A legnagyobb szám:", leg_nagyobb)
+
+
+
+
+
+67
