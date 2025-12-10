@@ -19,11 +19,9 @@ trunk_start = None
 
 trunk_end = None
 
-decorations = {
-	's': 0,
-	'p': 0,
-	'k': 0
-}
+decorations = {}
+
+basic = set("hzbf")
 
 with open("_Megoldások/python/Fenyőfa/fenyofa.txt") as f:
 	f.readline()
@@ -37,14 +35,17 @@ with open("_Megoldások/python/Fenyőfa/fenyofa.txt") as f:
 		if trunk_start is not None and trunk_end is None and 'b' not in l2:
 			trunk_end = i
 		
-		for d in decorations.keys():
+		for c in set(l2)-basic:
+			if c not in decorations:
+				decorations[c] = 0
+		
+		for d in decorations:
 			decorations[d] += l2.count(d)
 
-		
 
 print("Hópihék száma: %d" % snow)
 print("Törzs teteje: %d" % trunk_start)
-print("Törzs alja: %d, Törzs hossza: %d" % (trunk_end, trunk_end-trunk_start))
+print("Törzs alja: %d, Törzs hossza: %d" % (trunk_end-1, trunk_end-trunk_start))
 print("Díszek: Összesen %d" % sum(decorations.values()))
 
 for d in decorations:

@@ -74,6 +74,17 @@ f(6)
 for sor in range(sorok_szama):
     for szek in range(szekek_szama-2):
         if foglalas[sor][szek:szek+3] == '   ':
-            print(f'3 fős helyek: {sor}.-sor: ')
+            print(f'3 fős helyek: {sor+1}.-sor: {szek} - {szek+2} székek ')
 
+f(7)
 letsz = int(input('Adja meg hányan jönnének: '))
+print('\n')
+a = letsz-1
+n = 0
+for sor in range(sorok_szama):
+    for szek in range(szekek_szama-a):
+        if foglalas[sor][szek:szek+letsz] == letsz*' ':
+            print(f'{letsz} fős helyek: {sor+1}.-sor: {szek} - {szek+a} székek')
+            n += 1
+            if n == 0:
+                print('Nincs ilyen lehetőség')

@@ -23,6 +23,10 @@ minr_i = None
 
 single_chairs = []
 
+n = int(input("Hány fő: "))
+
+places_for_n = []
+
 for i, row in enumerate(data):
 	f_row = tuple(filter(lambda x: x[1], row))
 
@@ -39,6 +43,10 @@ for i, row in enumerate(data):
 	for j in range(chairs):
 		if not row[j][1] and (j == 0 or row[j-1][1]) and (j == chairs-1 or row[j+1][1]):
 			single_chairs.append((i,j))
+	
+	for j, a in enumerate(zip(*[row[k:] for k in range(n)])):
+		if not any(map(lambda x: x[1], a)):
+			places_for_n.append((i, j))
 
 feladat(1)
 print("Foglalások száma: %d" % res_count)
@@ -53,3 +61,8 @@ feladat(4)
 print("Legkevesebb foglalt helyes sor: %d" % (minr_i+1))
 
 print("Szabad szingli helyek: %s" % str(single_chairs))
+
+feladat(5)
+print("%d embernek ezeken a helyeken van elegendő szék: " % n)
+for r, c in places_for_n:
+	print("- %d. sor, %d-%d. szék" % (r+1, c+1, c+n))
