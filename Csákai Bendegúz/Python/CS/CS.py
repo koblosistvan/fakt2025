@@ -1,3 +1,4 @@
+import time
 forras_cs = open('fakt2025\\Csákai Bendegúz\\Python\\CS\\cs.csv', mode='r', encoding='utf-8')
 forras_mr = open('fakt2025\\Csákai Bendegúz\\Python\\CS\\match_results.csv', mode='r', encoding='utf-8')
 forras_cs.readline()
@@ -20,9 +21,10 @@ forras_cs.close()
 
 print(f'Összesen {len(ido)/2:.0f} meccseredményem van.')
 print(f'Az első meccs {min(ido)}-kor volt')
-
-for i in range(len(ido)):
-    for j in range(len(ido)-i-1):
+a = 1000
+start=time.time()
+for i in range(a):
+    for j in range(a-i-1):
         if pont_kulonb[j] < pont_kulonb[j+1]:
             pont_kulonb[j], pont_kulonb[j+1] = pont_kulonb[j+1], pont_kulonb[j]
             ido[j], ido[j+1] = ido[j+1], ido[j]
@@ -30,6 +32,7 @@ for i in range(len(ido)):
             team[j], team[j+1] = team[j+1], team[j]
             pont[j], pont[j+1] = pont[j+1], pont[j]
             eredmeny[j], eredmeny[j+1] = eredmeny[j+1], eredmeny[j]
+end = time.time()
 map_szam = []
 for i in range(len(map)):
     if map[i] not in map_szam:
@@ -62,10 +65,10 @@ print(f'A legnagyobb pontkülönbség {max(es_kul)}, a legkisebb {min(es_kul)} v
 print(f'A pontkülönbségek átlaga: {sum(es_kul)/len(es_kul)}')
 
 kimenet=open('fakt2025\\Csákai Bendegúz\\Python\\CS\\Top 10.txt', mode='w', encoding='utf-8')
-
+start= time.time()
 i = 0
 n = len(ido)
-while i < n-1:
+while i < a-1:
     if pont_kulonb[i] <= pont_kulonb[i+1]:
         i +=1
     else:
@@ -77,3 +80,4 @@ while i < n-1:
         eredmeny[i], eredmeny[i+1] = eredmeny[i+1], eredmeny[i]
         if i > 0:
             i -= 1
+end=time.time()

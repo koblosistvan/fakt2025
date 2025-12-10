@@ -25,7 +25,7 @@ legregebb = idopont[0]
 for i in range(sorok):
     if idopont[i] < legregebb:
         legregebb = idopont[i]
-print(f"A legrégebb mecs {legregebb} ban játszódott.")
+print(f"A legrégebbi mecs {legregebb} ban játszódott.")
 
 #3.feladat:
 '''
@@ -65,4 +65,4 @@ for i in range(sorok):
             vesztett += 1
         elif eredmeny[i] == 'döntetlen':
             dontetlen += 1 #67
-print(f"Az Extra Salt összesen {mecsek} mecset játszott amiből {nyert} nyert meg {dontetlen} lett döntetlen és végül {vesztett} mecset vesztett el, az átlagos pontkülönbségük: {pontkul/mecsek:.2f} ")
+print(f"Az Extra Salt összesen {mecsek} mecset játszott amiből {nyert} nyert meg {dontetlen} lett döntetlen és végül {vesztett} mecset vesztett el, az  átlagos pontkülönbségük: {pontkul/mecsek:.2f} ")
