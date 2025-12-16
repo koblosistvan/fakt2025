@@ -47,7 +47,7 @@ s = time.time_ns()
 
 sorts.quicksort(data, key=lambda x: x.point_diff)
 
-print(time.time_ns() - s)
+print(time.time_ns() - s, "ns")
 
 maps = set()
 

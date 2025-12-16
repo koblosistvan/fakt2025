@@ -54,7 +54,7 @@ for i in range(len(idopont)):
     elif csapat[i]=='Extra Salt' and eredmeny[i]=='vereség':
         vesztett_extrasalt+=1
     elif csapat[i]=='Extra Salt' and eredmeny[i]=='döntetlen':
-        dontetlen_extrasalt_extrasalt+=1
+        dontetlen_extrasalt+=1
 print(f'\t{nyert_extrasalt} alkalommal nyert\n\t{dontetlen_extrasalt} alkalommal játszott döntetlent\n\t{vesztett_extrasalt} alkalommal szenvedett vereséget')
 
 legnagyobb_pontkul=pont_kulonbseg[0]
@@ -74,5 +74,4 @@ for i in range(len(idopont)):
         szamlalo+=1
 print(f'\t{ossz_pontkul/szamlalo} volt  a csapat pontjainak átlaga')
 print()
-
 
