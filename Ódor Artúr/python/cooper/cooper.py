@@ -55,8 +55,8 @@ jav_diak = []
 for i in range(len(nev)):
     if tavaly[i] - iden[i] == legn_jav:
         jav_diak.append(nev[i])
-print(f"A legnagyobb javítás {legn_jav} m volt, melyet", end=" ")
-print(", ".join(jav_diak[0:len(jav_diak) -1]))
+print(f"A legnagyobb javítás {legn_jav} m volt, melyet {", ".join(jav_diak[0:-1])} és {jav_diak[-1]} követett el.")
+
 
 # --------------------------------------------------------------------------------------------------------
 # 6. feladat: listázd ki az idei 3000 m felett teljesítőket
@@ -76,3 +76,32 @@ print(", ".join(jav_diak[0:len(jav_diak) -1]))
 # Kis Miska    3460 (-210)
 # Kő Pál       3410 (-260)
 # ...
+
+kezd = 0
+bef = len(nev)-1
+
+while kezd > bef:
+    for n in range(kezd, bef):
+        if iden[n] < iden[n+1]:
+            iden[n], iden[n+1] = iden[n+1], iden[n]
+            nev[n], nev[n+1] = nev[n+1], nev[n]
+    bef -= 1
+    for n in range(bef, kezd, -1):
+        if iden[n] < iden[n-1]:
+            iden[n], iden[n-1] = iden[n-1], iden[n]
+            nev[n], nev[n-1] = nev[n-1], nev[n]
+    kezd += 1
+
+hezer_felett = []
+for i in range(len(nev)):
+    sor = []
+    if iden[i] >= 3000:
+        sor.append(nev[i])
+        sor.append(iden[i])
+        hezer_felett.append(sor)
+        
+for i in range(len(hezer_felett)):
+    if i == 0:
+        print(f"{hezer_felett[0][0]}\t{hezer_felett[0][1]} m")
+    else:
+        print(f"{hezer_felett[i][0]}\t{hezer_felett[i][1]} m\t({hezer_felett[0][1] - hezer_felett[i][1]} m)")
