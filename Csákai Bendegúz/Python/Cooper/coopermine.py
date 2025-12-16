@@ -13,6 +13,7 @@ for sor in forras:
     tavaly.append(int(adat[1]))
     idei.append(int(adat[2]))
 forras.close()
+print('Az adatokat beolvastam.')
 f(2)
 print(f'A teszten {len(nev)} diák vett részt.')
 f(3)
@@ -42,3 +43,14 @@ for i in range(len(idei)):
         tavalyi = tavaly[i]
         iden = idei[i]
 print(f'A legtöbbet {nev[legj_jav_ind]} javított, ő tavaly {tavalyi} m-t futott, idén {iden} m-t, így {legj_jav} m-t javított az eredményén.')
+f(6)
+torp = len(nev)
+for i in range(torp):
+    for j in range(torp-i-1):
+        if idei[j] < idei[j+1]:
+            idei[j], idei[j+1] = idei[j+1], idei[j]
+            tavaly[j], tavaly[j+1] = tavaly[j+1], tavaly[j]
+            nev[j], nev[j+1] = nev[j+1], nev[j]
+for i in range(len(nev)):    
+    if idei[i] > 3000:
+        print(f'{nev[i]} \t {idei[i]}')
