@@ -63,6 +63,13 @@ print(f'A leghosszabb futas {legjobb_futo_tav} volt, amit {legjobb_futo_nev}')
 # minta-könnyített: A legnagyobb javítás 231 m volt.
 # minta: A legtöbbet Gáz Áron javított, ő tavaly 2345 m-t futott, idén 2645 m-t, így 3005 m-t javított az eredményén.# # minta-extra: A legnagyobb javítás 234 m volt, megyet Gáz Áron, Szabó Miklós és Kiss Rozália követett el.
 f(5)
+legnagyobb_javitas = iden[0] - tavaly[0]
+legnagyobb_javitas_ki = nev[0]
+for i in range(len(nev)):
+    if iden[i] - tavaly[i] > legnagyobb_javitas:
+        legnagyobb_javitas = iden[i] - tavaly[i]
+        legnagyobb_javitas_ki = nev[i]
+print(f'A legnagyobb javitast {legnagyobb_javitas_ki} erte el, aki {legnagyobb_javitas} m-t javitott')
 
 
 # --------------------------------------------------------------------------------------------------------
@@ -71,7 +78,15 @@ f(5)
 # 3124
 # 3187
 # ...
-
+f(6)
+for i in range(len(nev)-1):
+    for j in range(len(nev)-i-1):
+        if iden[j] < iden[j+1]:
+            iden[j] , iden[j+1] = iden[j+1] ,  iden[j]
+            nev[j] , nev[j+1] = nev[j+1] , nev[j]
+print('A haromezer felett teljesitok toplistaja:')
+for i in range(11):
+    print(f'{i+1} : {nev[i]} , {iden[i]}')
 # minta: 
 # Mekk Elek    3143
 # Kis Miska    3251
