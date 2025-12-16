@@ -58,7 +58,13 @@ print(f'A legnagyobb távolság {legnagyobb_tavolsag} méter volt és {legnagyob
 # 5. feladat: mennyi volt a legnagyobb javítás és ki követte el (azaz az idei-tavalyi eredmény maximális értéke)?
 # minta-könnyített: A legnagyobb javítás 231 m volt.
 # minta: A legtöbbet Gáz Áron javított, ő tavaly 2345 m-t futott, idén 2645 m-t, így 3005 m-t javított az eredményén.# # minta-extra: A legnagyobb javítás 234 m volt, megyet Gáz Áron, Szabó Miklós és Kiss Rozália követett el.
-
+legnagyobb_javitott=str(0)
+legnagyobb_tavolsag_javitott=0
+for i in range(reszt_vett_diakok):
+    if iden[i]-tavaly[i]>legnagyobb_tavolsag_javitott:
+        legnagyobb_tavolsag_javitott=iden[i]-tavaly[i]
+        legnagyobb_javitott=nev[i]
+print(f'{legnagyobb_javitott} javított a legnagyobbat és {legnagyobb_tavolsag_javitott} méterrel futott többet idén mint tavaly.')
 
 # --------------------------------------------------------------------------------------------------------
 # 6. feladat: listázd ki az idei 3000 m felett teljesítőket
