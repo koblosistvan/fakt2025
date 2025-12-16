@@ -85,7 +85,10 @@ for i in range(len(nev)):
         leg_javit_nevek.append(nev[i])
 
 if len(leg_javit_nevek) > 1: 
-    print(f" A legnagyobb javítás {leg_fut} m volt, melyet" + ', '.join(leg_javit_nevek))
+    nevek =', '.join(leg_javit_nevek[:-1]) + ' és ' + leg_javit_nevek[-1]
+else: nevek = leg_javit_nevek[0]
+
+print(f"A legnagyobb javítás {leg_fut} m volt, melyet " + nevek + " követett el")
 
 # --------------------------------------------------------------------------------------------------------
 # 6. feladat: listázd ki az idei 3000 m felett teljesítőket
@@ -105,3 +108,17 @@ if len(leg_javit_nevek) > 1:
 # Kis Miska    3460 (-210)
 # Kő Pál       3410 (-260)
 # ...
+
+
+
+for i in range(len(nev)):
+    for k in range(len(nev)-i-1):
+        if iden[k] < iden[k+1]:
+            nev[k],nev[k+1],tavaly[k],tavaly[k+1],iden[k],iden[k+1] = nev[k+1],nev[k],tavaly[k+1],tavaly[k],iden[k+1],iden[k]
+            
+for i in range(len(nev)):
+    kül = iden[i-1]-iden[i]
+    if iden[i] > 3000:
+        if i == 0:
+            print(f'{nev[i]} \t {iden[i]} ')
+        else: print(f'{nev[i]} \t {iden[i]} (-{kül})')
