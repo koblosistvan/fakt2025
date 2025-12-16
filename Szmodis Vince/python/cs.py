@@ -75,4 +75,3 @@ for i in range(len(idopont)):
 print(f'\t{ossz_pontkul/szamlalo} volt  a csapat pontjainak átlaga')
 print()
 
-

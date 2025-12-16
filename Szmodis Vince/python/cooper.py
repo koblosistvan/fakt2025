@@ -1,6 +1,8 @@
 # olvasd be az adatokat tartalmazó fájlok egyikét
 # 	a cooper.txt minden számadatot tartalmaz, de a neveket nem, ezzel lesz egyszerűbb dolgoznod
 # 	a cooper-extra.txt a neveket és egy fejlécet is tartalmaz, ezzel oldhatod meg az extra feladatokat is
+
+ 
 # --------------------------------------------------------------------------------------------------------
 # mindkét fájl a 11. évfolyam Cooper tesztjének eredményét tartalmazza, azaz hogy tavaly és idén 
 # hány métert tudtak futni a diákok 12 perc alatt
@@ -9,30 +11,41 @@
 
 # --------------------------------------------------------------------------------------------------------
 # 1. feladat: adatok beolvasása és tárolása
-with open(r"_Feladatok\python\Cooper\cooper.txt", mode="r", encoding="utf-8") as f:
-    nev, tavaly, iden = f.readline()
-    for sor in f:
-        adat = sor
-        nev.append(adat[0])
-        tavaly.append(adat[1])
-        iden.append(adat[2])
-print(nev)
+forras=open('Szmodis Vince\\python\\cooper.txt',mode='r', encoding='utf-8')
+forras.readline()
+nev=[]
+tavaly=[]
+iden=[]
+for sor in forras:
+    adat=sor.strip().split('\t')
+    nev.append(adat[0])
+    tavaly.append(int(adat[1]))
+    iden.append(int(adat[2]))
+adatok_szama=len(nev)
 # --------------------------------------------------------------------------------------------------------
 # 2. feladat: hány diák vett részt a teszten
 # minta: A teszten 12 diák vett részt.
-
+print(f'A teszten {adatok_szama} diák vett részt.')
 
 # --------------------------------------------------------------------------------------------------------
 # 3. feladat: hány diák futott legalább 3000 m-t idén?
 # minta: Idén 3 diák futott legalább 3000 m-t.
 # minta: Idén senki nem futott legalább 3000 m-t.
+idei_haromezret_lefutott=0
+for i in range(adatok_szama):
+        if iden[i]>=3000:
+            idei_haromezret_lefutott+=1
+            
+if idei_haromezret_lefutott>=1:
+    print(f'Idén {idei_haromezret_lefutott} diák futott legalább 3000 m-t.')
 
-
+else:
+    print(f'Idén senki nem futott legalább 3000 m-t.')
 # --------------------------------------------------------------------------------------------------------
 # 4. feladat: mennyi volt a legjobb futó eredménye idén és ki futotta azt?
 # minta-könnyített: Az idei legjobb eredmény 3450 m volt.
 # minta: Az idei legjobb eredményt Mák Áron érte el 3450 m-es távval.
-
+idei_max=iden[0]
 
 # --------------------------------------------------------------------------------------------------------
 # 5. feladat: mennyi volt a legnagyobb javítás és ki követte el (azaz az idei-tavalyi eredmény maximális értéke)?
