@@ -46,12 +46,24 @@ else:
 # minta-könnyített: Az idei legjobb eredmény 3450 m volt.
 # minta: Az idei legjobb eredményt Mák Áron érte el 3450 m-es távval.
 idei_max=iden[0]
+idei_max_index=0
+for i in range(adatok_szama):
+     if idei_max<iden[i]:
+          idei_max=iden[i]
+          idei_max_index=i
+print(f'Az idei legjobb eredményt {nev[idei_max_index]} érte el {idei_max} m-es távval.')
 
 # --------------------------------------------------------------------------------------------------------
 # 5. feladat: mennyi volt a legnagyobb javítás és ki követte el (azaz az idei-tavalyi eredmény maximális értéke)?
 # minta-könnyített: A legnagyobb javítás 231 m volt.
 # minta: A legtöbbet Gáz Áron javított, ő tavaly 2345 m-t futott, idén 2645 m-t, így 3005 m-t javított az eredményén.# # minta-extra: A legnagyobb javítás 234 m volt, megyet Gáz Áron, Szabó Miklós és Kiss Rozália követett el.
-
+max_javitas=iden[0]-tavaly[0]
+max_javitas_index=0
+for i in range(adatok_szama):
+     if max_javitas<iden[i]-tavaly[i]:
+        max_javitas=iden[0]-tavaly[0] 
+        max_javitas_index=i
+print(f'A legtöbbet {nev[max_javitas_index]} javított, ő tavaly {tavaly[max_javitas_index]} m-t futott, idén {iden[max_javitas_index]} m-t, így {max_javitas} m-t javított az eredményén.')
 
 # --------------------------------------------------------------------------------------------------------
 # 6. feladat: listázd ki az idei 3000 m felett teljesítőket
@@ -65,7 +77,9 @@ idei_max=iden[0]
 # Kis Miska    3251
 # Kő Pál       3423
 # ...
-
+for i in range(adatok_szama):
+     if iden[i]>3000:
+          print(f'{nev[i]}\t{iden[i]}')
 # minta-extra (rendezett): 
 # Mekk Elek    3670
 # Kis Miska    3460 (-210)
