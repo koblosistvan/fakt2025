@@ -4,6 +4,7 @@ def fe(n):
 ora = []
 perc = []
 mp = []
+ido = []
 seb = []
 rendszam = []
 with open(r"Ódor Artúr\python\kozut\kozut.txt", mode="r", encoding="utf-8") as f:
@@ -13,6 +14,7 @@ with open(r"Ódor Artúr\python\kozut\kozut.txt", mode="r", encoding="utf-8") as
         ora.append(int(adat[0]))
         perc.append(int(adat[1]))
         mp.append(int(adat[2]))
+        ido.append(int(adat[0])*3600 + int(adat[1])*60 + int(adat[2]))
         seb.append(int(adat[3]))
         rendszam.append(adat[4])
 
@@ -51,6 +53,15 @@ with open(fr"Ódor Artúr\python\kozut\{fajl_nev}.txt", mode="w", encoding="utf-
             print(f"{ora[i]}:{perc[i]}:{mp[i]}\t{rendszam[i]}\t{seb[i]}", file= f)
 print(f"A 30 km/h-nál lassabb autók adatai eltárolva a {fajl_nev} fájlban")
 
+fe(7)
+for i in range(adatok_sz-1):
+    if seb[i] > 90 and seb[i+1] > 90:
+        print("Volt olyan hogy egymásután többen 90-nél többel mentek.")
+        break
+else:
+    print("Nem volt olyan hogy egymásután többen 90-nél többel mentek volna")
+
+
 fe(6)
 fajl_nev="kozut-rendezett"
 with open(fr"Ódor Artúr\python\kozut\{fajl_nev}.txt", mode="w", encoding="utf-8") as f:
@@ -79,10 +90,10 @@ with open(fr"Ódor Artúr\python\kozut\{fajl_nev}.txt", mode="w", encoding="utf-
 
 print(f"Az 50 km/h-nál gyorsabb autók adatai eltárolva a {fajl_nev} fájlban")
 
-fe(7)
 
 fe(8)
 tobbszor_ath = []
+ilyen_ido = []
 for i in range(adatok_sz):
     if rendszam[i] not in tobbszor_ath:
         for n in range(i+1, adatok_sz):
@@ -95,3 +106,13 @@ for i in range(len(tobbszor_ath)):
         if tobbszor_ath[i] == rendszam[n]:
             print(f"{ora[n]}:{perc[n]}:{mp[n]}\t",end="")
     print("\n")
+    
+fe(9)
+
+fe(10)
+for a in rendszam:
+    if len(a)== 9:
+        print("Van új rendszám formátumú autó az adatokban")
+        break
+else:
+    print("nincs új rendszám formátumú autó az adatokban.")
