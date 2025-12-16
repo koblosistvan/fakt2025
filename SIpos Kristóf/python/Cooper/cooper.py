@@ -44,6 +44,7 @@ print(f'Idén {legalabb_futott_3000_metert} diák futott legalább 3000 métert.
 # 4. feladat: mennyi volt a legjobb futó eredménye idén és ki futotta azt?
 # minta-könnyített: Az idei legjobb eredmény 3450 m volt.
 # minta: Az idei legjobb eredményt Mák Áron érte el 3450 m-es távval.
+
 legnagyobb_tavolsag=0
 legnagyobbat_futo_ember=str(0)
 for i in range(reszt_vett_diakok-1):
