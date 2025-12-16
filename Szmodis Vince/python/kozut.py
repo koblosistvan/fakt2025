@@ -47,4 +47,31 @@ for i in range(adatok_szama):
     ossz+=sebesseg[i]
 print(f'Az áthaladó autók átlagsebessége {round(ossz/adatok_szama,2)} km/h volt.')
 
+kimenet=open('Szmodis Vince\\python\\kozut-kimenet.txt', mode='w', encoding='utf-8')
+for i in range(adatok_szama):
+    if sebesseg[i]<30:
+        kimenet.write(f'{ora[i]}:{perc[i]}:{masodperc[i]} - {rendszam[i]} - {sebesseg[i]}\n')
+kimenet.close
+
+rendezett=open('Szmodis Vince\\python\\kozut-rendezett.txt', mode='w',encoding='utf-8')
+for i in range(adatok_szama):
+    if sebesseg[i]>50:
+        
+        rendezett.write(f'{ora[i]}:{perc[i]}:{masodperc[i]} - {rendszam[i]} - {sebesseg[i]}\n')
+rendezett.close
     
+f(7)
+for i in range(adatok_szama-1):
+    if sebesseg[i]>90 and sebesseg[i+1]>90:
+        print('Volt utcai verseny')
+        break
+    else:
+        print('Nem volt utcai verseny')
+        break
+
+'''
+tobbszor=[]
+tobbszor_index=[]
+for i in range(adatok_szama):
+    if rendszam[i]
+'''
