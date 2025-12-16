@@ -1,5 +1,4 @@
 
-from random import randint
 
 def bubblesort(arr, key=lambda x:x):
 	ret = arr # .copy()
@@ -9,28 +8,7 @@ def bubblesort(arr, key=lambda x:x):
 				ret[j], ret[j+1] = ret[j+1], ret[j]
 	return ret
 
-"""
-def __quicksort_part(arr, l, h, key: callable = None):
-	if key is None:
-		key = lambda x: x
-	
-	p = key(arr[h])
-
-	i = l
-
-	for j in range(l, h):
-		if key(arr[j]) <= p:
-			arr[i], arr[j] = arr[j], arr[i]
-			i += 1
-	
-	arr[i], arr[h] = arr[h], arr[i]
-	return i
-"""
-
-def quicksort_part(arr, l, h, key = None):
-	if key is None:
-		key = lambda x: x
-	
+def quicksort_part(arr, l, h, key):
 	p = key(arr[l])
 
 	i = l - 1
@@ -50,7 +28,7 @@ def quicksort_part(arr, l, h, key = None):
 		
 		arr[i], arr[j] = arr[j], arr[i]
 
-def quicksort(arr, l = 0, h = None, key = None):
+def quicksort(arr, l = 0, h = None, key = lambda x: x):
 	if h is None:
 		h = len(arr)-1
 	
@@ -59,13 +37,17 @@ def quicksort(arr, l = 0, h = None, key = None):
 	
 	p = quicksort_part(arr, l, h, key=key)
 
-	quicksort(arr, l, p-1, key=key)
+	quicksort(arr, l, p, key=key)
 	quicksort(arr, p+1, h, key=key)
 
-"""
-data = [randint(0,100) for i in range(100)]
 
-quicksort(data, key=lambda x: -x)
+
+"""
+from random import randint
+data = [randint(0,100) for i in range(100)]
+print(data)
+
+quicksort(data)
 
 # print(quicksort(data))
 print(data)
