@@ -9,29 +9,49 @@
 
 # --------------------------------------------------------------------------------------------------------
 # 1. feladat: adatok beolvasása és tárolása
-with open(r"_Feladatok\python\Cooper\cooper.txt", mode="r", encoding="utf-8") as f:
-    nev, tavaly, iden = f.readline()
-    for sor in f:
-        adat = sor
-        nev.append(adat[0])
-        tavaly.append(adat[1])
-        iden.append(adat[2])
-print(nev)
+forras=open('Sipos Kristóf\\python\\Cooper\\cooper.txt', mode='r', encoding='utf-8')
+forras.readline()
+nev=[]
+tavaly=[]
+iden=[]
+for sor in forras:
+    adat = sor.strip().split('\t')
+    nev.append(adat[0])
+    tavaly.append(int(adat[1]))
+    iden.append(int(adat[2]))
+forras.close
+
+
 # --------------------------------------------------------------------------------------------------------
 # 2. feladat: hány diák vett részt a teszten
 # minta: A teszten 12 diák vett részt.
+
+reszt_vett_diakok=len(iden)
+
+print(f'{reszt_vett_diakok} diák vett részt a teszten')
 
 
 # --------------------------------------------------------------------------------------------------------
 # 3. feladat: hány diák futott legalább 3000 m-t idén?
 # minta: Idén 3 diák futott legalább 3000 m-t.
 # minta: Idén senki nem futott legalább 3000 m-t.
-
-
+legalabb_futott_3000_metert=0
+for i in range(reszt_vett_diakok):
+    if iden[i] >= 3000:
+        legalabb_futott_3000_metert+=1
+print(f'Idén {legalabb_futott_3000_metert} diák futott legalább 3000 métert.')
 # --------------------------------------------------------------------------------------------------------
 # 4. feladat: mennyi volt a legjobb futó eredménye idén és ki futotta azt?
 # minta-könnyített: Az idei legjobb eredmény 3450 m volt.
 # minta: Az idei legjobb eredményt Mák Áron érte el 3450 m-es távval.
+
+legnagyobb_tavolsag=0
+legnagyobbat_futo_ember=str(0)
+for i in range(reszt_vett_diakok-1):
+    if iden[i] > legnagyobb_tavolsag:
+        legnagyobb_tavolsag=iden[i]
+        legnagyobbat_futo_ember=nev[i]
+print(f'A legnagyobb távolság {legnagyobb_tavolsag} méter volt és {legnagyobbat_futo_ember} futotta azt.')
 
 
 # --------------------------------------------------------------------------------------------------------
