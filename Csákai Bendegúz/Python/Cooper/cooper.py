@@ -9,14 +9,8 @@
 
 # --------------------------------------------------------------------------------------------------------
 # 1. feladat: adatok beolvasása és tárolása
-with open(r"_Feladatok\python\Cooper\cooper.txt", mode="r", encoding="utf-8") as f:
-    nev, tavaly, iden = f.readline()
-    for sor in f:
-        adat = sor
-        nev.append(adat[0])
-        tavaly.append(adat[1])
-        iden.append(adat[2])
-print(nev)
+
+
 # --------------------------------------------------------------------------------------------------------
 # 2. feladat: hány diák vett részt a teszten
 # minta: A teszten 12 diák vett részt.
@@ -37,7 +31,8 @@ print(nev)
 # --------------------------------------------------------------------------------------------------------
 # 5. feladat: mennyi volt a legnagyobb javítás és ki követte el (azaz az idei-tavalyi eredmény maximális értéke)?
 # minta-könnyített: A legnagyobb javítás 231 m volt.
-# minta: A legtöbbet Gáz Áron javított, ő tavaly 2345 m-t futott, idén 2645 m-t, így 3005 m-t javított az eredményén.# # minta-extra: A legnagyobb javítás 234 m volt, megyet Gáz Áron, Szabó Miklós és Kiss Rozália követett el.
+# minta: A legtöbbet Gáz Áron javított, ő tavaly 2345 m-t futott, idén 2645 m-t, így 3005 m-t javított az eredményén.# 
+# minta-extra: A legnagyobb javítás 234 m volt, megyet Gáz Áron, Szabó Miklós és Kiss Rozália követett el.
 
 
 # --------------------------------------------------------------------------------------------------------
