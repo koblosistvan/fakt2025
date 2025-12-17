@@ -27,7 +27,7 @@ graf = {
 graf = {}
 szomszedok = [
     (-1, 0),
-    (0,-1),
+    (0, -1),
     (0, 1),
     (1, 0),
 ]
@@ -49,4 +49,4 @@ for sor in range(1, magassag-1):
             if én == UT and szomszed == UT:
                 uj_el((sor, oszlop), (sor + sz[0], oszlop + sz[1])) 
 
-print(graf)   
+print(graf)
