@@ -1,6 +1,15 @@
-forras = open('_Megoldások\\Szakkör\\Labirintus\\labirintus.txt', mode='r', encoding='utf-8')
+FAL = '#'
+UT = ' '
+
+forras = open('_Megoldások\\Szakkör\\Labirintus\\labirintus-42-41x41.txt', mode='r', encoding='utf-8')
 adat = forras.readline().strip().split()
 magassag, szelesseg = int(adat[0]), int(adat[1])
+
+adat = forras.readline().strip().split()
+kijarat = ( int(adat[0]), int(adat[1]) )
+
+adat = forras.readline().strip().split()
+start = ( int(adat[0]), int(adat[1]) )
 
 labirintus = []
 for _ in range(magassag):
@@ -25,11 +34,10 @@ szomszedok = [
 
 
 def uj_el(a, b):
-    if a in graf:
-        graf[a].append(b)
-    else:
-        graf[a] = [b]
-
+    if a not in graf:
+        graf[a] = []
+    graf[a].append(b)
+    
 
 for sor in range(1, magassag-1):
     for oszlop in range(1, szelesseg-1):
@@ -37,8 +45,8 @@ for sor in range(1, magassag-1):
         for sz in szomszedok:
             én = labirintus[sor][oszlop]
             szomszed = labirintus[sor + sz[0]][oszlop + sz[1]]
-            # én is '.' vagyok és a szomszéd is, akkor élt találtam
-            if én == '.' and szomszed == '.':
-                uj_el(sor*10 + oszlop, (sor + sz[0])*10 + oszlop + sz[1]) 
+            # én is UT vagyok és a szomszéd is, akkor élt találtam
+            if én == UT and szomszed == UT:
+                uj_el((sor, oszlop), (sor + sz[0], oszlop + sz[1])) 
 
 print(graf)   

@@ -1,5 +1,5 @@
 import random
-WALL = '█'
+WALL = '#'
 PATH = ' '
 
 # -----------------------------
@@ -86,6 +86,6 @@ def generate_kruskal_maze(width=41, height=41, seed=None):
 width, height, seed = 41, 41, 42
 path = '_Megoldások\\Szakkör\\Labirintus\\'
 maze = generate_kruskal_maze(width, height, seed)
-with open(path + f'labitintus-{seed}-{width}x{height}.txt', mode='w', encoding='utf-8') as f:
+with open(path + f'labirintus-{seed}-{width}x{height}.txt', mode='w', encoding='utf-8') as f:
     print(f'{width} {height}', file=f)
     [print(line, file=f) for line in maze]
