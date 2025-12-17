@@ -17,6 +17,7 @@ for sor in forras:
     nev.append(str(adat[0]))
     tavaly.append(int(adat[1]))
     iden.append(int(adat[2]))
+forras.close
 
 # --------------------------------------------------------------------------------------------------------
 # 2. feladat: hány diák vett részt a teszten
@@ -49,13 +50,17 @@ for i in range(len(nev)):
         legnagyobb_idex = i
 print(f"Az idei legnagyobb eredményt {nev[legnagyobb_idex]} érte el {legnagyobb} m-es távval.")
 
-
 # --------------------------------------------------------------------------------------------------------
 # 5. feladat: mennyi volt a legnagyobb javítás és ki követte el (azaz az idei-tavalyi eredmény maximális értéke)?
 # minta-könnyített: A legnagyobb javítás 231 m volt.
 # minta: A legtöbbet Gáz Áron javított, ő tavaly 2345 m-t futott, idén 2645 m-t, így 3005 m-t javított az eredményén.# # minta-extra: A legnagyobb javítás 234 m volt, megyet Gáz Áron, Szabó Miklós és Kiss Rozália követett el.
-
-
+javitas = 0
+jav_index = 0
+for i in range(len(iden)):
+    if iden[i] - tavaly[i] > javitas:
+        javitas = iden[i] - tavaly[i]
+        jav_index = i
+print(f"A legtöbbet {nev[jav_index]} javított, ő tavaly {tavaly[jav_index]} m-t futott, idén {iden[jav_index]} m-t, így {javitas} m-t javított az eredményén. ")
 # --------------------------------------------------------------------------------------------------------
 # 6. feladat: listázd ki az idei 3000 m felett teljesítőket
 # minta-könnyített: 
@@ -68,7 +73,9 @@ print(f"Az idei legnagyobb eredményt {nev[legnagyobb_idex]} érte el {legnagyob
 # Kis Miska    3251
 # Kő Pál       3423
 # ...
-
+for i in range(len(iden)):
+    if iden[i] > 3000:
+        print(f"{nev[i]}    {iden[i]}")
 # minta-extra (rendezett): 
 # Mekk Elek    3670
 # Kis Miska    3460 (-210)
