@@ -35,7 +35,7 @@ f(2)
 össz_ut_3 = 0
 
 for i in range(megtett_ut):
-    if nap[i] == 3:
+      if nap[i] == 3:
         össz_ut_3 += km[i]
 
 print(f'A harmadik napon összesen {össz_ut_3} km-t tett meg.')
