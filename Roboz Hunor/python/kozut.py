@@ -2,7 +2,6 @@ forras = open('_Feladatok\\python\\Közúti ellenőrzés\\kozut.txt',mode = 'r',
 sorok_szama = int(forras.readline())
 
 ora,perc,mp,seb,rendsz = [],[],[],[],[]
-
 for sor in forras:
     adat = sor.strip().split()
     ora.append(int(adat[0]))
@@ -89,19 +88,18 @@ for i in range(sorok_szama):
     a[rendsz[i]].append(ido)
 
 
-'''for i in range(len(a)):
-    rendszam = a[i]
-    if len(a[rendszam]) > 1:
+for rendszam in a:
+    if len(a[rendszam]) > 2:
         print(rendszam, a[rendszam])
     
-    '''
+
 f(9)    
 
-
-min_ido = 100000
+def ido_ertek(o, p, mp):
+    return o*3600 + p*60 + mp
 
 for i in range(sorok_szama-1):
-    t_ido = (ora[i+1]*3600 + perc[i+1]*60 + mp[i+1]) - (ora[i]*3600 + perc[i]*60 + mp[i]) 
+    t_ido = ido_ertek(ora[i+1], perc[i+1], mp[i+1]) - (ora[i]*3600 + perc[i]*60 + mp[i]) 
     if t_ido < min_ido:
         min_ido = t_ido
 print(f'A legrövidebb áthaladás {min_ido} másodperc alatt történt')
@@ -114,9 +112,19 @@ for i in range(sorok_szama):
     for k in range(len(b)):
         if b[k] == '-':
             db_kotojel += 1
-    if db_kotojel == 3:
+    if db_kotojel == 2:
         print('Van új rendszám a listában')
         break
 else:print('Nincs új rendszám a listában')
+karakterek = {
+    'A': 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
+    '0': '0123456789',
+    '-': '-'
+}
 
+maszk = 'AA-AA-000'
+for i in range(len(maszk)):
+    if rsz[i] in karakterek[maszk[i]]:
+        ok
 
+    
