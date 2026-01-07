@@ -63,4 +63,4 @@ while len(sor) > 0:
         if tavolsag[csucs] < min_tav:
             min_csucs = csucs
             min_tav = tavolsag[csucs]
-
+    sor.remove(min_csucs)
