@@ -1,0 +1,42 @@
+#bevezető {
+    background-color: lightgray;
+    padding: 20px 10px ;
+    width: 600px;
+    margin: 10px auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    text-align: center;
+}
+figcaption {
+    text-align: center;
+}
+figure {
+    margin: 0 auto;
+}
+h1 {
+    color: brown;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.figura {
+    font-style: italic;
+    font-weight: bold;
+    color: #89605a;
+}
+table, th, td {
+    border: 1px solid darkgray;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px
+}
+table > caption {
+    font-weight: bold;
+    color: maroon;
+    font-size: 1.1em;
+    border-bottom: 5px;
+}
