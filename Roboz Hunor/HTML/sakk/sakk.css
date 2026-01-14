@@ -1,0 +1,43 @@
+#bevezeto {
+    background-color: rgb(216, 216, 216);
+    padding: 20px 10px;
+    width: 600px;
+    margin: 10px auto;
+border: 2px solid black;
+border-radius: 20px;
+}
+
+h1 {
+    color: maroon;
+}
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.figura {
+    font-style: italic;
+    font-weight: bold;
+    color: #89605a;
+}
+figcaption {
+    text-align: center;
+}
+
+table, td, th {
+    border: 3px solid rgb(168, 18, 228);
+    border-collapse: collapse;
+}
+
+th,td {
+    padding: 5px;
+    text-align: center;
+
+}
+table > caption {
+    font-weight: bold;
+    color: rgb(0, 255, 157);
+}
+
+
+
