@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sakk</title>
+    <link rel="stylesheet" href="sakk.css">
 </head>
 
 <body>
-    <h1>A sakk bemutatása</h1>
-    <p> <i>Ez az oldal a kedvenc játékomról, a sakkról szól, amelyhez sok személyes élményem is kötődik.
-            <video width="300px" src="media/sakk.mp4" alt="Video" controls></i></p>
-
+    <div id="bevezeto">
+        <h1>A sakk bemutatása</h1>
+        <p> <i>Ez az oldal a kedvenc játékomról, a sakkról szól, amelyhez sok személyes élményem is kötődik.<br>
+                <video width="500px" src="media/sakk.mp4" alt="Video" controls></i></p>
+    </div>
     <h2>A játékról</h2>
     <p>A sakk <b>táblajáték</b> két személy részére, és egyben <b>sportág</b> is. A „sakk” szó nemcsak a játékot
         jelenti, hanem azt a helyzetet is, amikor az ellenfél királya „ütésben van”.</p>
@@ -25,17 +27,17 @@
     A tábla mindig akkor áll helyesen, ha a bal alsó sarokban sötét, a jobb alsóban pedig világos színű mező van.
     Vízszintesen az 1-től 8-ig, arab számokkal jelölt sorok, függőlegesen az a–h betűkkel azonosított vonalak vannak.
     <h2>A figurák</h2>
-    <p><img src="media/figurak.png" alt="A sakkbábukat (gyalog, huszár, bástya, futó, vezér, király) bemutató kép"
-            titel="Csákai Bendegríz"></p>
-    <p>Sakkbábuk: gyalog, huszár, bástya, futó, vezér, király</p>
-    <p>A játék kezdetén a világosnak és a sötétnek ugyanannyi figurája van:</p>
-    <p>1–1 király, </p>
-    <p>1–1 vezér (alternatív neve: „királynő”), </p>
-    <p>2–2 bástya (alternatív neve: „torony”), </p>
-    <p>2–2 huszár (alternatív neve: „ló”), </p>
-    <p>2–2 futó </p>
-    <p>8–8 gyalog (alternatív neve: „paraszt”). </p>
-    <p>A figurák kiindulási helyzetét, illetve mozgatásuk lehetőségeit a játék szabálya határozza meg.</p>
+        <p><img src="media/figurak.png" alt="A sakkbábukat (gyalog, huszár, bástya, futó, vezér, király) bemutató kép"
+                titel="Csákai Bendegríz"></p>
+        <p>Sakkbábuk: gyalog, huszár, bástya, futó, vezér, király</p>
+        <p>A játék kezdetén a világosnak és a sötétnek ugyanannyi figurája van:</p>
+            <li>1–1<span class="figura"> király,</snap></li>
+            <li>1–1<span class="figura"> vezér (alternatív neve: „királynő”),</snap></li>
+            <li>2–2<span class="figura"> bástya (alternatív neve: „torony”),</snap></li>
+            <li>2–2<span class="figura"> huszár (alternatív neve: „ló”),</snap></li>
+            <li>2–2<span class="figura"> futó</snap></li>
+            <li>8–8<span class="figura"> gyalog (alternatív neve: „paraszt”). </snap></li>
+        <p>A figurák kiindulási helyzetét, illetve mozgatásuk lehetőségeit a játék szabálya határozza meg.</p>
     <h2>A játszma kimenetele</h2>
     <p>A játszma valamelyik fél győzelmével ér véget:</p>
     <ul>
@@ -63,8 +65,9 @@
     <h2>Minősítés</h2>
     <p>A klasszikus sakkjátékban nemzetközileg elismert címet csak a Nemzetközi Sakkszövetség (FIDE) adhat, mégpedig a
         következőket:</p>
-    <p>A FIDE által adott címek</p>
+    
     <table>
+        <caption>A FIDE által adott címek</caption>
         <tr>
             <th>Megnevezés</th>
             <th>Rövidítés</th>
