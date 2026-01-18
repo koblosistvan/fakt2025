@@ -14,3 +14,4 @@ if Y_or_N == 1:
         print(f'Feltölthetsz 50€-t és az {Euro*50} FT-ba fog kerülni és ennyi pénz marad még a számládon {pénzem-Euro*50}. 50€ ??? Csávó csöves leszel.')
 else:
     print('Több pénz fog maradni most a számládon.')
+
