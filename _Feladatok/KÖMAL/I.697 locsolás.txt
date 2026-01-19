@@ -1,0 +1,31 @@
+I. 679. Egy kisváros utcáin és terein a meleg nyári napokon a fákat és más köztéri növényeket 
+locsolják. A modern locsolókocsi adatrögzítője feljegyzi, hogy az egyes növényeknél hány liter 
+vizet használt fel a kertész.
+
+Készítsünk programot i679 néven, amely megadja a locsolási adatok átlagát, móduszát, mediánját 
+és az éppen ennyit fogyasztó első növények sorszámát, valamint, hogy hány növény locsolásánál 
+használtak fel éppen ennyi vizet.
+
+A program standard bemenetének első sorában a meglocsolt növények N száma (1≤N≤1000) és egy 
+növény locsolásához felhasznált víz maximális M térfogata (1≤M≤200) literben van szóközzel
+elválasztva. A következő sorban az N növény locsolásához felhasznált víz (1≤Vi≤M, egész szám)
+térfogata szerepel.
+
+A program standard kimenetére három sort írjunk ki, bennük az adatokat szóközzel elválasztva. 
+Az első sorba az átlagos locsolási térfogatot egész számra kerekítve, az első éppen átlagos 
+vízfogyasztó növény sorszámát, és hogy hány növényt locsoltak éppen ennyi vízzel. A második
+sorba írjuk ki a locsolási térfogatok móduszát (több módusz esetén a legkisebbet), valamint 
+az első ennyivel locsolt növény sorszámát, illetve összes számát. A harmadik sorban a 
+vízmennyiségek mediánja legyen, az első ennyi vízzel locsolt növény sorszáma, majd az éppen 
+ennyivel locsolt növények száma. Ha az adott középértéknek megfelelő vízzel egy növényt sem 
+locsoltak, akkor a második szám az adott sorban legyen −1.
+
+Pl:
+Bemenet
+11 100
+48 15 18 18 15 18 8 15 11 18 10
+
+Kimenet
+18 3 4
+18 3 4
+15 2 3
