@@ -1,0 +1,36 @@
+img, video, table {width:100%}
+
+body {
+    background-color: #fff8dc;
+    background-image: url('media/dart-hatter.jpg');
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div#oldal {
+    border-radius: 20px;
+    border: 4px;
+    border-color: #2c9030;
+    width: 75%;
+    min-width: 400px;
+    max-width: 1000px;
+    background-color: white;
+    margin: auto;
+    margin-top: 20px;
+}
+
+video,
+table {
+    margin: 10px;
+}
+
+
+table {
+    border: 4px double gray;
+}
+
+
+td,
+th {
+    padding      : 5px;
+    border-bottom: 1px dotted gray;
+}

@@ -1,0 +1,21 @@
+Darts
+Kezdőlap Ranglista
+
+Ez az oldal a kedvenc sportomról, a dartsról szól. Az oldalon a játékról és a szakágakról olvashatsz.
+
+A játékról
+Darts-tábla
+A darts angol eredetű játék és sport, melynek során apró nyilakkal dobnak egy kör alakú céltábla különböző pontértékű szektoraira. A játék célja a versenyszabályban meghatározott számú leget nyerni. Egy leg az 501 pontról indul, és a játékos által dobott pontot mindig kivonják a maradék pontjaiból. Aki először éri el a 0 pontot úgy, hogy az utolsó dobás dupla szektort talál, megnyerte a leget.
+
+A játékosok felváltva dobnak körönként 3-3 nyilat. A dobás értékét a nyíl által eltalált szektor száma adja meg.
+
+A dartsban legeket és szetteket kell nyerni. A legtöbb versenyen egy nyert leg automatikusan egy megnyert szettnek számít, a világbajnokságokon viszont három leg után nyer a versenyző egy szettet. Az előre meghatározott számú szettet nyerő játékos nyeri a mérkőzést.
+
+Szakágak
+A dartsban két szakágat különböztetnek meg a tábla és a nyilak anyagától függően.
+
+Steel darts:
+fémhegyű (steel = acél) nyíllal szizál (vagy ritkábban egyéb anyagú) táblára dobnak.
+Soft darts:
+A játékosok automata gépekre játszanak műanyag hegyű nyilakkal.
+Mivel a nemzetközi versenyeken és a vb-n is fémhegyű nyilakkal játszanak, a steel dartsot egyszerűen a darts szóval azonosítják.
