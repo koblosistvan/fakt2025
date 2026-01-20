@@ -1,0 +1,42 @@
+img, video, table {width:100%}
+
+body {
+    background-color: #fff8dc;
+    background-image: url(media/dart-hatter.jpg);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+div#oldal {
+    border-radius: 20px;
+    background-color: white;
+    width: 75%;
+    min-width: 400px;
+    max-width: 1000px;
+    margin: 0 auto;
+    border:4px solid #2C9030;
+    padding: 0px 20px;
+    background-image: url(media/dart-nyil.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+video,
+table {
+    margin: 10px;
+}
+
+
+table {
+    border: 4px double gray;
+}
+
+
+td,
+th {
+    padding      : 5px;
+    border-bottom: 1px dotted gray;
+}
+p {
+    text-align: justify;
+}
