@@ -1,0 +1,26 @@
+img, video, table {width:100%}
+
+body {
+    background-color: #fff8dc;
+}
+
+div#oldal {
+    border-radius: 20px;
+}
+
+video,
+table {
+    margin: 10px;
+}
+
+
+table {
+    border: 4px double gray;
+}
+
+
+td,
+th {
+    padding      : 5px;
+    border-bottom: 1px dotted gray;
+}
