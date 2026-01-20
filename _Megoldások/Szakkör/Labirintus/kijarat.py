@@ -49,4 +49,67 @@ for sor in range(1, magassag-1):
             if én == UT and szomszed == UT:
                 uj_el((sor, oszlop), (sor + sz[0], oszlop + sz[1])) 
 
-print(graf)
+# print(graf)
+
+'''
+ 3      for each vertex v in Graph.Vertices:
+ 4          dist[v] ← INFINITY
+ 5          prev[v] ← UNDEFINED
+ 6          add v to Q
+ 7      dist[source] ← 0
+'''
+tavolsag = {csucs: 1000 for csucs in graf}
+elozo = {csucs: None for csucs in graf}
+sor = [start]
+kesz = []
+tavolsag[start] = 0
+
+'''
+ 9      while Q is not empty:
+10          u ← vertex in Q with minimum dist[u]
+11          Q.remove(u)
+'''
+
+while len(sor) > 0:
+    akt_csucs = sor[0]
+    akt_tav = tavolsag[akt_csucs]
+    for csucs in sor:
+        if tavolsag[csucs] < akt_tav:
+            akt_csucs = csucs
+            akt_tav = tavolsag[csucs]
+    sor.remove(akt_csucs)
+    kesz.append(akt_csucs)      
+
+    for szomszed in graf[akt_csucs]:
+        tav = tavolsag[akt_csucs] + 1
+        if tav < tavolsag[szomszed]:
+            tavolsag[szomszed] = tav
+            elozo[szomszed] = akt_csucs
+        if szomszed not in kesz:
+            sor = sor + [szomszed]
+'''         
+13          for each arc (u, v) in Q:
+14              alt ← dist[u] + Graph.Edges(u, v)
+15              if alt < dist[v]:
+16                  dist[v] ← alt
+17                  prev[v] ← u
+18
+19      return dist[], prev[]] 
+'''
+
+ut = []
+akt_csucs = kijarat
+while akt_csucs != start:
+    ut = [akt_csucs] + ut
+    akt_csucs = elozo[akt_csucs]
+ut = [akt_csucs] + ut
+
+utvonal = open('_Megoldások\\Szakkör\\Labirintus\\utvonal.txt', mode='w', encoding='utf-8')
+for sor in range(magassag):
+    for oszlop in range(szelesseg):
+        if (sor, oszlop) in ut:
+            print('o', end='', file=utvonal)
+        else:
+            print(labirintus[sor][oszlop], end='', file=utvonal)
+    print(file=utvonal)
+print(ut)
