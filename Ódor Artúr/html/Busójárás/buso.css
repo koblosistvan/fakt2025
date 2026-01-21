@@ -1,0 +1,68 @@
+body {
+    background-color: #FFF5E8;
+    max-width: 1000px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+    margin: auto;
+    color: saddlebrown;
+}
+
+footer {
+    background-color: chocolate;
+    padding: 30px 10px;
+    border-radius: 5px;
+    background-image: url(buso_logo.png) ;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+h1, h2 {
+    color: darkorange;
+}
+
+img {
+    min-width: 300px;
+    max-width: 1000px;
+    width: 35%;
+    margin: 20px;
+    border: 3px solid white;
+    border-radius: 3px;
+}
+
+li {
+    list-style-image: url("jel.png");
+    margin: 20px 0;
+}
+
+#buso {
+    float: left;
+    margin-left: 0;
+}
+
+#jankele {
+    float: right;
+    margin-right: 0;
+}
+
+img#header {
+    width: 100%;
+    border: 0;
+    margin: 0;
+}
+
+#logo {
+    float: right;
+}
+
+p::first-letter {
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+

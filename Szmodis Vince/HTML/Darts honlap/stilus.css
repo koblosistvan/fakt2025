@@ -2,13 +2,14 @@ img, video, table {width:100%}
 
 body {
     background-color: #fff8dc;
-    background-image: url("media/dart-hatter.jpg");
+    background-image: url('media/dart-hatter.jpg');
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-p{
+p {
     text-align: justify;
 }
+
 div#oldal {
     border-radius: 20px;
     background-color: white;
@@ -18,7 +19,7 @@ div#oldal {
     margin: 0 auto;
     border: 4px solid #2c9030;
     padding: 0 20px;
-    background-image: url("media/dart-nyil.png");
+    background-image: url('media/dart-nyil.png');
     background-repeat: no-repeat;
     background-position: top right;
 }
@@ -45,22 +46,23 @@ h1{
     font-size: 48;
     color: #fd4722;
 }
+
 h2{
     color: #2c9030;
 }
 
 #menu{
+    background-color: rgb(255, 255, 170);
+    font-size: 1.2em;
+    padding: 20;
     font-weight: bold;
     font-style: italic;
     text-align: center;
-    padding: 20px;
-    font-size: 1.2em;
-    background-color: rgb(255, 255, 170);
 }
 
 #tabla{
     float: left;
-    margin: 10px 10px 10px 0;
+    margin: 10px, 10px, 10px, 0;
     width: 150px;
     text-align: center;
 }
