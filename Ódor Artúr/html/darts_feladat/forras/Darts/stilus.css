@@ -4,11 +4,48 @@ body {
     background-color: #fff8dc;
     background-image: url('media/dart-hatter.jpg');
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0px 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+    color: #fd4722 ;
+}
+
+p {
+    text-align: justify;
+}
+
+h2 {
+    color: #2c9030;
+}
+
+#tabla{
+    float: left;
+    margin: 10px 10px 10px 0px;
+    width: 150px;
+    text-align: center;
+}
+
+.fontos {
+    color: darkorange;
+    font-weight: bold;
+
+}
+
+#menu {
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    font-size: 120%;
+    background-color: rgb(255, 255, 170);
 }
 
 div#oldal {
     border-radius: 20px;
-    border: 4px;
+    border: 10px;
     border-color: #2c9030;
     width: 75%;
     min-width: 400px;
@@ -16,6 +53,7 @@ div#oldal {
     background-color: white;
     margin: auto;
     margin-top: 20px;
+    padding: 0px 20px;
 }
 
 video,
