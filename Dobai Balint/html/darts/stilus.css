@@ -1,0 +1,25 @@
+body{
+    background-color: white;
+    background-image: url('media/dart-hatter.jpg');
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+
+p{
+    text-align: justify;
+}
+
+div#oldal{
+    border-radius: 20px;
+    background-color: white;
+    width: 75%;
+    min-width: 400ox;
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 4px solid #2c9030 ;
+    padding: 0 20px;
+    background-image: url('media/dart-nyil.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+}
