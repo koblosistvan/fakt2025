@@ -1,0 +1,48 @@
+#buso {
+    float: left;
+    margin: 0px 10px 10px 0;
+}
+#jankele {
+    float: right;
+    margin: 0px 0 10px 10px;
+}
+body {
+    background-color: #FFF5E8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    color: saddlebrown;
+    margin: 0 auto;
+    max-width: 1000px;;
+}
+h1, h2 {
+color: burlywood;
+}
+#buso, #jankele {
+    min-width: 300px;
+    max-width: 1000px;
+    border: 4px solid white;
+    border-radius: 2px;
+}
+
+li{
+    list-style-image: url(jel.png);
+    margin: 20px 0;
+}
+
+img#header {
+    width: 100%;
+}
+
+
+
+footer {
+    background-color: wheat;
+    padding: 30px 10px;
+    background-image: url(buso_logo.png);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+p::first-letter {
+    margin-left: 20px;
+}
