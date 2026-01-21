@@ -21,7 +21,32 @@ div#oldal {
     background-repeat: no-repeat;
     background-position: top right;
 }
-
+h1 {
+    text-align: center;
+    font-size: 48;
+    color: #fd4722;
+}
+h2 {
+    color: #2c9030;
+}
+#menu {
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+    font-size: 120%;
+    background-color: rgb(255 255 170);
+}
+figure {
+    float: left;
+    margin: 10 10 10 0;
+    width: 150px;
+    text-align: center;
+}
+.fontos {
+    color: darkorange;
+    font-weight: bold;
+}
 video,
 table {
     margin: 10px;
