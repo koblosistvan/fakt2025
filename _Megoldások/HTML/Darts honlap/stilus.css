@@ -40,3 +40,34 @@ th {
     padding      : 5px;
     border-bottom: 1px dotted gray;
 }
+
+h1 {
+    text-align: center;
+    font-size: 48;
+    color: #fd4722;
+}
+
+h2 {
+    color: #2c9030;
+}
+
+#menu {
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2em;
+    background-color: rgb(255, 255, 170)
+}
+
+#tabla {
+    float: left;
+    margin: 10px 10px 10px 0px;
+    width: 150px;
+    text-align: center;
+}
+
+.fontos {
+    font-weight: bold;
+    color: darkorange;
+}
