@@ -1,0 +1,57 @@
+
+body {
+	font-family: sans-serif;
+	background: #FFF5E8;
+	color: saddlebrown;
+	text-align: justify;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1, h2 {
+	color: brown;
+	font-size: 1.5em;
+}
+
+.balra {
+	margin-right: 20px;
+	float: left;
+}
+
+.jobbra {
+	margin-left: 20px;
+	float: right;
+}
+
+.balra, .jobbra {
+	width: 10%;
+	min-width: 300px;
+	border: 5px solid white;
+	border-radius: 3px;
+}
+
+q {
+	font-style: italic;
+}
+
+li {
+	list-style: url("jel.png");
+	margin: 20px 0;
+}
+
+header>img {
+	width: 100%;
+}
+
+p::first-letter {
+	margin-left: 30px;
+}
+
+footer {
+	background: bisque;
+	padding: 25px;
+	background-image: url("buso_logo.png");
+	background-position: 100% 100%;
+	background-repeat: no-repeat;
+}

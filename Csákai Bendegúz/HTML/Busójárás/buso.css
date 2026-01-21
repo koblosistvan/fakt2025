@@ -1,0 +1,44 @@
+body {
+    background-color: #FFF5E8;
+    max-width: 1000px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    color: saddlebrown;
+    margin: 0 auto;
+}
+h1, h2 {
+    color: darkgoldenrod;
+}
+#egybuso {
+    float:left;
+    margin: 0 10px 10px 0; 
+}
+#jankele {
+    float:right;
+    margin: 0 0 10px 10px;
+}
+#egybuso, #jankele {
+    width: 300px;
+    border: 4px solid white;
+    border-radius: 1%;
+}
+li {
+    list-style-image: url('jel.png');
+    margin: 15px 0;
+}
+#maglya {
+    width: 100%;
+}
+#logo {
+    float: right;
+}
+footer {
+    background-color: wheat;
+    padding: 20px 10px;
+    background-image: url(buso_logo.png);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+p::first-letter {
+    margin-left: 20px ;
+}
