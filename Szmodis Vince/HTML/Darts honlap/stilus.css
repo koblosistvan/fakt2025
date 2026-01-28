@@ -71,3 +71,7 @@ h2{
     font-weight: bold;
     color: darkorange;
 }
+
+th, td,tr{
+    border: 2px solid black;
+}

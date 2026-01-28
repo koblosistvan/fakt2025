@@ -1,0 +1,15 @@
+table{
+  box-shadow: 5px 5px 7px #1D1D4E;
+  float: left;
+}
+
+td:first-child {
+  font-weight: bold;
+  text-align: right;
+}
+
+td:nth-child(2) {
+  font-style: italic;
+  text-align: left;
+}
+
