@@ -61,7 +61,7 @@ img {
   min-width: 300px;
   width: 505px;
 }
-
+.fejlec:first-child
 td:first-child {
   font-weight: bold;
   text-align: right;

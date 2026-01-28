@@ -21,6 +21,38 @@ div#oldal {
     background-position: top right;
 }
 
+h1 {
+text-align: center;
+font-size: 48px;
+color: #fd4722;
+}
+
+h2 {
+    color: #2C9030;
+}
+
+#menu {
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    font-size: 120%;
+    background-color: rgb(255, 255, 170);
+}
+
+#tabla {
+    float: left;
+    margin: 10px 10px 10px 0;
+    width: 150px;
+    text-align: center;
+}
+
+
+.fontos {
+    color: darkorange;
+    font-weight: bold;
+}
+
 video,
 table {
     margin: 10px;
@@ -36,7 +68,13 @@ td,
 th {
     padding      : 5px;
     border-bottom: 1px dotted gray;
+    
+
+
 }
 p {
     text-align: justify;
+}
+#cim{
+    text-align: center;
 }
