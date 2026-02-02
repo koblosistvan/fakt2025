@@ -1,0 +1,48 @@
+body {
+    background-color: #F0F0F0 ;
+}
+
+a {
+    color: #747474;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    color: #9BCE11;
+}
+
+table{
+    margin: auto;
+}
+
+#adat {
+    width: 1000px;
+    border: none;
+}
+
+#tart {
+    width: 850px;
+    color: #747474;
+}
+
+#gyumolcs {
+    background-image: url(gyumolcs.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+td {
+    margin: 2px;
+}
+
+td.szin{
+    background-color: #9BCE11;
+}
+
+.jobb {
+    float: right;
+}

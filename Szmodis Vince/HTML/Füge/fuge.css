@@ -1,0 +1,23 @@
+head{
+    background-color: #F0F0F0;
+}
+
+.link{
+    color: #747474;
+}
+
+table{
+    margin: 0 auto 0 auto;
+    width: 1000px;
+    padding: 2px;
+    border: none;
+    border-collapse: collapse;
+}
+
+#zold{
+    background-color: #9BCE11;
+}
+
+h2{
+    color: #9BCE11;
+}

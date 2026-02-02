@@ -5,6 +5,10 @@
 	background-image: url(bg.png);
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	text-align: justify;
+	max-width: 1000px;
+	margin: 5px auto;
+	font-size: large;
+
 
 }
 
@@ -27,7 +31,6 @@ h2 {
 #tartalom {
 	margin: 0 auto 0 auto;
 	text-align: left;
-	
 }
 
 #nev{
