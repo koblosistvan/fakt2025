@@ -1,3 +1,9 @@
+body {
+  background-color: #E7E7FF;
+  color: #1D1D4E;
+}
+
+
 table{
   box-shadow: 5px 5px 7px #1D1D4E;
   float: left;
@@ -12,4 +18,17 @@ td:nth-child(2) {
   font-style: italic;
   text-align: left;
 }
-
+#balkep {
+  float: left;
+  box-shadow: 5px 5px 7px #1D1D4E;
+  width: 200px;
+}
+#jobbkep {
+  float: right;
+}
+#jobbkep, #balkep {
+  border: 1px solid #1D1D4E;
+}
+#break {
+  word-wrap: break-word;
+}
