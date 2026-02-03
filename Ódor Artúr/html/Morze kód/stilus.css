@@ -1,0 +1,65 @@
+body {
+    background-image: url(hatter.png);
+    background-repeat: repeat-y;
+    background-position: left top;
+    font-family: sans-serif;
+    text-align: justify;
+    color: #444444;
+    font-size: 110%;
+}
+
+a {
+    color: black;
+}
+
+h1, h2 {
+    color: red;
+}
+
+h2 {
+    margin-top: 20px;
+    font-style: italic;
+    background-color: #cccccc;
+    padding: 20px;
+}
+
+#sfb{
+    float: left;
+    margin: 0px;
+    margin-right: 5px;
+}
+
+#tartalom {
+    background-color: #fff;
+    max-width: 1100px;
+    margin: auto;
+    border: none;
+    padding-left: 10px;
+}
+
+#taviro {
+    text-align: center;
+}
+
+table {
+    margin: auto;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+th, tr, td {
+    border: 2px solid black;
+    text-align: center;
+    font-weight: bold;
+}
+
+td {
+    width: 100px;
+}
+
+th {
+    color: red;
+    font-size: 100%;
+    background-color: #cccccc;
+    padding: 5px;
+}
