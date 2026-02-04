@@ -1,0 +1,40 @@
+body{
+    font-family: serif;
+}
+h2{
+    color: #0a6266;
+}
+#logo{
+    float: right;
+    width: 130px;
+}
+#fontos{
+    background-image:url('hatter.png');
+    height: 200px;
+    padding: 20px;
+    color: white;
+}
+#fontos > a{
+    width: 150px;
+    background-color: #f56423;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+table,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+th{
+    color: white;
+    background-color: #0a6266;
+}
+.kiemelt{
+    font-size: 200%;
+    background-color: #Fed573;
+}
+#video{
+    text-align: center;
+}
+
