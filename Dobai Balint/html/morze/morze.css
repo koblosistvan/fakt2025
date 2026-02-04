@@ -3,15 +3,16 @@ body{
     font-family: sans-serif;
     font-size: 110%;
     color: #444444;
+    margin-top: 0;
 }
 
 #tartalom{
     background-color: white;
-    margin: auto;
+    margin: 0 auto;
     width: 1100px;
     text-align: center;
     border: none;
-    padding: 0 10px;
+    padding:10px;
 }
 
 p{
@@ -50,7 +51,7 @@ margin: 0 5px 0 0;
 table{
     text-align: center;
     margin: auto;
-    border: 1px solid black;
+    
 }
 
 tr{
@@ -62,5 +63,10 @@ tr{
 
 th{
     background-color: grey;
-    color:#FC484
+    color:red;
+    padding: 10px 0;
+}
+
+table, th, tr{
+    border: 1px solid black;
 }
