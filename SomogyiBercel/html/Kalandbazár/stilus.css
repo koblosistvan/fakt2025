@@ -1,0 +1,64 @@
+
+:root {
+	--yellow: #fed573;
+	--orange: #f56423;
+	--blue: #0a6266;
+}
+
+body {
+	font-family: "Constantia", serif;
+}
+
+h2 {
+	color: var(--blue);
+}
+
+#logo {
+	float: right;
+	width: 130px;
+}
+
+#header {
+	background-image: url("hatter.png");
+	height: 200px;
+	padding: 20px;
+	color: #fff;
+}
+
+#header a {
+	color: #fff;
+}
+
+#fogl {
+	width: 150px;
+	background: var(--orange);
+	border-radius: 10px;
+	padding: 10px;
+}
+
+table {
+	margin: auto;
+}
+
+table, td, th {
+	border-collapse: collapse;
+	border: 1px solid #000;
+}
+
+th {
+	background: var(--blue);
+	color: #fff;
+}
+
+th, td {
+	padding: 10px;
+}
+
+.kiemelt {
+	background: var(--yellow);
+	font-size: 2em;
+}
+
+#center {
+	text-align: center;
+}
