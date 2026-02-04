@@ -1,0 +1,51 @@
+body{
+    font-family: serif;
+    
+}
+
+h2{
+    color:#0A6266
+}
+
+#logo{
+    float: right;
+    width: 130px;
+}
+
+#header{
+    background-image: url(hatter.png);
+    height: 200px;
+    padding: 20px;
+    color: white;
+}
+#link{
+    color: white;
+    padding: 10px;
+}
+
+table,th , td{
+    border: solid 1px black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+th{
+    background-color: #0A6266;
+    color: white;
+}
+
+#narancs{
+    background-color: #F56423;
+    width: 150px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.kiemelt{
+    font-size: 200%;
+    background-color: #FED573;
+}
+
+#kapcsolat{
+    text-align: center;
+}
