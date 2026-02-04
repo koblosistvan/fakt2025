@@ -1,0 +1,44 @@
+body {
+    font-family: 'Constantia', serif;
+}
+h2 {
+    color: #0A6266;
+}
+#kep {
+    float: right;
+    width: 130px;
+}
+#hatter {
+    background-image: url(hatter.png);
+    height: 200px;
+    padding: 20px;
+    color: white;
+}
+#hatter a {
+    color: white;
+}
+#link {
+    width: 150px;
+    background-color: #F56423;
+    padding: 10px;
+    border-radius: 10px;
+}
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+table {
+    margin: auto;
+}
+th {
+    background-color: #0A6266;
+    color: white
+}
+.kiemelt {
+    font-size: 200%;
+    background-color: #FED573;
+}
+#kozep {
+    text-align: center;
+}
