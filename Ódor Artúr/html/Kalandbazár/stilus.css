@@ -1,0 +1,54 @@
+body {
+    font-family: Constantia, serif;
+    max-width: 750px;
+    margin: auto;
+}
+
+h2 {
+    color: #0a6266;
+}
+
+header {
+    background-image: url(hatter.png);
+    color: white;
+    height: 200px;
+    padding: 20px;
+}
+
+table {
+    margin: auto;
+}
+
+table, th, td, tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+th {
+    background-color: #0a6266;
+    color: white;
+}
+
+#logo {
+    float: right;
+    width: 130px;
+}
+
+#hlink{
+    color: white;
+    width: 150px;
+    background-color: #f56423;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.kozep {
+    text-align: center;
+}
+
+.kiemelt {
+    background-color: #fed573;
+    font-weight: bold;
+    font-size: 200%;
+}
