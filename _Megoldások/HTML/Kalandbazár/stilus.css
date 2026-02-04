@@ -1,0 +1,47 @@
+body {
+    font-family: Constantia, serif;
+}
+
+h2 {
+    color: #0a6266;
+}
+
+#logo {
+    float: right;
+    width: 130px;
+}
+
+#fejlec {
+    color: white;
+    background-image: url("hatter.png");
+    padding: 20px;
+    height: 200px;
+}
+
+#fejlec > a {
+    color: white;
+    background-color: #f56423;
+    padding: 10px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+table, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+th {
+    color: white;
+    background-color: #0a6266;
+    padding: 10px;
+}
+
+#kiemelt {
+    font-size: 2em;
+    background-color: #f56423;
+}
+#lablec {
+    text-align: center;
+}
