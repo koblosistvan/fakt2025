@@ -5,6 +5,11 @@ body{
     color: #444444;
     text-align: justify;
 }
+div{
+    margin: auto;
+    background-color: white;
+    width: 1100px;
+}
 .list{
     color: black;
 }
@@ -33,4 +38,3 @@ table{
 .első_sor{
     
 }
-

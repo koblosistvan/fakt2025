@@ -1,0 +1,47 @@
+body{
+    font-family: Constantia, serif;
+}
+
+h2{
+    color: #0A6266;
+}
+
+#logo{
+    float: right;
+    width: 130px;
+}
+
+#fejlec{
+    background-image: url(hatter.png);
+    height: 200px;
+    padding: 20px;
+    color: white;
+}
+
+#fejlec > a{
+    color: white;
+    background-color: #f56423;
+    padding: 10px;
+    width: 150px;
+    border-radius: 10px;
+}
+table{
+    margin: auto;
+}
+table,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+th{
+    background-color: #0A6266;
+    color: white;
+}
+.kiemelt{
+    background-color: #fed573;
+    font-size: 2em;
+}
+
+#kapcsolat{
+    text-align: center;
+}
