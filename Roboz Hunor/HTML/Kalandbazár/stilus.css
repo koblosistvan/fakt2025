@@ -1,0 +1,50 @@
+body {
+    font-family: Constantia, serif;
+    width: 800px;
+    margin: 0 auto;
+    font-size: 19px;
+}
+
+h2 {
+    color: #0A6266;
+}
+
+img {
+    float: right;
+    width: 130px;
+}
+#hatter {
+    background-image: url(hatter.png);
+    height: 200px;
+    padding: 20px;
+    color: white;
+}
+
+#idopont {
+    color: white;
+    background-color: #F56423;
+    height: 150px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+th {
+    background-color: #0A6266;
+    color: white;
+}
+table, th, td{
+    border: solid black 2px;
+    border-collapse: collapse ;
+}
+td, th {
+    padding: 10px;
+}
+
+.kiemelt {
+    font-size: 200%;
+    background-color: #FED573;
+}
+
+#kozep {
+    text-align: center;
+}
