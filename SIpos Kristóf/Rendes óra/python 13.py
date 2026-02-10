@@ -1,0 +1,5 @@
+fajlagos_ellenállás=float(input('Add meg a fajlagos ellenállást: '))
+hossz=float(input('Add meg a hosszt: '))
+keresztmetszet=float(input('Add meg a keresztmetszetet: '))
+vezeték_ellenállása=fajlagos_ellenállás*(hossz/keresztmetszet)
+print(f'A vezeték ellenállása {vezeték_ellenállása}.')
