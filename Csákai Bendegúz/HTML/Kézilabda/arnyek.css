@@ -1,0 +1,32 @@
+/* címsorok beállításai */
+body {
+    background-image: url("kezipalya.jpg");
+    font-family: Arial, sans-serif;
+    text-align: justify;
+}
+div {
+    width: 80%;
+    margin: auto;
+    border: 1px black solid;
+    background-color: white;
+    padding: 10px 20px;
+}
+h1 {
+    color: rgb(170, 90,38);
+}
+h1,h2 {
+    text-shadow: 5px 5px #d8d8d8;
+}
+
+table {box-shadow: 10px 10px #d8d8d8;}
+#kep {
+    width: 120px;
+    float: right;
+    margin: 20px;
+}
+th {
+    font-weight: bold;
+}
+table, th, td, {
+    
+}
