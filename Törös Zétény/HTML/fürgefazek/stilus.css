@@ -1,0 +1,51 @@
+body {
+    background-color: #2f4858;
+    background-image: url(hatter.png);
+}
+
+#tartalom {
+    background-color: white;
+    padding: 10px;
+    padding-top: 20px;
+    border-radius: 30px;
+    width: 80%;
+    margin: 30px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#konyha, #video {
+    width: 90%;
+}
+
+h1 {
+    color: #2D9A46;
+    text-align: center;
+}
+
+h2 {
+    color: #E95B13;
+}
+
+table, tr, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+table {
+    margin: auto;
+}
+
+.kozep {
+    text-align: center;
+}
+
+th {
+    color: #2D9A46;
+}
+
+#logo {
+    float: left;
+    margin-right: 20px;
+}
+
