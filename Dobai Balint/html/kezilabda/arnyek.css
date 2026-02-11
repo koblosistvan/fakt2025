@@ -15,7 +15,8 @@ div{
     margin: 20px auto;
     border: 1px solid black;
     background-color: white;
-    padding: 10px 0;
+    padding: 10px;
+    max-width: 800px;
 }
 
 h1{
@@ -29,5 +30,22 @@ p{
 #labda{
     width: 120px;
     float: right;
-    margin: 20px;
+    margin: 0 0 0 20px;
+}
+
+.elso{
+    background-color: RGB(224,152,56);
+}
+
+ table{
+    border: 1 px solid black;
+    background-color: RGB(232,238,196);
+    width: 90%;
+    margin: auto;
+    max-width: 600px;
+    border-collapse: collapse;
+}
+tr, th , td{
+    border: 1px solid rgb(170,90,38);
+    padding: 5px;    
 }
