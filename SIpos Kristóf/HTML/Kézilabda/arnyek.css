@@ -10,6 +10,7 @@ div{
     padding: 20px;
     border: 1px solid black;
     margin: 10px auto;
+    max-width: 800px;
 }
 
 h1,h2 {
@@ -20,6 +21,7 @@ table {box-shadow: 10px 10px #d8d8d8;}
 
 h1{
     color: rgb(170,90,38);
+    text-align: center;
 }
 #kep{
     width: 120px;
@@ -27,6 +29,24 @@ h1{
     margin: 20px;
 }
 .tablafejlec{
-    color: rgb(170,90,38);
     background-color: rgb(224,152,56);
+    font-weight: bold;
+    text-align: center;
+}
+
+table{
+    background-color: rgb(232,238,196) ;
+    border: 1px solid rgb(170,90,38);
+    border-collapse: collapse;
+    width: 90%;
+    margin: auto;
+    max-width: 600px;
+}
+th,td{
+    border: 1px solid rgb(170,90,38);
+    padding: 5px;
+}
+.alairas{
+    font-style: italic;
+    text-align: center;
 }
