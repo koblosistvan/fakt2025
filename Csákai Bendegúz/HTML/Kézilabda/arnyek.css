@@ -3,9 +3,11 @@ body {
     background-image: url("kezipalya.jpg");
     font-family: Arial, sans-serif;
     text-align: justify;
+    margin: auto;
 }
 div {
     width: 80%;
+    max-width: 800px;
     margin: auto;
     border: 1px black solid;
     background-color: white;
@@ -18,15 +20,31 @@ h1,h2 {
     text-shadow: 5px 5px #d8d8d8;
 }
 
-table {box-shadow: 10px 10px #d8d8d8;}
+table {
+    box-shadow: 10px 10px #d8d8d8;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: rgb(232,238,196);
+}
+th, td {
+    border: 1px rgb(170, 90,38) solid;
+    padding: 5px;
+}
+
+th {
+    text-align: center;
+    background-color: rgb(224,152,56);
+    font-weight: bold;
+}
+
 #kep {
     width: 120px;
     float: right;
-    margin: 20px;
+    margin: 0px 20px;
 }
-th {
-    font-weight: bold;
-}
-table, th, td, {
-    
+
+#mid {
+    text-align: center;
 }
