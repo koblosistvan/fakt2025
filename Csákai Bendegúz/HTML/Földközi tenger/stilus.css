@@ -1,0 +1,22 @@
+body {
+    background-image: url(tengerpart.jpg);
+}
+table {
+    background-color: white;
+    width: 1100px;
+    margin: auto;
+    border: 1px #284555 solid;
+}
+
+#jobb {
+    background-color: #e8f7fe;
+    width: 400px;
+}
+
+tr {
+    padding: 10px;
+}
+
+
+
+#cssgrid#
