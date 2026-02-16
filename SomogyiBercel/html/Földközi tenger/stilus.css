@@ -7,18 +7,16 @@ body {
 	width: 1100px;
 	margin: auto;
 	border: 2px solid #284555;
+	display: grid;
+	grid-template-columns: auto auto;
+	background: #fff;
 }
 
-
-table {
-	border-collapse: collapse;
-}
-
-.content-td {
+.side {
 	padding: 10px;
 }
 
-.content-td:last-of-type {
+.side:last-of-type {
 	background: #e8f7fe;
 	width: 400px;
 }
@@ -35,11 +33,23 @@ img {
 	width: 600px;
 }
 
+table, td, th {
+	border-collapse: collapse;
+}
+
 #datatab th {
 	text-align: left;
 }
 
-#datatab * {
+#datatab {
+	width: 100%;
+}
+
+#datatab th, td {
 	border: 1px solid #388ec0;
 	padding: 3px;
+}
+
+button[type="submit"] {
+	margin-top: 1em;
 }

@@ -7,45 +7,50 @@
 	<link rel="stylesheet" href="stilus.css">
 </head>
 <body>
-	<table id="content">
-		<tr>
-			<td class="content-td">
-				<h1>A Földközi-tenger</h1>
-				A Földközi-tenger az <a href="https://hu.wikipedia.org/wiki/Atlanti-óceán" target="_blank">Atlanti-óceánhoz</a> a Gibraltári-szorossal kapcsolódó melléktenger, amelyet három kontinens vesz körbe:
-				<ol>
-					<li>Európa (északról)</li>
-					<li>Ázsia (keletről)</li>
-					<li>Afrika (délről)</li>
-				</ol>
-				<p>A Földközi-tenger térsége vagy Mediterráneum (mediterrán, azaz „földközi”) a partvidéki területekkel és a szigetekkel a nyugati civilizáció bölcsője. Az ókorban fontos közlekedési térségnek számított, az egyiptomiak, görögök, rómaiak és a közel-keleti népek is sokat utaztak és kereskedtek e tenger partjain.</p>
-				<img src="foldkozitenger.png" alt="Földközi-tenger térképe">
-				<p>Forrás: <a href="https://hu.wikipedia.org/wiki/Földközi-tenger" target="_blank">Földközi-tenger – Wikipédia</a></p>
-			</td>
-			<td class="content-td">
-				<h2>Adatlap</h2>
-				<table id="datatab">
-					<tr><th>Terület</th><td>2 520 000 km2</td></tr>
-					<tr><th>Hosszúság</th><td>4000 km</td></tr>
-					<tr><th>Átlagos mélység</th><td>1500 m</td></tr>
-					<tr><th>Legnagyobb mélység</th><td>5267 m</td></tr>
-				</table>
-				<h2>Más elnevezések</h2>
-				<p>A Földközi-tenger egyes részeinek ősidők óta vannak egyéb, gyakran párhuzamosan vagy ellentmondásosan használt egyéb nevei is, például</p>
-				<ul>
-					<li>Katalán-tenger</li>
-					<li>Szardíniai-tenger</li>
-					<li>Szicíliai-tenger</li>
-					<li>Líbiai-tenger</li>
-					<li>Levantei-tenger</li>
-				</ul>
-				<h2>Kedvenc város</h2>
-				<p>Legszívesebben melyik várost látogatnád meg a Földközi-tenger partján?</p>
-				Valencia
-				Barcelona
-				Nápoly
-				Monaco
-			</td>
-		</tr>
-	</table>
+	<div id="content">
+		<div class="side">
+			<h1>A Földközi-tenger</h1>
+			A Földközi-tenger az <a href="https://hu.wikipedia.org/wiki/Atlanti-óceán" target="_blank">Atlanti-óceánhoz</a> a Gibraltári-szorossal kapcsolódó melléktenger, amelyet három kontinens vesz körbe:
+			<ol>
+				<li>Európa (északról)</li>
+				<li>Ázsia (keletről)</li>
+				<li>Afrika (délről)</li>
+			</ol>
+			<p>A Földközi-tenger térsége vagy Mediterráneum (mediterrán, azaz „földközi”) a partvidéki területekkel és a szigetekkel a nyugati civilizáció bölcsője. Az ókorban fontos közlekedési térségnek számított, az egyiptomiak, görögök, rómaiak és a közel-keleti népek is sokat utaztak és kereskedtek e tenger partjain.</p>
+			<img src="foldkozitenger.png" alt="Földközi-tenger térképe">
+			<p>Forrás: <a href="https://hu.wikipedia.org/wiki/Földközi-tenger" target="_blank">Földközi-tenger – Wikipédia</a></p>
+		</div>
+		<div class="side">
+			<h2>Adatlap</h2>
+			<table id="datatab">
+				<tr><th>Terület</th><td>2 520 000 km<sup>2</sup></td></tr>
+				<tr><th>Hosszúság</th><td>4000 km</td></tr>
+				<tr><th>Átlagos mélység</th><td>1500 m</td></tr>
+				<tr><th>Legnagyobb mélység</th><td>5267 m</td></tr>
+			</table>
+			<h2>Más elnevezések</h2>
+			<p>A Földközi-tenger egyes részeinek ősidők óta vannak egyéb, gyakran párhuzamosan vagy ellentmondásosan használt egyéb nevei is, például</p>
+			<ul>
+				<li>Katalán-tenger</li>
+				<li>Szardíniai-tenger</li>
+				<li>Szicíliai-tenger</li>
+				<li>Líbiai-tenger</li>
+				<li>Levantei-tenger</li>
+			</ul>
+			<h2>Kedvenc város</h2>
+			<p>Legszívesebben melyik várost látogatnád meg a Földközi-tenger partján?</p>
+			<form action="">
+				<input id="valencia" type="radio" name="city" value="0" required>
+				<label for="valencia">Valencia</label><br>
+				<input id="barcelona" type="radio" name="city" value="1">
+				<label for="barcelona">Barcelona</label><br>
+				<input id="napoly" type="radio" name="city" value="2">
+				<label for="napoly">Nápoly</label><br>
+				<input id="monaco" type="radio" name="city" value="3">
+				<label for="monaco">Monaco</label><br>
+				<button type="submit">Elküld</button>
+			</form>
+		</div>
+	</div>
 </body>
 </html>
