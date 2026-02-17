@@ -18,5 +18,11 @@ tr {
 }
 
 
+h2 {
+    color: #388ec0;
+}
 
-#cssgrid#
+#kep {
+    width: 600px; 
+    margin: auto;
+}
