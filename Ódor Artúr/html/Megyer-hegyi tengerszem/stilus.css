@@ -1,0 +1,50 @@
+body {
+    background-image: url(hatterkep.jpg);
+}
+
+#tartalom {
+    width: 1200px;
+    background-image: url(tabla_hatter.png);
+    margin: auto;
+    background-color: white;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.container div{
+    padding: 15px;
+}
+
+h1, h2 {
+    color: #354266;
+    text-align: center;
+}
+
+table, td, th {
+    border: 2px solid #354266;
+    border-collapse: collapse;
+}
+
+th{
+    text-align: left;
+}
+
+table {
+    padding: 5px;
+}
+
+#footer {
+    background-color: #354266;
+    color: white;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.feher {
+    font-style: italic;
+    color: white;
+}
