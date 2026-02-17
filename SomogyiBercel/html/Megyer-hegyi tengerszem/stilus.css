@@ -1,0 +1,43 @@
+
+:root {
+	--color: #354266;
+}
+
+body {
+	background-image: url("hatterkep.jpg");
+}
+
+#content {
+	width: 1200px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	background: #fff;
+	background-image: url("tabla_hatter.png");
+}
+
+#content>div {
+	padding: 15px;
+}
+
+
+#footer {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	background: var(--color);
+	text-align: center;
+}
+
+h1, h2 {
+	color: var(--color);
+}
+
+th, td {
+	padding: 5px;
+	text-align: left;
+}
+
+table, th, td {
+	border: 1px solid var(--color);
+	border-collapse: collapse;
+}

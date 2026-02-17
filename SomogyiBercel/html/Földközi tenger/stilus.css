@@ -53,3 +53,7 @@ table, td, th {
 button[type="submit"] {
 	margin-top: 1em;
 }
+
+h2 {
+	text-align: center;
+}
