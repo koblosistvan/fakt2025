@@ -1,0 +1,42 @@
+body{
+    background-image: url(hatterkep.jpg)
+}
+
+#tartalom{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 1200px;
+    margin: auto;
+    padding: 15px;
+    background-image: url(tabla_hatter.png);
+}
+h1{
+    color: #354266;
+}
+h2{
+    color: #354266;
+}
+
+#kiemelt{
+    color: #354266;
+}
+
+footer{
+    background-color: #354266;
+}
+#fejlec{
+font-weight: bolder;
+}
+
+#kozep{
+    background-color: white;
+}
+table, th, tr{
+    border: 1px solid #354266;
+    border-collapse: collapse;
+    padding: 5px;
+}
+footer, a{
+    color: white;
+    text-align: center;
+}
