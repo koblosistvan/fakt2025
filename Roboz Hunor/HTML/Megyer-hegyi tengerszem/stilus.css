@@ -1,0 +1,49 @@
+body {
+    background-image: url(hatterkep.jpg);
+}
+
+#tartalom {
+    width: 1200px;
+    padding: 15px;
+}
+h1 {
+    color: #354266;
+    text-align: center;
+}
+h2 {
+    color: #354266;
+}
+#kiemelt {
+    color: #354266;
+    font-weight: bold;
+}
+footer {
+    background-color: #354266;
+
+}
+
+#container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+#bal {
+    background-image: url(tabla_hatter.png);
+}
+#kozep {
+    background-color: white;
+    padding: 10px;
+}
+body, footer {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    background-color: rgb(178, 245, 223);
+}
+table,tr,td {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+td {
+    padding: 5px;
+}
