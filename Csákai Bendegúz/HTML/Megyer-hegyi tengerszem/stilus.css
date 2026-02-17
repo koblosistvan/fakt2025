@@ -1,0 +1,19 @@
+body {
+    background-image: url(hatterkep.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2 {
+    color: #345266
+}
+footer {
+    background-color: #345266;
+}
+.blokk {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-image: url(tabla_hatter.png);
+    width: 1200px;
+    margin: auto;
+    padding: 15px;
+}
