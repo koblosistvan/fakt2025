@@ -1,14 +1,6 @@
 body {
     background-image: url(tengerpart.jpg);
 }
-div {
-    width: 1100px;
-    padding: 10px;
-    border: #284555;
-    background-color: white;
-    margin: 0 auto;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 h1 {
     color: #284555;
@@ -16,16 +8,70 @@ h1 {
 
 h2 {
     color: #388ec0;
+    text-align: center;
 }
+
+#tartalom {
+    border: none;  
+    width: 1100px;
+    background-color: white;
+    border: 1px solid #284555;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+
+.kozep {
+    text-align: center;
+}
+
 img {
-    width: 600px;
+    width: 600px ;
 }
-#kicsi, th{
-    border: 2 px solid black ;
-    background-color: #388ec0;
+
+#keplink{
+    text-align: center;
+}
+
+#tablazat{
+    margin: auto;
     border-collapse: collapse;
+    padding: 3px;
+    border: 1px solid #388ec0;
 }
-#jobb {
-    background-color: #e8f7fe;
+
+table{
+    width: 380px;
+}
+
+td{
+    border: 1px solid #388ec0;
+    padding: 3px;
+}
+
+th{
+    border: 1px solid #388ec0;
+    text-align: left;
+}
+
+
+table,td,th {
+    background-color: #a0d8f8;
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.container div{
+    padding: 10px;
+    margin: 1px;
+}
+
+#j {
     width: 400px;
+    background-color: #e8f7fe;
+    border: none;
 }
