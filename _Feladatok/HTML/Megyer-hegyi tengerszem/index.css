@@ -4,7 +4,6 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 #tartalom{
-    padding: 15px;
     background-image: url(tabla_hatter.png);
     background-color: white;
     margin: 0;
@@ -17,13 +16,16 @@ h1,h2{
 }
 footer{
     background-color: #354266;
-    width: 1200px;
+    width: 1167px;
     margin:0 ;
 }
 #tablazat {
     text-align: left;
     border: 2px solid #354266 ;
     border-collapse: collapse;
+    background-color: aqua;
+    width: 300px;
+    margin: 0 10px;
 }
 #tablazat th{
     padding: 5px;
@@ -33,9 +35,9 @@ footer{
     padding: 5px;
     border: 1px solid #354266
 }
-div{
+#egész{
     border: solid #354266;
-    width: 1200px;
+    width: 1167px;
     margin: auto;
 }
 #adatlap{
@@ -44,7 +46,21 @@ div{
     background-repeat: no-repeat;
     align-content: start;
     background-position: 50% 20%;
+    background-color: grey;
 }
 #no_margin{
     margin: 0;
+    text-align: center;
+    font-style: italic;
+    color: white;
+}
+#kep{
+    align-content: center;
+}
+p{
+    text-align: left;
+}
+#kep2{
+    float: left;
+    margin: 30px 10px 80px 0;
 }
