@@ -1,0 +1,54 @@
+#content {
+	display: grid;
+	grid-template-areas:
+		"header header"
+		"hist dev1"
+		"dev2 data"
+		"footer footer";
+	
+	width: 600px;
+	margin: auto;
+}
+
+#header {
+	grid-area: header;
+}
+
+#hist {
+	grid-area: hist;
+}
+
+#dev1 {
+	grid-area: dev1;
+}
+
+#dev2 {
+	grid-area: dev2;
+}
+
+#data {
+	grid-area: data;
+}
+
+#footer {
+	grid-area: footer;
+	text-align: center;
+}
+
+#content>div {
+	padding: 10px;
+}
+
+#content>:not(#footer) {
+	text-align: justify;
+}
+
+h1 {
+	color: #ab4a1d;
+	text-align: center;
+}
+
+h2 {
+	color: #018ca4;
+	text-align: center;
+}

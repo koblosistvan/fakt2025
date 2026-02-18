@@ -1,0 +1,54 @@
+body{
+    background-image: url(hatterkep.jpg);
+}    
+#tartalom{
+    width: 1200px;
+    margin: auto;
+    border: 3px solid #354266;
+    border-collapse: collapse;
+    background-image: url(tabla_hatter.png);
+    background-color: white;
+}
+td{
+
+}
+tr{
+
+}
+h1{
+    color: #354266;
+    text-align: center;
+}
+h2{
+    color: #354266;
+}
+b{
+    color: #354266;
+}
+#labjegyzet{
+    background-color: #354266;
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+#labjegyzet a{
+    color: white;
+}
+#kep{
+    width: 300px;
+    margin: 25px;
+}
+#terkep{
+    display: block;
+    margin: auto;
+}
+#adatlap{
+    text-align: center;
+}
+#tablazat{
+    background-color: lightblue;
+}
+td #tablazat{
+    border: 2px solid #354266;
+    border-collapse: collapse;
+}
