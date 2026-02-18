@@ -1,5 +1,6 @@
 body{
-    background-image: url(hatterkep.jpg)
+    background-image: url(hatterkep.jpg);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #tartalom{
@@ -9,6 +10,7 @@ body{
     margin: auto;
     padding: 15px;
     background-image: url(tabla_hatter.png);
+    
 }
 h1{
     color: #354266;
@@ -30,13 +32,43 @@ font-weight: bolder;
 
 #kozep{
     background-color: white;
+    padding: 20px;
 }
 table, th, tr{
-    border: 1px solid #354266;
+    border: 2px solid #354266;
     border-collapse: collapse;
-    padding: 5px;
+    background-color: lightblue;
+    padding: 10px;
 }
-footer, a{
+footer{
     color: white;
+    text-align: center;
+    font-style: italic;
+}
+#link{
+    color:white;
+    text-align: center;
+}
+#jobb{
+    background-color: lightgrey;
+    background-image: url(Nemzeti_Park_logo.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding: 15px;
+    width: 350px;
+}
+
+#terkep{
+    margin: auto;
+    display: block;
+}
+
+#nagy{
+    font-size: large;
+    color: #354266 ;
+    font-weight: bold;
+}
+
+#adatlap{
     text-align: center;
 }

@@ -1,0 +1,53 @@
+body{
+    background-image: url(buzamezo.jpg);
+}
+
+#tartalom{
+    width: 600px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: white;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#tartalom div{
+    padding: 10px;
+}
+
+table{
+    margin: auto;
+}
+
+table, th, td, caption{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+h1{
+    color: #ab4a1d;
+}
+
+h2{
+    color: #018ca4;
+}
+
+#header{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#footer{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #6e391a;
+}
+
+#seta {
+    width: 580px;
+}
