@@ -1,0 +1,50 @@
+body {
+    background-image: url(buzamezo.jpg);
+}
+.container {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "tort fejl"
+    "egyed adat"
+    "footer footer";
+    background-color: white;
+    width: 600px;
+    margin: auto;
+    padding: 15px;
+}
+#header {
+    grid-area: "header";
+    width: 600px;
+
+}
+
+#el {
+    grid-area: "tort";
+    width: 300px;
+}
+
+#ma {
+    grid-area: "fejl";
+    width: 300px;
+}
+
+#ha {
+    grid-area: "egyed";
+    width: 300px;
+}
+
+#ne {
+    grid-area: "adat";
+    width: 300px;
+}
+
+#footer {
+    grid-area: "footer";
+    background-color: saddlebrown;
+    width: 300px;
+}
+
+h1 {
+    text-align: center;
+}

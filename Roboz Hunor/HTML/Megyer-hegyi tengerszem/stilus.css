@@ -48,7 +48,7 @@ h2 {
     grid-area: jobb;
     background-image: url(Nemzeti_Park_logo.png);
     background-repeat: no-repeat;
-    background-position: initial center;
+    background-position: 50% 10% ;
     padding: 15px;
 }
 
@@ -71,8 +71,12 @@ td {
     margin-top: 20px;
 }
 #terkep {
-    
+    margin: 0 auto;
+    display: block;
 }
 #alsolink {
     color: white;
+}
+#Adatlap {
+    text-align: center;
 }
