@@ -12,3 +12,28 @@ td:nth-child(2) {
   font-style: italic;
   text-align: left;
 }
+img{
+  box-shadow: 5px 5px 7px #1D1D4E;
+}
+#balkep{
+  width: 200px;
+  height: 125px;
+  float: left;
+  margin: 5px;
+  border: 1px solid black;
+}
+h1{
+  text-align: center;
+}
+div{
+  width: 650px;
+  margin: auto;
+  background-color: #E7E7FF;
+  color: #1D1D4E;
+}
+#forras{
+  text-align: center;
+}
+#jobbkep{
+  width: 250px;
+}
