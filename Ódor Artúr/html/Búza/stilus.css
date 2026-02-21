@@ -16,11 +16,33 @@ body{
     padding: 10px;
 }
 
+a{
+    color: yellow;
+}
+
 table{
     margin: auto;
 }
 
-table, th, td, caption{
+th{
+    text-align: center;
+}
+
+#balra{
+    text-align: left;
+}
+
+#kalaszok{
+    float: right;
+    margin: 0 0 10px 10px;
+}
+
+#buzakalasz{
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+table, th, td{
     border: 1px solid black;
     border-collapse: collapse;
 }
@@ -46,6 +68,8 @@ h2{
     grid-column-start: 1;
     grid-column-end: 3;
     background-color: #6e391a;
+    color: white;
+    text-align: center;
 }
 
 #seta {
