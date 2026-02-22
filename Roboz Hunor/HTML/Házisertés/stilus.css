@@ -1,0 +1,72 @@
+body {
+    background-image: url(hatter_sertes.jpg);
+    margin: 5px;
+}
+
+#tartalom {
+    width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#mind {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h2 {
+    color: #9F5C2F;
+}
+
+#footer {
+    background-color: #E9E9E9;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+
+th:first-child,
+td:first-child {
+    background-color: #FCEADD;
+}
+
+#header {
+    background-image: url(malacok.jpg);
+    background-position: center;
+    height: 320px;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    padding-top: 255px;
+    padding-left: 15px;
+    color: white;
+}
+
+table,
+tr,
+td,
+th {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    padding: 5px;
+}
+
+#kep {
+    float: right;
+}
+
+#fontos {
+    text-align: center;
+    font-weight: bold;
+    font-size: 130%;
+}
+
+.kiemelt {
+    font-weight: bold;
+}
