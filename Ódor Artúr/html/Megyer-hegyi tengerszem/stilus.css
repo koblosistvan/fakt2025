@@ -1,5 +1,6 @@
 body {
     background-image: url(hatterkep.jpg);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #tartalom {
@@ -7,6 +8,7 @@ body {
     background-image: url(tabla_hatter.png);
     margin: auto;
     background-color: white;
+    border: 5px solid #354266;
 }
 
 .container{
@@ -18,6 +20,12 @@ body {
     padding: 15px;
 }
 
+.kiemelt{
+    color: #354266;
+    font-weight: bold;
+    font-size: large;
+}
+
 h1, h2 {
     color: #354266;
     text-align: center;
@@ -26,6 +34,8 @@ h1, h2 {
 table, td, th {
     border: 2px solid #354266;
     border-collapse: collapse;
+    background-color: #a2c3ee;
+    padding: 5px;
 }
 
 th{
@@ -34,6 +44,20 @@ th{
 
 table {
     padding: 5px;
+}
+
+.kozep{
+    text-align: center;
+}
+
+#tengerszem{
+    margin-top: 13%;
+}
+
+#jobb{
+    background-image: url(Nemzeti_Park_logo.png);
+    background-repeat: no-repeat;
+    background-position: initial center;
 }
 
 #footer {

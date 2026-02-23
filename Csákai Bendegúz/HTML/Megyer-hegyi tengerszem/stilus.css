@@ -3,17 +3,58 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h1, h2 {
-    color: #345266
-}
-footer {
-    background-color: #345266;
-}
 .blokk {
     display: grid;
     grid-template-columns: auto auto auto;
-    background-image: url(tabla_hatter.png);
     width: 1200px;
     margin: auto;
+    border: 5px solid #354266;
+}
+
+#elso {
+    background-color: white;
+    background-image: url(tabla_hatter.png);
     padding: 15px;
+}
+
+#masodik {
+    background-color: white;
+    padding: 15px;
+}
+
+#harmadik {
+    background-color: beige;
+    background-image: url(Nemzeti_Park_logo.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    padding: 15px;
+    width: 350px;
+}
+
+#footer {
+    background-color: #354266;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 15px;
+    font-style: italic;
+    text-align: center;
+    color: white;
+}
+#footer a:link {
+    color: white;
+}
+h1, h2 {
+    color: #354266
+}
+table {
+    background-color: aqua;
+}
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+#terkep {
+    display: block;
+    margin: auto;
 }

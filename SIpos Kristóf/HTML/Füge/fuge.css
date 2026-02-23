@@ -6,6 +6,7 @@ body{
 h2{
     color: #9BCE11;
 }
+<<<<<<< HEAD
 link{
     background-color: #F0F0F0 ;
 }
@@ -41,4 +42,8 @@ div{
 }
 td{
     padding: 2px;
+=======
+.hr{
+    padding: 0px;
+>>>>>>> 72a8946633778945cd5c17d1f05c0ed2157fe4ff
 }
