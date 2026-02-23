@@ -1,0 +1,61 @@
+body{
+    background-image: url('hatter_sertes.jpg');
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#szöveg{
+    margin: auto;
+    width: 880px;
+    padding: 10px;
+    background-color: white;
+}
+h2{
+    color: #9f5c2f;
+}
+footer{
+    background-color: #E9E9E9;
+    width: 900px;
+    margin: auto;
+    text-align: center;
+}
+.sor1{
+    background-color: #FCEADD;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+#közep{
+    text-align: center;
+    margin: auto;
+    padding-left: 100px;
+}
+.összevont{
+    background-color: #FCEADD;
+    text-align: center;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+#cim{
+    text-align: left ;
+    width: 900px;
+    padding-top: 240px;
+    padding-left: 10px;
+}
+#table{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+.td_and_th{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+#cim_kep{
+    height: 300px;
+    color: white;
+    background-image: url('malacok.jpg');
+    margin-left: 472px;
+    background-repeat: no-repeat;
+}
+#malac{
+    float: right;
+    height: 200px;
+}
