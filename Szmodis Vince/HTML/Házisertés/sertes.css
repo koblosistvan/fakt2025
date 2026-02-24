@@ -1,0 +1,80 @@
+#tartalom{
+   
+    border: none;
+    background-color: white;
+}
+
+
+
+#forma{
+     margin: 0 auto 0 auto;
+    width: 900px;
+    padding: 10px;
+    
+}
+
+h2{
+    color: #9F5C2F;
+}
+
+#forras{
+    background-color: #E9E9E9;
+    border: none;
+    text-align: center;
+}
+
+.szines{
+    background-color: #FCEADD;
+}
+
+tr, td, th{
+    border: 2px solid black;
+    
+}
+
+#tablazat{
+    border-collapse: collapse;
+    margin: 0 auto 0 auto;
+    margin: 0 50px 0 50px;
+}
+
+body{
+    background-image: url('hatter_sertes.jpg');
+}
+
+#malacok{
+    width: 900px;
+    margin: 0 auto 0 auto;
+}
+
+h1{
+    color: white;
+    text-align: left;
+    margin-left: 10px;
+
+}
+
+#fejlec{
+    border: none;
+    background-image: url('malacok.jpg');
+    height: 300px;
+    vertical-align: bottom;
+    
+}
+
+h1, h2, td, th, p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+#kozepre{
+    text-align: center;
+    margin: 20px 0 0 0;
+    font-weight: bold;
+}
+
+#malac{
+    float:right;
+}

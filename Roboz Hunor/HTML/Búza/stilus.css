@@ -1,0 +1,44 @@
+#tartalom{
+    background-color: white;
+    width: 600px;
+    padding: 10px;
+    margin: 0 auto;
+}
+body {
+    background-image: url(buzamezo.jpg);
+}
+h1 {
+    color: #ab4a1d;
+}
+h2 {
+    color: #018ca4;
+}
+
+#container {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "egy ketto"
+    "harom negy"
+    "footer footer";
+    grid-template-columns: auto auto;
+}
+
+#fej {
+    grid-area: header;
+}
+#elso {
+    grid-area: egy;
+}
+#masodik {
+    grid-area: ketto;
+}
+#harmadik {
+    grid-area: harom;
+}
+#negyedik {
+    grid-area: negy;
+}
+#láb {
+    grid-area: footer;
+}

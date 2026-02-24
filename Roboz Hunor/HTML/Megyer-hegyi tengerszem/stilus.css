@@ -1,0 +1,82 @@
+body {
+    background-image: url(hatterkep.jpg);
+}
+
+#tartalom {
+    width: 1200px;
+    padding: 15px;
+}
+h1 {
+    color: #354266;
+    text-align: center;
+}
+h2 {
+    color: #354266;
+}
+#kiemelt {
+    color: #354266;
+    font-weight: bold;
+}
+#footer {
+    background-color: #354266;
+    grid-area: footer;
+    text-align: center;
+    color: white;
+}
+
+#container {
+    display: grid;
+    grid-template-areas: 
+    "bal kozep jobb"
+    "footer footer footer";
+    grid-template-columns: auto auto auto;
+    border: 5px solid #354266;
+}
+#bal {
+    background-color: white;
+    background-image: url(tabla_hatter.png);
+    grid-area: bal;
+    padding: 15px;
+}
+#kozep {
+    grid-area:kozep;
+    background-color: white;
+    padding: 10px;
+}
+#jobb {
+    background-color: white;
+    grid-area: jobb;
+    background-image: url(Nemzeti_Park_logo.png);
+    background-repeat: no-repeat;
+    background-position: 50% 10% ;
+    padding: 15px;
+}
+
+body, footer {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    background-color: rgb(178, 245, 223);
+}
+table,tr,td {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+td {
+    padding: 5px;
+}
+
+#kep {
+    margin-top: 20px;
+}
+#terkep {
+    margin: 0 auto;
+    display: block;
+}
+#alsolink {
+    color: white;
+}
+#Adatlap {
+    text-align: center;
+}
