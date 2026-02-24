@@ -1,0 +1,56 @@
+.tartalom {
+}
+
+.forras {
+    clear:both;
+}
+
+p {
+}
+
+img.elsok {
+}
+
+img.szerepek{
+}
+
+.adatok {
+}
+
+.elso {
+    width: 16%;
+    height: 190px;
+    float: left;
+}
+
+p, h1, h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#garasban{
+    background-color: #CCC;
+    
+}
+
+#forras{
+    background-color: #757575;
+    color: white;
+    width: 700px;
+    padding: 0 20px 0 20px;
+}
+
+#potkep{
+    padding: 0 auto 0 auto;
+}
+
+#garastartalom{
+    margin: 0 auto 0 auto;
+    width: 700px;
+    padding: 0 20px 0 20px;
+}
+
+#portre{
+    width: 100px;
+    float: right;
+    margin: 0 20px 0 20px;
+}
