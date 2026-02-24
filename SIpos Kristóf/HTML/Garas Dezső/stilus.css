@@ -1,0 +1,52 @@
+body{
+    font-family: 'Times New Roman', Times, serif,
+}
+.tartalom {
+    color: black;
+    background-color: #CCC;
+    margin: auto;
+    width: 700px;
+}
+
+.forras {
+    clear:both;
+    color: white;
+    background-color: #757575;
+    margin: auto;
+    width: 700px;
+}
+
+p {
+}
+
+img.elsok {
+    height: 80%;
+    border: solid white;
+}
+
+img.szerepek{
+}
+
+.adatok {
+    width: 130px;
+    padding-left: 15px;
+    border-left: solid black;
+    height: auto;
+}
+
+.elso {
+    width: 16%;
+    height: 190px;
+    float: left;
+    
+}
+#garas_kep{
+    width: 700px;
+}
+.garas_kep2{
+    width: 100px;
+    border: solid white;
+}
+.kep_adat{
+    text-align: center;
+}
