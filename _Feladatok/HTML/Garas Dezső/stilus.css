@@ -1,8 +1,18 @@
 .tartalom {
+    background-color: #ccc;
+    color: black;
+    width: 700px;
+    margin: auto;
+    padding: 10px;
 }
 
 .forras {
     clear:both;
+    background-color: #757575;
+    color: white;
+    width: 700px;
+    margin: auto;
+    padding: 10px;
 }
 
 p {
@@ -15,10 +25,26 @@ img.szerepek{
 }
 
 .adatok {
+    width: 130px;
+    float: right;
+    margin-left: 15px;
 }
 
 .elso {
     width: 16%;
     height: 190px;
     float: left;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+#kep{
+    width: 100px;
+    float: right;
+    border: white solid 3px;
+}
+#potkep{
+    width: auto;
+    max-width: 700px;
+
 }
