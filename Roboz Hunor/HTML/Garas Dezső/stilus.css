@@ -1,0 +1,58 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.tartalom {
+    background-color: #CCC;
+    color: black;
+    padding: 10px;
+    margin: 0 auto;
+    width: 700px;
+}
+
+.cointaner {
+    display: grid;
+}
+
+.forras {
+    clear:both;
+    background-color: #757575 ;
+    color: white;
+    padding: 10px;
+    margin: 0 auto;
+    width: 700px;
+}
+
+p {
+    padding-left: 20px;
+}
+
+#pot {
+    width: 700px;
+}
+
+img.elsok {
+
+}
+
+img.szerepek{
+}
+
+.adatok {
+    width: 130px;
+    margin-left: 15px;
+    border-left: 2px solid black;
+    float: right;
+    padding-left: 30px;
+    width: 100px;
+}
+
+.elso {
+    width: 16%;
+    height: 152px;
+    float: left;
+}
+
+a {
+    color: white;
+}
