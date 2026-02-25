@@ -1,0 +1,71 @@
+body {
+    font-family: serif;
+}
+
+.tartalom {
+    background: #CCC;
+    width: 700px;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 0;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+a {
+    color: #fff;
+}
+
+.forras {
+    clear: both;
+    color: #fff;
+    background: #757575;
+    width: 700px;
+    margin: auto;
+    margin-top: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.adatok {
+    float: right;
+    text-align: center;
+    margin-left: 15px;
+    width: 130px;
+    border-left: 3px solid #000;
+}
+
+.adatok img {
+    border: 5px solid #fff;
+    width: 100px;
+}
+
+p {
+    padding: 0 20px;
+}
+
+#first {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+}
+
+img.elsok {
+    border: 5px solid #fff;
+    width: 100px;
+}
+
+img.szerepek{
+    width: 100%;
+    border: 5px solid #fff;
+    box-sizing: border-box;
+    margin: 10px auto;
+    display: block;
+}
+
+.elso {
+    /* width: 16%; */
+    height: 190px;
+    float: left;
+    font-size: .8em;
+    text-align: center;
+}

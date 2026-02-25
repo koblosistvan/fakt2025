@@ -1,0 +1,56 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.tartalom {
+    background-color: #CCC;
+    color: black;
+
+}
+
+.forras {
+    background-color: #757575;
+    color: white;
+    clear:both;
+}
+
+p {
+    padding: 0px 20px;
+}
+
+img.elsok {
+    width: 100px;
+    border: 1px solid white;
+}
+
+img.szerepek{
+}
+
+.adatok {
+    float: right;
+    width: 130px;
+    padding-left: 15px;
+    border-left: 1px solid black;
+}
+
+img.adatok {
+    width: 100px;
+}
+
+.elso {
+    width: 16%;
+    height: 190px;
+    float: left;
+    font-size: 80%;
+    text-align: center;
+}
+
+.tartalom, .forras {
+    width: 700px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#kep {
+    width: 700px;
+}
