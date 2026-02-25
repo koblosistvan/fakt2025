@@ -1,5 +1,8 @@
+
 body{
-    font-family: 'Times New Roman', Times, serif,
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    
 }
 .tartalom {
     color: black;
@@ -12,8 +15,9 @@ body{
     clear:both;
     color: white;
     background-color: #757575;
-    margin: auto;
     width: 700px;
+    margin: auto;
+    padding: 30px;
 }
 
 p {
@@ -31,13 +35,14 @@ img.szerepek{
     width: 130px;
     padding-left: 15px;
     border-left: solid black;
-    height: auto;
+    height: 250px;
 }
 
 .elso {
     width: 16%;
     height: 190px;
     float: left;
+    padding: 0px;
     
 }
 #garas_kep{
@@ -45,8 +50,17 @@ img.szerepek{
 }
 .garas_kep2{
     width: 100px;
+    margin: 10px;
     border: solid white;
+    
 }
 .kep_adat{
     text-align: center;
+    margin: 0;
+}
+div{
+    padding: 30px;
+}
+a{
+    color: white;
 }
