@@ -1,0 +1,57 @@
+body {
+    background-image: url(kiskunsagi_np.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    color: #000080;
+}
+
+#tartalom {
+    display: grid;
+    grid-template-columns: auto;
+    width: 700px;
+}
+
+#tartalom div{
+    padding: 15px;
+    background-color: white;
+    width: 700px;
+}
+
+#header{
+    height: 200px;
+    padding: 15px;
+    background-image: url(hortobagy_hid.jpg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    color: white;
+}
+
+#menu {
+    background-color: #E9E9E9 !important;
+    padding: 0 15px !important;
+}
+
+#main{
+    padding: 15px;
+}
+
+table, td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+table{
+    margin: auto;
+}
+
+th{
+    background-color: #638BA8;
+}
+
+#kepek {
+    background-color: rgba(255, 255, 255, 0);
+    text-align: center;
+}
