@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(kiskunsagi_np.jpg);
+}
+
+#tartalom {
+    display: grid;
+    grid-template-columns: auto;
+    width: 700px;
+    background-color: white;
+    padding: 10px;
+}
+
+#header {
+    background-image: url(hortobagy_hid.jpg);
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: #000080;
+}
+
+table, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    margin: auto;
+}
+
+th {
+    background-color: #638BA8;
+}
