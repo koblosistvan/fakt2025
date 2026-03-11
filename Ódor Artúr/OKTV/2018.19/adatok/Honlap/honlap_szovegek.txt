@@ -7,6 +7,7 @@ A nemzeti park a Természetvédelmi Világszövetség [https://hu.wikipedia.org/
 Magyarország nemzeti parkjai
 Igazgatóságok
 
+<<<<<<< HEAD
 Nemzeti park	Alapítás éve	Székhelye
 Hortobágyi Nemzeti Park	1973	Debrecen
 Kiskunsági Nemzeti Park	1975	Kecskemét
@@ -18,6 +19,19 @@ Körös–Maros Nemzeti Park	1997	Szarvas
 Balatoni-felvidéki Nemzeti Park	1997	Csopak
 Duna–Ipoly Nemzeti Park	1997	Budapest/Esztergom
 Őrségi Nemzeti Park	2002	Őriszentpéter
+=======
+Nemzeti park</td><td>Alapítás éve</td><td>Székhelye
+Hortobágyi Nemzeti Park</td><td>1973</td><td>Debrecen
+Kiskunsági Nemzeti Park</td><td>1975</td><td>Kecskemét
+Bükki Nemzeti Park</td><td>1977</td><td>Eger
+Aggteleki Nemzeti Park</td><td>1985</td><td>Jósvafő
+Fertő–Hanság Nemzeti Park</td><td>1991</td><td>Sarród
+Duna–Dráva Nemzeti Park</td><td>1996</td><td>Pécs
+Körös–Maros Nemzeti Park</td><td>1997</td><td>Szarvas
+Balatoni-felvidéki Nemzeti Park</td><td>1997</td><td>Csopak
+Duna–Ipoly Nemzeti Park</td><td>1997</td><td>Budapest/Esztergom
+Őrségi Nemzeti Park</td><td>2002</td><td>Őriszentpéter
+>>>>>>> 590ed3ef147c404cc2ceff1dd6869809bdeb4731
  
 
 Források: Wikipedia [https://hu.wikipedia.org/wiki/Nemzeti_park], itthon.hu [http://www.itthon.hu/]

@@ -23,14 +23,15 @@ p {
 }
 
 img.elsok {
-}
-
-img.szerepek{
+    width: 100px;
+    border: 1px solid white;
 }
 
 .adatok {
     width: 130px;
     padding-left: 15px;
+    margin-left: 500px;
+    float: right;
 }
 
 .elso {
@@ -42,7 +43,8 @@ img.szerepek{
 }
 #garas2{
     width: 100px;
-    border: 1px solid white;
+    border: 2px solid white;
+    float: right;
 
 }
 #potkep{
@@ -52,8 +54,4 @@ img.szerepek{
 
 a{
     color: white;
-}
-.elsok{
-    width: 100px;
-    border: 1px solid white;
 }
