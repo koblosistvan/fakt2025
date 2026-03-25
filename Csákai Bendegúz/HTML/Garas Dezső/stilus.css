@@ -1,12 +1,13 @@
 body {
     font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
 }
 
 .tartalom {
     background-color: #CCC;
     color: black;
-
 }
+
 
 .forras {
     background-color: #757575;
@@ -20,21 +21,19 @@ p {
 
 img.elsok {
     width: 100px;
-    border: 1px solid white;
-}
-
-img.szerepek{
+    border: 2px solid white;
 }
 
 .adatok {
-    float: right;
     width: 130px;
     padding-left: 15px;
-    border-left: 1px solid black;
+    border-left: 3px solid black;
+    float: right;
 }
 
-img.adatok {
+.garaskep {
     width: 100px;
+    border: 2px solid white;
 }
 
 .elso {
@@ -53,4 +52,13 @@ img.adatok {
 
 #kep {
     width: 700px;
+}
+
+a:link {
+    color: white;
+}
+
+#evszam {
+    text-align: center;
+    margin: auto;
 }

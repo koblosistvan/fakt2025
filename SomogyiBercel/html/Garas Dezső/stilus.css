@@ -3,7 +3,7 @@ body {
 }
 
 .tartalom {
-    background: #CCC;
+    background: #ccc;
     width: 700px;
     margin: auto;
     padding: 20px;
@@ -44,13 +44,9 @@ p {
     padding: 0 20px;
 }
 
-#first {
-    display: grid;
-    grid-template-columns: repeat(6, auto);
-}
 
 img.elsok {
-    border: 5px solid #fff;
+    border: 3px solid #fff;
     width: 100px;
 }
 
@@ -63,9 +59,10 @@ img.szerepek{
 }
 
 .elso {
-    /* width: 16%; */
+    width: 16%;
     height: 190px;
     float: left;
     font-size: .8em;
     text-align: center;
+    margin: 2px;
 }

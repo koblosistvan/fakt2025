@@ -3,6 +3,10 @@
 
 .forras {
     clear:both;
+    background-color: #757575;
+    color: white;
+    width: 700px;
+    padding: 0 20px 0 20px;
 }
 
 p {
@@ -23,34 +27,49 @@ img.szerepek{
     float: left;
 }
 
-p, h1, h2{
-    font-family: Arial, Helvetica, sans-serif;
+p, h1, h2, tr, td, th {
+    font-family: 'Times New Roman', Times, serif
 }
 
-#garasban{
+.garasban{
     background-color: #CCC;
+    padding: 0 20px 0 20px;
     
 }
 
-#forras{
-    background-color: #757575;
-    color: white;
-    width: 700px;
-    padding: 0 20px 0 20px;
-}
+
 
 #potkep{
     padding: 0 auto 0 auto;
 }
 
-#garastartalom{
+.garastartalom{
     margin: 0 auto 0 auto;
     width: 700px;
     padding: 0 20px 0 20px;
 }
 
-#portre{
+.portre{
     width: 100px;
     float: right;
     margin: 0 20px 0 20px;
+}
+
+.elsok{
+    float: left;
+
+    width: 100px;
+
+    
+}
+
+.elso{
+    font-size: 0.8em;
+    text-align: center;
+
+
+}
+
+.link{
+    color: white;
 }
