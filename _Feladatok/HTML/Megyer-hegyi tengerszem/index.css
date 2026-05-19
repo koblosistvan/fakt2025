@@ -1,0 +1,66 @@
+body{
+    background-image: url("hatterkep.jpg");
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#tartalom{
+    background-image: url(tabla_hatter.png);
+    background-color: white;
+    margin: 0;
+}
+h1,h2{
+    color: #354266;
+}
+#kiemelt{
+    color: #354266;
+}
+footer{
+    background-color: #354266;
+    width: 1167px;
+    margin:0 ;
+}
+#tablazat {
+    text-align: left;
+    border: 2px solid #354266 ;
+    border-collapse: collapse;
+    background-color: aqua;
+    width: 300px;
+    margin: 0 10px;
+}
+#tablazat th{
+    padding: 5px;
+    border: 1px solid #354266 ;
+}
+#tablazat td{
+    padding: 5px;
+    border: 1px solid #354266
+}
+#egész{
+    border: solid #354266;
+    width: 1167px;
+    margin: auto;
+}
+#adatlap{
+    background-image:url(Nemzeti_Park_logo.png);
+    width: auto;
+    background-repeat: no-repeat;
+    align-content: start;
+    background-position: 50% 20%;
+    background-color: grey;
+}
+#no_margin{
+    margin: 0;
+    text-align: center;
+    font-style: italic;
+    color: white;
+}
+#kep{
+    align-content: center;
+}
+p{
+    text-align: left;
+}
+#kep2{
+    float: left;
+    margin: 30px 10px 80px 0;
+}

@@ -1,0 +1,70 @@
+
+body {
+	background-image: url("hatter_sertes.jpg");
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#content {
+	width: 900px;
+	margin: auto;
+	background: #fff;
+}
+
+#header {
+	background-image: url("malacok.jpg");
+	height: 300px;
+	position: relative;
+}
+
+h1 {
+	position: absolute;
+	color: #fff;
+	left: 10px;
+	bottom: 0;
+}
+
+h2 {
+	color: #9F5C2F;
+}
+
+#footer {
+	background: #E9E9E9;
+	text-align: center;
+	padding: 5px;
+}
+
+#main {
+	padding: 5px;
+}
+
+table {
+	border-collapse: collapse;
+	display: block;
+	margin: 50px;
+}
+
+td, th {
+	padding: 5px;
+	border: 1px solid #000;
+}
+
+th {
+	text-align: center;
+}
+
+tr>th:first-child, tr>td:first-child {
+	background: #FCEADD;
+}
+
+tr>td:nth-child(2) {
+	max-width: 70px;
+}
+
+#malac {
+	float: right;
+	margin: 0 10px;
+}
+
+.center {
+	text-align: center;
+}

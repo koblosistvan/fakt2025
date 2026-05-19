@@ -1,0 +1,11 @@
+Nemzeti parkok (NP)
+1	177/NP/85	Aggteleki NP	Jósvafő	1985	20 183,7
+2	282/NP/97	Balaton-felvidéki NP	Csopak	1997	57 019,0
+3	138/NP/76	Bükki NP	Eger	1977	42 283,4
+4	271/NP/96	Duna–Dráva NP	Pécs	1996	49 751,6
+5	283/NP/97	Duna–Ipoly NP	Budapest	1997	60 676,0
+6	238/NP/91	Fertő–Hanság NP	Sarród	1991	23 891,3
+7	97/NP/73	Hortobágyi NP	Debrecen	1973	80 957,2
+8	109/NP/74	Kiskunsági NP	Kecskemét	1975	50 641,0
+9	276/NP/97	Körös–Maros NP	Szarvas	1997	51 246,5
+10	296/NP/02	Őrségi NP	Őriszentpéter	2002	44 048,3

@@ -1,0 +1,66 @@
+body {
+    background-image: url(hatter_sertes.jpg);
+}
+
+#tartalom{
+    margin: auto;
+    width: 900px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#tartalom div{
+        padding: 10px;
+}
+
+#header {
+    height: 300px;
+    background-image: url(malacok.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#footer{
+    background-color: rgb(197, 186, 186);
+    text-align: center;
+}
+
+#kiemelt{
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+
+#malac {
+    float: right;
+}
+
+h1 {
+    margin-top: 245px;
+    color: white;
+}
+
+h2 {
+    color: #9F5C2F;
+}
+
+table {
+    margin: 10px auto;
+
+}
+
+table, td, th {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 5px;
+}
+
+td:first-child, th:first-child{
+    background-color: #FCEADD;
+}

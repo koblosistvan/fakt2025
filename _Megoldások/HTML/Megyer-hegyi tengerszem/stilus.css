@@ -1,0 +1,18 @@
+body {
+    background-image: url("hatterkep.jpg");
+}
+
+#tartalom {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 1200px;
+    background-image: url("tabla_hatter.png");
+}
+
+#tartalom div {
+    padding: 15px;
+}
+
+h1, h2 {
+    color: #354266;
+}

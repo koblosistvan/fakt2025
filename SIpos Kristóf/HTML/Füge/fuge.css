@@ -1,15 +1,49 @@
 body{
-    background-color: #F0F0F0 ;
-}
-.link{
-    color: #747474;
-}
-#fontos{
-    background-color: #9BCE11;
-}
-h1{
-    text-align: center;
+    border-collapse: collapse;
+    margin-left: 360px;
+    margin-right: 360px;
 }
 h2{
     color: #9BCE11;
+}
+<<<<<<< HEAD
+link{
+    background-color: #F0F0F0 ;
+}
+table{
+    width: 1000px;
+    border-collapse: collapse;
+}
+#oldal_oszlop{
+    background-color: #9BCE11;
+}
+h1{
+ text-align: center;
+}
+.fugerajz{
+    float: right;
+}
+#gyumolcs{
+ margin-bottom: 1600px;
+}
+#szöveg{
+    text-align: justify;
+}
+tr{
+    border-collapse: collapse;
+}
+a{
+color: #747474;
+}
+div{
+    border: 2px solid black;
+    width: 1150px;
+    margin: 2px;
+}
+td{
+    padding: 2px;
+=======
+.hr{
+    padding: 0px;
+>>>>>>> 72a8946633778945cd5c17d1f05c0ed2157fe4ff
 }

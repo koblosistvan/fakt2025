@@ -1,0 +1,40 @@
+#tartalom{
+    width: 700px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+h2{
+    color: #000080
+}
+#szurke{
+    background-color: #E9E9E9;
+    padding-top: 20px;
+}
+
+#bal{
+width: 800px;
+}
+
+#teto{
+    background-image: url(hortobagy_hid.jpg);
+    height: 250px;
+}
+#ficko{
+    width: auto;
+}
+
+th, td , tr{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 700px;
+    
+}
+th{
+    background-color: #638BA8;
+
+}
