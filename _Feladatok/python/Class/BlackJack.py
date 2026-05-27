@@ -38,7 +38,7 @@ class Deck:
         a = random.randint(0, len(self.cards)-1)
         self.cards = self.cards[a:] + self.cards[:a]
 
-    def draw(self)->Card:
+    def draw(self) -> Card:
         c = self.cards[0]
         self.cards = self.cards[1:]
         return c
