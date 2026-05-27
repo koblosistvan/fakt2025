@@ -52,7 +52,7 @@ class Deck:
 class Hand:
     def __init__(self, name):
         self.name = name
-        self.cards = [Card]
+        self.cards = []
 
     def add_card(self, c: Card):
         self.cards.append(c)
@@ -63,25 +63,59 @@ class Hand:
         for c in self.cards:
             if c.value in ('A'):
                 v += 11
+                a_count += 1
             elif c.value in ('J','Q','K'):
                 v += 10
             else:
                 v += int(c.value)
 
-                
+        sub_a = min(
+            (v-12)//10,
+            a_count
+        )                    
+        return v - sub_a*10 if sub_a > 0 else v 
 
-
-
-
-c = Card('pikk', '8')
-print(c)
+    def __repr__(self) -> str:
+        return f"{self.value()} {self.cards}"
 
 d = Deck()
-print(d)
-print(d.cards[5])
 d.shuffle()
-print(d.cards[5])
 
-c = d.draw()
-print(c)
-print(d)
+player = Hand(name='Tippszmix Csabi')
+player.add_card(c=d.draw())
+player.add_card(c=d.draw())
+
+dealer = Hand(name='Dealer')
+dealer.add_card(c=d.draw())
+dealer.add_card(c=d.draw())
+
+print(player)
+print(dealer)
+
+player_draws = input('Kérsz még lapot?\nVálasz (I/N): ')
+while player_draws == 'I':
+    player.add_card(c=d.draw())
+    print(player)
+    if player.value() < 21:
+        player_draws = input('Kérsz még lapot?\nVálasz (I/N): ')
+    else:
+        break
+
+winner = None
+if player.value() > 21:
+    winner = dealer
+else:
+    while dealer.value() < 17:
+        dealer.add_card(c=d.draw())
+        print(dealer)
+
+    if player.value() > dealer.value() or dealer.value() >21:
+        winner = player
+    elif player.value() < dealer.value():
+        winner = dealer
+    
+print('A játéknak vége')
+if winner:
+    print(f'A győztes: {winner.name}')
+else: 
+    print('Döntetlen')
