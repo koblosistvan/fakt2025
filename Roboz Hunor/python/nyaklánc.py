@@ -21,12 +21,12 @@ for sor in forras:
     adat.append(sor.strip())
 
 # 4.fájl 
-forras = open("_Feladatok\\python\\11 év végi gyakorlás\\1-gyongy-3.txt", mode="r",encoding="utf-8")
+"""forras = open("_Feladatok\\python\\11 év végi gyakorlás\\1-gyongy-3.txt", mode="r",encoding="utf-8")
 forras.readline()
 adat =[]
 for sor in forras:
     adat.append(sor.strip())
-
+"""
 
 
 #feladat
@@ -54,11 +54,19 @@ print(f'{egymasutan} 2 gyöngy')
 M_db = int(input("Milyen hosszú láncot keresel? "))
 counter = 1
 elf = "Nem fordul elő"
+fs = []
+
 
 for i in range(len(adat)-1):
     if adat[i] == adat[i+1]:
         counter += 1
+    else: 
+        fs.append(counter)
+        counter = 1
     if M_db == counter:
+        elf = "Előfordul"
+if adat[-1] == adat[0]:
+    if fs[0] + counter == M_db:
         elf = "Előfordul"
 
 
@@ -69,22 +77,23 @@ print(f'{elf} hogy {M_db}szor egymás után jön ugyanolyan szín')
 max_counter = 0
 max_color = ''
 current_counter = 1
-first_counter = 0
+first_counter = []
 
 for i in range(len(adat)-1):
     if adat[i] == adat[i+1]:
         current_counter += 1
     else:
+        first_counter.append(current_counter)
         current_counter = 1
-        first_counter = current_counter
     if current_counter > max_counter:
         max_counter = current_counter
         max_color = adat[i]
 if adat[-1] == adat[0]:
-    if first_counter + current_counter > max_counter:
-        max_counter = first_counter + current_counter
+    if first_counter[0] + current_counter > max_counter:
+        max_counter = first_counter[0] + current_counter
         max_color = adat[0]
 
 
 print(max_counter)
 print(max_color)
+
