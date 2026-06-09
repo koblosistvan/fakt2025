@@ -49,12 +49,18 @@ else:
 
 #Feladat plusz 1
 m = int(input('Menyi gyöngyöt szertnél hogy egymás után legyen egy sorban: '))
-egymas_mellett_egy_sorban = 0
+n = 0
 for i in range(len(adat)):
     if adat[i-1] == adat[i]:
-        egymas_mellett_egy_sorban += 1
+        n += 1
+        if n == m:
+            print('Van ilyen hosszú egymás után következő gyöngy.')
+            break
     else:
-        egymas_mellett_egy_sorban=0 
+        n = 1
+else:
+    print('Nincs ennyi egymás után következő gyöngy.')
+
 
         
    
