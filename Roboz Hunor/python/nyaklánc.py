@@ -69,20 +69,20 @@ print(f'{elf} hogy {M_db}szor egymás után jön ugyanolyan szín')
 max_counter = 0
 max_color = ''
 current_counter = 1
-first_counter = 0
+first_counter = []
 
 for i in range(len(adat)-1):
     if adat[i] == adat[i+1]:
         current_counter += 1
     else:
         current_counter = 1
-        first_counter = current_counter
+        first_counter.append(current_counter)
     if current_counter > max_counter:
         max_counter = current_counter
         max_color = adat[i]
 if adat[-1] == adat[0]:
-    if first_counter + current_counter > max_counter:
-        max_counter = first_counter + current_counter
+    if first_counter[0] + current_counter > max_counter:
+        max_counter = first_counter[0] + current_counter
         max_color = adat[0]
 
 
