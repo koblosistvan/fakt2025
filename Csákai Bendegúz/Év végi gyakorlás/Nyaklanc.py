@@ -25,7 +25,8 @@ for sor in forras:
     adat.append(sor.strip())
 forras.close()
 print(adat)
-'''# utolso par
+'''
+# utolso par
 forras = open('fakt2025\\_Megoldások\\python\\11 év végi gyakorlás\\1-gyongy-1-utolsó pár.txt', mode = 'r', encoding= 'utf-8')
 adat = forras.readline().strip()
 adat = list(adat)
@@ -51,15 +52,15 @@ else:
 #3
 print(adat)
 m = int(input('Mennyire vagy kíváncsi?: '))
-n = 0
-for i in range(len(adat)):
+n = 1
+for i in range(-len(adat)+1,len(adat)):
     if adat[i-1] == adat[i]:
         n +=1
+        if n >= m:
+            print(f'{m} előfordul egymás után')
+            break
     else:
-        n = 0
-        i+=1
-if n >= m:
-    print(f'{m} előfordul egymás után')
+        n = 1
 else:
     print(f'{m} nem fordul elő egymás után')
 
