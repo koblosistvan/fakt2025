@@ -1,6 +1,6 @@
 import random
-Euro=382 #FT
-pénzem=273351 #FT
+Euro=352 #FT
+pénzem=316069 #FT
 Y_or_N=random.randint(1,2)
 if Y_or_N == 1:
     money=random.randint(1,4)
