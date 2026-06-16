@@ -80,6 +80,7 @@ print(f'A legtöbbet megosztott videó címe: {cim[maxindex]} aminek a megjelen�
 f(5)
 
 evhonapjai=[0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+'''
 datho=int(input('And meg egy hónapot: '))
 datnap=int(input('And meg egy napot: '))
 datho2=int(input('And meg egy másik hónapot: '))
@@ -91,18 +92,26 @@ for _ in range(adatok_szama):
     elif 0 != 2:
         print(f'A két dátum között {(sum(evhonapjai[:datho2])+datnap2)-(sum(evhonapjai[:datho])+datnap)} nap telik el')
         break
+'''
+def elteltido(ho1,nap1,ho2,nap2):
+    return (sum(evhonapjai[:ho2])+nap2)-(sum(evhonapjai[:ho1])+nap1)
 
-f(6)
+
+
+f(7)
 
 maxtetlenseg=0
 maxtetlenseg_index=0
 for i in range(adatok_szama-1):
-    if maxtetlenseg<(sum(evhonapjai[:honap[i+1]])+nap[i+1])-(sum(evhonapjai[:honap[i]])+nap[i]):
-        maxtetlenseg =(sum(evhonapjai[:honap[i+1]])+nap[i+1])-(sum(evhonapjai[:honap[i]])+nap[i])
+    if maxtetlenseg<elteltido(honap[i],nap[i],honap[i+1],nap[i+1]):
+        maxtetlenseg = elteltido(honap[i],nap[i],honap[i+1],nap[i+1])
         maxtetlenseg_index=i
 print(f'{maxtetlenseg} nap volt a maximális idő, amíg nem került fel poszt\nEz {datum[maxtetlenseg_index]} és {datum[maxtetlenseg_index+1]} között volt')
 
-f(7)
+
+
+
+f(8)
 
 for i in range(adatok_szama):
     if megtekintes[i]>100000 and megosztas[i]<1000:
@@ -112,6 +121,24 @@ else:
     print('Nem volt olyan poszt, ami amely 100e-nél több megtekintést kapott, mégis 1000-nél kevesebb megosztást')
 
 f(9)
+cimrendes=cim.copy()
+megtekintesrendes=megtekintes.copy()
+
+for j in range(adatok_szama):
+    for i in range(adatok_szama-j-1):
+        if megtekintesrendes[i]<megtekintesrendes[i+1]:
+            megtekintesrendes[i+1], megtekintesrendes[i] = megtekintesrendes[i], megtekintesrendes[i+1]
+            cimrendes[i+1], cimrendes[i] = cimrendes[i], cimrendes[i+1]
+
+max = open('Szmodis Vince\\python\\influencermax.txt', mode='w', encoding='utf-8')
+
+for i in range(10):
+    max.write(f'{cimrendes[i].replace("_"," ")}\n')
+max.close()
+
+
+
+f(10)
 
 unboxing=0
 osszmegtekintes=0
