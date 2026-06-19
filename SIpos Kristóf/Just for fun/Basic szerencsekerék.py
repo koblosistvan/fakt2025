@@ -3,6 +3,11 @@ Euro=352 #FT
 pénzem=316069 #FT
 Y_or_N=random.randint(1,2)
 if Y_or_N == 1:
+    console=random.randint(1,2)
+    if console==1:
+        print('A Gépedre tölthetsz fel pénzt')
+    else:
+        print('A switch-re tölthetsz fel pénzt')
     money=random.randint(1,4)
     if money==1:
         print(f'Feltölthetsz 5€-t és az {Euro*5} FT-ba fog kerülni és ennyi pénz marad még a számládon {pénzem-Euro*5}. 5€ nem sok de néha pont elég.')

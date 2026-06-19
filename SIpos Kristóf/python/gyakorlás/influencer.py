@@ -176,9 +176,6 @@ elif hónap_2 == 1:
     nap_2=nap_2+0
 else:
     print('Számba add meg a hónapot vagy adj meg létező hónapot.')
-if hónap_1 or hónap_2 == 2 and nap_1 or nap_2 > 29:
-    print('Ezt te is tudod hogy helytelen.') 
-    
 eltelt_napok_száma=nap_2-nap_1
 print(f'A kettő dátum közötti eltelt napok száma {eltelt_napok_száma}')
 
