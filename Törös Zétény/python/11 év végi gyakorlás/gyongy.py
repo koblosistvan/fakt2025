@@ -45,13 +45,14 @@ for i in range(len(adat)):
         break
 else:
     print("Nem fordul elő ilyen eset")
-
+"""""
 #3 feladat
 a = int(input("Hány gyöngy egymás után:"))
 
 for i in range(len(adat)):
-    if :
+    if adat[i] :
         print(f"Van olyan hogy {a} ugyan olyan gyöngy van egymás után.")
         break
 else:
     print(f"Nincs olyan hogy {a} ugyan olyan gyöngy van egymás után.")
+"""""
