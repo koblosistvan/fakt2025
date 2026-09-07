@@ -45,6 +45,16 @@ else:
     print('Nincs  egymás mellett két ugyanolyan gyöngy')    
 
 
-m = input('Hány ugyanolyan gyöngy legyen sorba: ')
-ugy_szamlalo=0
 
+m = int(input('Milyen hosszúságút keresel: '))
+n = 1
+for i in range(-len(adat)+1,len(adat)):
+    if adat[i-1]==adat[i]:
+        n+=1
+        if n==m:
+            print('Van ilyen hosszú')
+            break
+    else: 
+        n=1
+else:
+    print('Nincs ennyi ugyanolyan gyöngy egymás melett')

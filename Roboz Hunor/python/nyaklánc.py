@@ -21,12 +21,12 @@ for sor in forras:
     adat.append(sor.strip())
 
 # 4.fájl 
-forras = open("_Feladatok\\python\\11 év végi gyakorlás\\1-gyongy-3.txt", mode="r",encoding="utf-8")
+"""forras = open("_Feladatok\\python\\11 év végi gyakorlás\\1-gyongy-3.txt", mode="r",encoding="utf-8")
 forras.readline()
 adat =[]
 for sor in forras:
     adat.append(sor.strip())
-
+"""
 
 
 #feladat
@@ -54,11 +54,19 @@ print(f'{egymasutan} 2 gyöngy')
 M_db = int(input("Milyen hosszú láncot keresel? "))
 counter = 1
 elf = "Nem fordul elő"
+fs = []
+
 
 for i in range(len(adat)-1):
     if adat[i] == adat[i+1]:
         counter += 1
+    else: 
+        fs.append(counter)
+        counter = 1
     if M_db == counter:
+        elf = "Előfordul"
+if adat[-1] == adat[0]:
+    if fs[0] + counter == M_db:
         elf = "Előfordul"
 
 
@@ -75,8 +83,12 @@ for i in range(len(adat)-1):
     if adat[i] == adat[i+1]:
         current_counter += 1
     else:
-        current_counter = 1
         first_counter.append(current_counter)
+        current_counter = 1
+<<<<<<< HEAD
+        first_counter.append(current_counter)
+=======
+>>>>>>> 5b25ffb6c79744f9b514705adda567dea39d29e9
     if current_counter > max_counter:
         max_counter = current_counter
         max_color = adat[i]
@@ -88,3 +100,4 @@ if adat[-1] == adat[0]:
 
 print(max_counter)
 print(max_color)
+
