@@ -4,7 +4,7 @@ def f(a):
     print(f'{a}. feladat')
     
     
-forras = open('Roboz Hunor\\erettsegi\\meres.txt',mode='r',encoding='utf-8')
+forras = open('fakt2025\\Roboz Hunor\\erettsegi\\meres.txt')
 meresek = []
 for sor in forras:
     adat = sor.split(', ')
@@ -61,7 +61,6 @@ ora = 6
 perc = 0
 
 for i in range(max_hely+1):
-    print(ora,perc)
     if i % 4 == 3:
         ora += 1
         perc = 0
