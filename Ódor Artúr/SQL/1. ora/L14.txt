@@ -1,0 +1,1 @@
+SELECT nev, az, magassag, orszag FROM csucs ORDER by magassag DESC LIMIT 5;
