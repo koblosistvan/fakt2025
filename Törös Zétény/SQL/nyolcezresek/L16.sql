@@ -1,0 +1,1 @@
+SELECT nev,magassag,magassag-8848 FROM `csucs` ORDER by magassag desc;

@@ -1,0 +1,1 @@
+SELECT nev,magassag,orszag FROM `csucs` ORDER by orszag,magassag DESC;
