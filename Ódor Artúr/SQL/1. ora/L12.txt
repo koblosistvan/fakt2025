@@ -1,0 +1,1 @@
+SELECT nev, magassag FROM csucs WHERE orszag LIKE "%Kína%" ORDER BY nev;
