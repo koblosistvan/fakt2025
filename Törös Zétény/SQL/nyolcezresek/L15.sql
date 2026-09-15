@@ -1,0 +1,1 @@
+SELECT nev,magassag/1000,orszag FROM `csucs` ORDER by magassag;

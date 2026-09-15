@@ -1,0 +1,10 @@
+SELECT
+	m.nev, c.nev, c.magassag
+FROM
+	naplo as n
+    join maszo as m on m.az = n.maszoaz
+    join csucs as c on c.az = n.csucsaz
+where
+	c.orszag like '%kina%'and n.ev >2000
+ORDER BY
+	c.magassag DESC;
