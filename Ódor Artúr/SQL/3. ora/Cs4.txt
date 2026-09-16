@@ -3,7 +3,8 @@ SELECT
 FROM
 	naplo as n
 	JOIN maszo as m on m.az = n.maszoaz
-    JOIN csucs as c on c.az = n.csucsaz
-WHERE c.orszag LIKE "%KÍNA%"
+	JOIN csucs as c on c.az = n.csucsaz
+    
+WHERE m.ferfi = 0
 GROUP by c.az
-order by darab desc;
+ORDER BY darab desc
