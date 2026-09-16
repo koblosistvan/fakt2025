@@ -1,0 +1,10 @@
+SELECT
+	c.nev, c.magassag
+FROM
+	naplo as n
+    JOIN csucs as c on c.az = n.csucsaz
+WHERE
+	c.orszag not like '%kína°%'
+ORDER BY
+	n.ev DESC
+LIMIT 3;
