@@ -1,0 +1,10 @@
+SELECT
+	m.nev,
+    COUNt(m.az) as expediciok_szama
+FROM
+	naplo as n
+    JOIN maszo as m on m.az = n.maszoaz
+WHERE
+	n.ev > 2000
+GROUP by  m.az
+HAVING COUNT(*) > 1;

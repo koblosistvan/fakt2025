@@ -1,0 +1,4 @@
+SELECT
+	 az, nev
+FROM
+	maszo;

@@ -85,6 +85,10 @@ for i in range(len(adat)-1):
     else:
         first_counter.append(current_counter)
         current_counter = 1
+<<<<<<< HEAD
+        first_counter.append(current_counter)
+=======
+>>>>>>> 5b25ffb6c79744f9b514705adda567dea39d29e9
     if current_counter > max_counter:
         max_counter = current_counter
         max_color = adat[i]
