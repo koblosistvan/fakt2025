@@ -1,0 +1,14 @@
+SELECT distinct
+	m1.nev
+FROM
+	csucs as c
+    join naplo as n1 on n1.csucsaz = c.az
+    join maszo as m1 on n1.maszoaz = m1.az
+    
+    join naplo as n2 on n2.csucsaz = c.az
+    join maszo as m2 on n2.maszoaz = m2.az
+    
+where 
+	m1.az != m2.az
+order by
+	1;
