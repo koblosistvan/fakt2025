@@ -1,0 +1,13 @@
+SELECT
+	c.nev, count(distinct m. az) as db
+FROM
+	naplo as n
+    JOIN maszo as m on m.az = n.maszoaz
+    join csucs as c on c.az = n.csucsaz
+Group by
+	c.az
+
+Having
+	count(distinct m.az) > 1
+Order by
+	db desc;
