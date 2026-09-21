@@ -1,0 +1,12 @@
+SELECT
+	c.nev, COUNT(*) as db
+FROM
+	naplo as n
+    JOIN maszo as m on m.az = n.maszoaz
+    JOIN csucs as c on c.az = n.csucsaz
+WHERE
+	m.ferfi = 0
+GROUP BY
+	c.az
+ORDER BY
+	db Desc;
