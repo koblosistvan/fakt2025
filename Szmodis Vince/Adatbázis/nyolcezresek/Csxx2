@@ -1,12 +1,11 @@
 SELECT
-	m.nev
-    c.magassag
+	m.nev,
+    max(c.magassag)
 FROM
 	maszo as m
     join csucs as c on m.az = c.az
 group by 
 	m.az
-having
 	
 order by 
-	c.magassag desc
+	c.magassag DESC;
