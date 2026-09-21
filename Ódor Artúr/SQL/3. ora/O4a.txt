@@ -1,0 +1,27 @@
+1.
+
+SELECT
+	nev, month(edatum) as honap
+FROM
+	csucs;
+	
+2.
+	
+SELECT
+	month(edatum) as honap, COUNT(*) as darab
+FROM
+	csucs
+GROUP by month(edatum);
+
+3.
+
+SELECT
+	 c.nev,
+     MIN(n.ev) as elso,
+	 MAX(N.ev) as utolso
+FROM
+	csucs as c
+    
+    join naplo as n on n.csucsaz = c.az
+GROUP by 
+	c.az;
