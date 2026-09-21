@@ -1,0 +1,14 @@
+SELECT
+	*
+FROM
+	csucs as c
+    
+    JOIN naplo as n1 on n1.csucsaz = c.az
+    JOIN maszo as m1 on m1.az = n1.maszoaz
+    
+    JOIN naplo as n2 on n2.csucsaz = c.az
+    JOIN maszo as m2 on m2.az = n2.maszoaz
+    
+WHERE
+	m1.nev = 'Ugyan Anita'
+    and m2.nev = 'Erőss Zsolt';
