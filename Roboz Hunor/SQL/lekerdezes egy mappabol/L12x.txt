@@ -1,0 +1,8 @@
+SELECT 
+	nev, magassag, orszag 
+FROM 
+	csucs
+WHERE 
+	orszag like '%Kína%'
+ORDER BY
+	magassag;

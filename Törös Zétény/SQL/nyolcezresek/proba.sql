@@ -1,0 +1,1 @@
+SELECT nev FROM maszo WHERE ferfi ORDER BY nev;

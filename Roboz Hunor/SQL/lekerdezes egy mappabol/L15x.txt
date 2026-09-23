@@ -1,0 +1,6 @@
+SELECT
+	nev, magassag/1000 as 'magassag km-ben', orszag
+FROM
+	csucs
+ORDER BY
+	NOT magassag;

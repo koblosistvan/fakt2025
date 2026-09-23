@@ -1,0 +1,12 @@
+SELECT
+	c.nev, count(*)
+FROM
+	naplo as n
+    join maszo as m on m.az = n.maszoaz
+   	join csucs as c on c.az = n.csucsaz
+where
+	c.orszag like '%kína%'
+group by
+	c.az
+order by
+	count(*) desc;

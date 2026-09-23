@@ -1,0 +1,8 @@
+SELECT
+	m.nev, c.nev as csucs, c.magassag
+FROM
+	naplo as n
+	JOIN csucs as c on c.az = n.csucsaz
+    JOIN maszo as m on m.az = n.maszoaz
+WHERE n.ev < 2000 or c.orszag LIKE "%Pakisztán%"
+ORDER by m.nev desc, c.magassag DESC;

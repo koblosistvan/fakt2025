@@ -1,0 +1,1 @@
+SELECT * FROM `csucs` ORDER by magassag DESC LIMIT 5;

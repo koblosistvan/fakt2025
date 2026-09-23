@@ -1,0 +1,1 @@
+SELECT * FROM `csucs` WHERE orszag LIKE "Kína%";

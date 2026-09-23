@@ -1,0 +1,8 @@
+SELECT
+	nev
+FROM
+	maszo
+WHERE
+	not ferfi
+ORDER BY
+	nev;
