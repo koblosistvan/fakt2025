@@ -1,0 +1,8 @@
+SELECT 
+	t.ev, g.vnev, t.csapat
+FROM
+	tour as t
+	join gyoztesek as g on g.vazon = t.gyoztesid
+WHERE
+	g.vorszag LIKE "FRA"
+ORDER by t.ev desc LImit 1;
