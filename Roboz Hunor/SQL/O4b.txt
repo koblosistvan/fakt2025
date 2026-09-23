@@ -1,0 +1,6 @@
+SELECT
+	month(edatum) as honap, COUNT(*) as db
+FROM
+	csucs
+GROUP BY
+	month(edatum);
