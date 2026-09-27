@@ -1,0 +1,11 @@
+Select distinct
+	g.vnev, count(*) as darab
+From
+	tour as t
+	join gyoztesek as g on t.gyoztesid = g.vazon
+group by
+	g.vazon
+having
+	count(g.vnev)> 1
+order by
+	darab desc;
