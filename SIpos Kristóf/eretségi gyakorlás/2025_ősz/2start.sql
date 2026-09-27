@@ -5,4 +5,6 @@ SELECT
 from 
 	tour as t
 where
-	start != ''
+	start != 'Franicaorszag'
+    AND
+    ev>=1950
