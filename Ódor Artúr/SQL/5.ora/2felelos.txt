@@ -1,0 +1,9 @@
+SELECT
+	h.megnevezes,
+    f.veznev,
+    f.utonev,
+    f.email
+FROM
+	uzenet as u
+	JOIN hirfolyam as h on h.id = u.h_id
+    JOIN felhasznalo as f on f.id = u.f_id;
