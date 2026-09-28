@@ -1,0 +1,10 @@
+SELECT 
+	t.ev, gy.vnev, t.csapat
+FROM 
+	`tour` as t
+    JOIN gyoztesek as gy ON gy.vazon = t.gyoztesid
+WHERE
+	gy.vorszag = 'FRA'
+ORDER BY
+	t.ev DESC
+LIMIT 1;

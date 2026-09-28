@@ -1,0 +1,7 @@
+SELECT
+	u.tartalom
+FROM
+	uzenet as u
+WHERE
+	u.tartalom like "%bicikli%" OR
+    u.tartalom like "%bike%";
