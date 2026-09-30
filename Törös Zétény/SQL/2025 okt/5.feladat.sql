@@ -1,0 +1,9 @@
+SELECT
+	f.veznev,
+    f.utonev,
+    u.tartalom,
+    u.kuldido
+FROM
+	uzenet as u
+    JOIN felhasznalo as f on f.id = u.f_id
+    JOIN hirfolyam as h on u.tartalom LIKE concat('%', h.megnevezes, '%');

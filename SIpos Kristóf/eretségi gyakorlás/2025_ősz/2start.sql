@@ -5,6 +5,6 @@ SELECT
 from 
 	tour as t
 where
-	start != 'Franicaorszag'
+	start != 'Franciaorszag'
     AND
     ev>=1950

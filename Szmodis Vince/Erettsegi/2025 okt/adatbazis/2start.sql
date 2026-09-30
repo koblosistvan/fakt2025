@@ -4,4 +4,5 @@ SELECT
 FROM
 	tour as t
 WHERE
-	orszag != '';
+	orszag != '' and  
+	orszag IS NOT NULL
