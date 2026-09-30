@@ -1,0 +1,8 @@
+SELECT
+	h.megnevezes, COUNT(*) as uzenetek_szama
+FROM
+	uzenet as u
+    JOIN hirfolyam as h on u.h_id = h.id
+GROUP BY
+	h.id
+ORDER by count(*) desc;
