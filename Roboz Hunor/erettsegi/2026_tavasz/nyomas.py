@@ -1,4 +1,4 @@
-forras = open('Roboz Hunor\\erettsegi\\2026_tavasz\\nyomas.txt')
+forras = open(r'fakt2025\Roboz Hunor\erettsegi\2026_tavasz\nyomas.txt')
 
 for sor in forras:
     adatok = sor.split(', ')

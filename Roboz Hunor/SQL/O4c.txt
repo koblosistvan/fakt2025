@@ -1,0 +1,10 @@
+SELECT
+	c.nev, 
+    MIN(n.ev) as elso,
+    MAX(n.ev) as utolso
+FROM
+	csucs as c
+    JOIN naplo as n on n.csucsaz = c.az
+    
+GROUP BY
+	c.az;

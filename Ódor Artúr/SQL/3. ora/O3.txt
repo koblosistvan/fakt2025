@@ -1,0 +1,37 @@
+SELECT
+	c.nev
+FROM
+	csucs as c
+	
+    JOIN naplo as n1 on n1.csucsaz = c.az
+	JOIN naplo as n2 on n2.csucsaz = c.az
+    
+WHERE
+	n1.ev = 2005 AND
+    n2.ev = 2009;
+	
+	
+	
+	
+	
+SELECT
+	csucs.nev
+FROM
+	csucs
+WHERE
+	az in (
+    	SELECT
+			n.csucsaz
+        FROM
+			naplo as n
+		WHERE
+        	n.ev = 2005
+    )	AND
+    az in (
+    	SELECT
+			n.csucsaz
+        FROM
+			naplo as n
+		WHERE
+        	n.ev = 2005
+	);

@@ -1,0 +1,5 @@
+SELECT
+	t.ev, t.tav, t.feladok/t.indulok as hanyad
+FROM
+	tour as t
+order by hanyad desc;
