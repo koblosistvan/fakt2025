@@ -1,0 +1,1 @@
+select nev, id from maszo;

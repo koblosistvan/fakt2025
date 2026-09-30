@@ -1,0 +1,7 @@
+SELECT DISTINCT
+	d.cim, m.nev
+FROM 
+	darab as d
+    JOIN mufaj as m on d.mufajid = m.id
+WHERE
+	d.cim LIKE '%asszony%' AND (m.nev LIKE'%operett%' OR m.nev like'%opera%');
