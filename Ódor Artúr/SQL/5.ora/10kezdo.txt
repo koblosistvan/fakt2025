@@ -1,0 +1,10 @@
+SELECT
+	MAX(u.kuldido)
+From
+	uzenet as u
+WHERE
+	u.f_id = (SELECT
+              	uzenet.f_id
+              FROM
+              	uzenet
+              ORDER by uzenet.kuldido limit 1);
