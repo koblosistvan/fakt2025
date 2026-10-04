@@ -1,0 +1,10 @@
+SELECT
+	h.megnevezes, 
+    COUNT(*)
+FROM
+	uzenet as u 
+   	join hirfolyam as h on h.id = u.h_id
+GROUP BY
+	h.id
+ORDER BY
+	COUNT(*) DESC;
