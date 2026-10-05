@@ -1,7 +1,7 @@
 SELECT
 	t.ev,
     t.tav,
-    t.indulok-t.feladok as arany
+    t.feladok/t.indulok as arany
 FROM
     tour as t
 order by

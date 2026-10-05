@@ -1,0 +1,5 @@
+SELECT 
+	h.megnevezes, f.veznev, f.utonev, f.email
+FROM 
+	felhasznalo as f
+    JOIN hirfolyam as h on f.id = h.moderator

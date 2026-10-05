@@ -1,0 +1,11 @@
+SELECT
+	f.veznev,
+    f.utonev,
+    COUNT(*)
+FROM
+	felhasznalo as f
+	JOIN uzenet as u on u.f_id = f.id
+    JOIN hirfolyam as h on u.h_id = h.id
+WHERE
+	h.megnevezes = "e-bike" and u.kuldido < "16:00:01" AND u.kuldido > "11:59:59"
+GROUP by f.id;
