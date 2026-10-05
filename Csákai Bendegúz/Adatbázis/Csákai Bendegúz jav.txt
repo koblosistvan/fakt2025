@@ -1,0 +1,30 @@
+1. feladat
+
+SELECT
+	v.datum,
+	v.versenynev,
+	v.tipus
+FROM
+	verseny as v
+ORDER BY
+	v.datum
+2/2pont
+2. feladat
+
+SELECT
+	tipus,
+	count(v.tipus) as darab
+FROM
+	verseny as v
+GROUP BY
+	darab
+3/1
+3. feladat
+
+SELECT
+	(*)
+FROM
+	verseny as v
+WHERE
+	MONTH(v.datum) = 04 and
+	v.esemeny not like 'esemeny'
