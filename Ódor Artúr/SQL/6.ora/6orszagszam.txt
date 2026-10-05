@@ -1,0 +1,4 @@
+ SELECT 
+	Count(allekerdezes.orszag) as osszes_orszag
+FROM 
+	(SELECT DISTINCT orszag FROM urhajos) AS allekerdezes;

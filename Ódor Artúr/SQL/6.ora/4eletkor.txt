@@ -1,0 +1,8 @@
+SELECT
+	u.nev, YEAR(min(k.kezdet)) - u.szulev as eletkor_1, year(max(k.kezdet)) - u.szulev as eletkor_2
+FROM
+	urhajos as u
+	JOIN repules as r on r.urhajosid = u.id
+    JOIN kuldetes as k on r.kuldetesid = k.id
+GROUP by u.nev
+HAVING min(k.kezdet) != max(k.kezdet);

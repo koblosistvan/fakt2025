@@ -1,0 +1,7 @@
+SELECT
+	d.terjedelem, d.szakterulet
+FROM
+	doku as d
+	join nyelv as n on n.id = d.nyelvid
+WHERE n.fnyelv = "angol" and n.cnyelv = "magyar"
+order by d.terjedelem desc;
