@@ -1,0 +1,7 @@
+SELECT
+	s.nev
+FROM 
+	szemely as s
+WHERE 
+	s.elerheto is not null
+ORDER by s.nev;

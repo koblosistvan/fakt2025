@@ -1,0 +1,8 @@
+SELECT
+	k.megnevezes
+FROM
+	urhajos as u 
+    JOIN repules as r on r.urhajosid = u.id
+    join kuldetes as k on k.id = r.kuldetesid
+GROUP by k.id
+HAVING COUNT(DISTINCT u.nem) > 1;
