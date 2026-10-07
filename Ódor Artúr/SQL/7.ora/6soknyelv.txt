@@ -1,0 +1,5 @@
+SELECT
+	*
+FROM
+	doku as d
+	JOIN fordito as f on f.nyelvid = d.nyelvid

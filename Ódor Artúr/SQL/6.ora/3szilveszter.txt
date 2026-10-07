@@ -1,0 +1,6 @@
+SELECT
+	k.megnevezes, datediff(k.veg, k.kezdet) as hossz
+FROM
+	kuldetes as k
+WHERE
+	year(k.kezdet) != year(k.veg);

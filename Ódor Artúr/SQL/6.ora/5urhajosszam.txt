@@ -1,0 +1,6 @@
+SELECT
+	u.orszag, COUNT(*) as db
+FROM
+	urhajos as u
+GROUP by u.orszag
+order by db desc;

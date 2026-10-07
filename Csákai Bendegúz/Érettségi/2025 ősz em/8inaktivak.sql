@@ -1,0 +1,9 @@
+SELECT
+	f.veznev,
+    f.utonev
+FROM
+	felhasznalo as f
+    left JOIN uzenet as u on u.f_id = f.id
+WHERE
+	f.utolso < '2010-01-01'
+    AND u.id is null;
