@@ -1,0 +1,6 @@
+SELECT 
+	COUNT(*) as darab, sum(n.egysegar)
+FROM
+	doku as d
+	JOIN nyelv as n on n.id = d.nyelvid
+WHERE d.terjedelem < 5001;

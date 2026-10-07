@@ -1,0 +1,8 @@
+SELECT 
+	t.ev,
+    t.start,
+    t.orszag
+FROM
+	tour as t
+WHERE
+	t.orszag <> '';
