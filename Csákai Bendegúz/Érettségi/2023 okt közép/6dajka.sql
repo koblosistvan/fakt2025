@@ -1,0 +1,1 @@
+'nem fért bele az időbe'
