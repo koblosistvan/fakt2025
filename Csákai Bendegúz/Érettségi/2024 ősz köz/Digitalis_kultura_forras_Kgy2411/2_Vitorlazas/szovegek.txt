@@ -1,0 +1,17 @@
+1. dia:
+Vitorlázás
+
+2. dia:
+Szélkör
+Ha a hajónk a jobb oldala felől kapja a szelet, akkor jobbcsapáson haladunk, ha a bal oldal felől, akkor balcsapáson. Így az ismert menetirányok a teljes 360°-ot lefedik, felrajzolhatjuk a szélkört.
+Negyedszél
+Félszél
+Háromnegyed-szél
+Hátszél
+
+3. dia:
+Fordulás
+A forduló egy szél felé történő csapásváltó manőver. A vitorla átkerül az egyik oldalról a másikra, megtörténik a csapásváltás. A forduló mindig élesedéssel kezdődik szélbeállásig, majd ejtéssel, az új menetirány felvételével fejeződik be.
+Ejtés
+Szélbeállás
+Élesedés
