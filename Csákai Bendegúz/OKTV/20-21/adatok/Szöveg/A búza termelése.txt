@@ -1,0 +1,36 @@
+A búza termelése Magyarországon 2015 és 2019 között						
+Betakarított terület, hektár						
+Területi egység						
+neve	Területi egység					
+szintje	2015	2016	2017	2018	2019	
+Budapest	fõváros, régió	8027	8424	6942	6780	7336
+Pest	megye, régió	60366	58900	53993	57723	57286
+Közép-Magyarország	nagyrégió					
+Fejér	megye	69353	65544	66117	62291	62990
+Komárom-Esztergom	megye	31334	28347	24118	24070	23499
+Veszprém	megye	31814	34879	34335	33067	28715
+Közép-Dunántúl	régió					
+Gyõr-Moson-Sopron	megye	57770	64848	60169	62729	60711
+Vas	megye	47126	44636	42747	44631	43217
+Zala	megye	27103	30760	28030	30682	29556
+Nyugat-Dunántúl	régió					
+Baranya	megye	54472	54886	50778	54110	54162
+Somogy	megye	48956	59316	58672	57864	55078
+Tolna	megye	45082	50803	50693	51506	49163
+Dél-Dunántúl	régió					
+Dunántúl	nagyrégió					
+Borsod-Abaúj-Zemplén	megye	67568	65699	59745	66285	65954
+Heves	megye	52581	47038	43380	42987	44172
+Nógrád	megye	18423	17894	14916	14565	14195
+Észak-Magyarország	régió					
+Hajdú-Bihar	megye	72113	56191	49423	58459	59764
+Jász-Nagykun-Szolnok	megye	99971	102912	95302	97053	102774
+Szabolcs-Szatmár-Bereg	megye	28529	27502	23219	25380	25605
+Észak-Alföld	régió					
+Bács-Kiskun	megye	62506	66571	59333	70381	66051
+Békés	megye	89398	97703	86273	104623	107109
+Csongrád-Csanád	megye	56826	61461	58215	60965	58303
+Dél-Alföld	régió					
+Alföld és Észak	nagyrégió					
+Ország összesen	ország										
+Magyarország régiói						
