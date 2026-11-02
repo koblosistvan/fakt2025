@@ -1,5 +1,11 @@
 SELECT
-	*
+	s.nev, COUNT(*) as db
 FROM
-	doku as d
-	JOIN fordito as f on f.nyelvid = d.nyelvid
+	nyelv as n 
+	JOIN fordito as f on f.nyelvid = n.id
+    JOIN szemely as s on s.id = f.szemelyid
+WHERE
+	n.fnyelv = "magyar"
+GROUP by f.szemelyid
+HAVING COUNT(DISTINCT n.cnyelv)
+ORDER by db desc limit 1;
