@@ -1,4 +1,3 @@
-t = []
 def hanyparos(t):
     db = 0
     for i in range(len(t)):

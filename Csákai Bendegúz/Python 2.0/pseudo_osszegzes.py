@@ -10,7 +10,6 @@ Eljárás PozitívakSzáma(T[1...n])
 
 PozitívakSzáma([1,2,3,-1,-2,-3])
 '''
-t = []
 def pozitivakszama(t):
     c = 0
     for i in range(len(t)):
