@@ -1,0 +1,19 @@
+start(Bal,előre)==Jobb
+start(Bal,hátra)==Bal
+stop(Bal)==leáll a Bal
+start(Jobb,előre)==Bal
+start(Jobb,hátra)==Jobb
+stop(Jobb)==leáll a Jobb
+várj(mp)= várakozik mp másodpercet
+
+A,Feladat
+    10 cm előre
+    90 fok fordulás balra (balra néz)
+    N=6 H=20
+    20 cm balra
+    90 fok fordulás balra (hátra néz)
+    20 cm előre
+
+B,Feladat
+    Halad(N,H):
+    start(Bal,előre);várj()
