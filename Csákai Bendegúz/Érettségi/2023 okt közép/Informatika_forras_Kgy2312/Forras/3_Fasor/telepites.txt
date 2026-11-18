@@ -1,0 +1,41 @@
+Helyszín	Fafaj	Faiskola	Szállítás napja	Darab
+Május 1. út	Korai juhar	Zöld Fák Kertészeti Áruda	10.04	6
+Gesztenye sor	Hegyi juhar	Tisza Dísznövény	10.10	9
+Kérész út	Hegyi juhar	Tisza Dísznövény	10.10	7
+Bajcsy-Zsilinszky út	Magas kőris	Liget Faiskola	10.11	5
+Kőrizs út	Magas kőris	Liget Faiskola	10.11	9
+Csók István út	Piros virágú vadgesztenye	Liget Faiskola	10.11	5
+Ifjúsági út	Piros virágú vadgesztenye	Liget Faiskola	10.11	18
+Béke út	Mezei juhar	Husáng Kertészet	10.12	6
+Bercsényi utca	Mezei juhar	Husáng Kertészet	10.12	4
+Csók István út	Mezei juhar	Husáng Kertészet	10.12	9
+Erdő út	Mezei juhar	Husáng Kertészet	10.12	6
+Ifjúsági út	Mezei juhar	Husáng Kertészet	10.12	13
+Kérész út	Mezei juhar	Husáng Kertészet	10.12	27
+Csók István út	Háromerű juhar	Husáng Kertészet	10.19	4
+Szolnoki út	Háromerű juhar	Tisza Dísznövény	10.19	9
+Csók István út	Mirkovec platán	Liget Faiskola	10.19	3
+Szegfű út	Mirkovec platán	Liget Faiskola	10.19	6
+Déryné utca	Európai hárs	Zöld Fák Kertészeti Áruda	10.24	6
+Szolnoki út	Európai hárs	Zöld Fák Kertészeti Áruda	10.24	9
+Déryné utca	Ezüsthárs	Zöld Fák Kertészeti Áruda	10.24	10
+Béke út	Virágos kőris	Husáng Kertészet	10.30	7
+Kérész út	Virágos kőris	Husáng Kertészet	10.30	5
+Petőfi Sándor út	Virágos kőris	Husáng Kertészet	10.30	4
+Béke út	Csertölgy	Husáng Kertészet	11.07	9
+Ifjúsági út	Csertölgy	Husáng Kertészet	11.07	12
+Gesztenye sor	Közönséges gyertyán	Liget Faiskola	11.07	7
+Szolnoki út	Magas kőris	Liget Faiskola	11.11	9
+Béke út	Ezüsthárs	Zöld Fák Kertészeti Áruda	11.13	6
+Béke út	Korai juhar	Zöld Fák Kertészeti Áruda	11.13	11
+Déryné utca	Juharlevelű platán	Husáng Kertészet	11.15	7
+Gesztenye sor	Juharlevelű platán	Husáng Kertészet	11.15	3
+Gesztenye sor	Juharlevelű platán	Husáng Kertészet	11.15	8
+Petőfi Sándor út	Juharlevelű platán	Husáng Kertészet	11.15	8
+Szegfű út	Juharlevelű platán	Husáng Kertészet	11.15	6
+Szegfű út	Juharlevelű platán	Husáng Kertészet	11.15	9
+Ifjúsági út	Háromerű juhar	Tisza Dísznövény	11.16	12
+Kőrizs út	Háromerű juhar	Tisza Dísznövény	11.16	10
+Bajcsy-Zsilinszky út	Juharlevelű platán	Husáng Kertészet	11.16	7
+Bajcsy-Zsilinszky út	Piros virágú vadgesztenye	Husáng Kertészet	11.16	13
+Kőrizs út	Piros virágú vadgesztenye	Tisza Dísznövény	11.16	10
