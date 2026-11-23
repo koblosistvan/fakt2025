@@ -1,0 +1,7 @@
+Eljárás Összegzés(T[1...n])
+	Ö:=0;
+	Ciklus i= 1-től n-ig
+		Ha T[i] pozitív, akkor
+		Ö:= Ö + T[i];
+	Ciklus vége
+	Ki: Ö;
