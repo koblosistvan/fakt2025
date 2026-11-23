@@ -28,3 +28,17 @@ def mertani(b1, c, f):
         return b1
     else:
         return 
+
+def kozos(a, b):
+    if a == b:
+        return a
+    else:
+        if a > b:
+            a, b = b, a
+
+        return kozos(a, b-a)
+
+def rsa(a, b):
+    if b == a:
+        return a
+    else: 
