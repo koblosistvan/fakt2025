@@ -23,5 +23,4 @@ v1 = vektor(3, 1)
 v2 = vektor(4, -2)
 v= v1 + v2
 vm = v1-v2
-vh
 print(vm)
