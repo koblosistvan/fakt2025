@@ -17,7 +17,7 @@ class Hallgato:
         self.vegzes_eve = int(adat[4])
 
         self.diploma_kor = self.vegzes_eve - self.szul_ev
-        self.szulinap = f'{self.szul_honap}.{self.szul_nap}'
+        self.szulinap = f'{self.szul_honap}.{self.szul_nap}' 
         self.szuletesi_ido = f'{self.szul_ev}.{self.szul_honap}.{self.szul_nap}'
         self.eletkor =  2014 - self.szul_ev
 
